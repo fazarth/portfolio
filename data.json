@@ -1,0 +1,100 @@
+{
+    "products": [
+        {
+            "id": "lms",
+            "title": "LMS Platform",
+            "badge": "Live",
+            "description": "Platform pembelajaran online untuk sekolah dan institusi pendidikan dengan fitur kelas virtual, quiz, tugas, dan manajemen nilai.",
+            "features": [
+                "Kelas Virtual",
+                "Quiz & Ujian Online",
+                "Manajemen Nilai",
+                "Progress Tracking"
+            ],
+            "icon": "lms",
+            "link": "https://lms.fazarth.my.id",
+            "buttonText": "Buka Aplikasi",
+            "comingSoon": false
+        },
+        {
+            "id": "kasir",
+            "title": "Kasir (POS & Inventory)",
+            "badge": "Live",
+            "description": "Aplikasi Point of Sales modern dengan manajemen inventori terintegrasi, laporan penjualan lengkap, dan support multi-outlet.",
+            "features": [
+                "Point of Sales",
+                "Manajemen Stok",
+                "Laporan Penjualan",
+                "Multi Outlet"
+            ],
+            "icon": "pos",
+            "link": "https://kasir.fazarth.my.id",
+            "buttonText": "Buka Aplikasi",
+            "comingSoon": false
+        },
+        {
+            "id": "warehouse",
+            "title": "Warehouse Management",
+            "badge": "Live",
+            "description": "Sistem manajemen gudang komprehensif untuk tracking barang masuk/keluar, opname stok, dan optimasi tata letak gudang.",
+            "features": [
+                "Inbound/Outbound",
+                "Stock Opname",
+                "Location Management",
+                "Real-time Tracking"
+            ],
+            "icon": "warehouse",
+            "link": "https://whs.fazarth.my.id",
+            "buttonText": "Buka Aplikasi",
+            "comingSoon": false
+        },
+        {
+            "id": "kiwarijournal",
+            "title": "Forum & Media",
+            "badge": "Live",
+            "description": "Platform forum dan media online untuk berbagi artikel, video, dan diskusi komunitas. Dilengkapi fitur interaksi seperti komentar dan likes.",
+            "features": [
+                "Artikel & Blog",
+                "Video Content",
+                "Forum Komunitas",
+                "Kategori & Tag"
+            ],
+            "icon": "forum",
+            "link": "https://kiwari-journals.fazarth.my.id",
+            "buttonText": "Buka Aplikasi",
+            "comingSoon": false
+        },
+        {
+            "id": "ai-agent",
+            "title": "AI Sales & Support Agent",
+            "badge": "Live",
+            "description": "Asisten virtual pintar bertenaga AI untuk otomatisasi layanan pelanggan dan perpesanan WhatsApp secara 24/7.",
+            "features": [
+                "Chatbot Pintar AI dengan Persona",
+                "Integrasi WhatsApp",
+                "Respons Cepat & Natural",
+                "Tersedia 24/7"
+            ],
+            "icon": "ai",
+            "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20tertarik%20dan%20ingin%20request%20demo%20untuk%20Aplikasi%20AI%20Agent.",
+            "buttonText": "Request Demo",
+            "comingSoon": false
+        },
+        {
+            "id": "next",
+            "title": "Proyek Selanjutnya",
+            "badge": "Coming Soon",
+            "description": "Kami terus mengembangkan solusi baru untuk membantu lebih banyak organisasi. Hubungi kami jika Anda memiliki ide proyek.",
+            "features": [
+                "Custom Development",
+                "Konsultasi Gratis",
+                "Harga Bersahabat",
+                "Support 24/7"
+            ],
+            "icon": "next",
+            "link": "#contact",
+            "buttonText": "Hubungi Kami",
+            "comingSoon": true
+        }
+    ]
+}
