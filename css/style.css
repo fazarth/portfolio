@@ -6,10 +6,10 @@
 /* ========== CSS Variables ========== */
 :root {
     /* Primary Colors */
-    --primary: #6ABF4B;
-    --primary-dark: #55a03a;
-    --primary-light: #8fd175;
-    --primary-glow: rgba(106, 191, 75, 0.3);
+    --primary: #2BC48D;
+    --primary-dark: #1Ea271;
+    --primary-light: #4DE1B0;
+    --primary-glow: rgba(43, 196, 141, 0.3);
 
     /* Neutrals */
     --black: #0a0a0a;
@@ -22,7 +22,7 @@
     --off-white: #f5f5f5;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    --gradient-primary: linear-gradient(135deg, #1BC46F 0%, #5FE2D4 100%);
     --gradient-dark: linear-gradient(180deg, var(--black) 0%, var(--dark) 100%);
     --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
 
@@ -434,6 +434,9 @@ h4 {
     border-radius: var(--radius-lg);
     padding: 32px;
     transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -499,6 +502,7 @@ h4 {
 
 .product-btn {
     width: 100%;
+    margin-top: auto;
 }
 
 .product-card-soon {
