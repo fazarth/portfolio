@@ -4,7 +4,7 @@
             "id": "onetwotripid",
             "title": "Dreamscape Tour & Trip",
             "badge": "Live",
-            "description": "Platform reservasi perjalanan premium berbasis Next.js. Menawarkan pengalaman booking yang seamless dengan kecepatan loading tinggi dan sistem manajemen inventaris tour yang efisien untuk operasional travel modern.",
+            "description": "Platform reservasi perjalanan premium berbasis Next.js. Menawarkan pengalaman booking seamless dengan performa tinggi dan manajemen inventaris tour yang efisien.",
             "features": [
                 "Next.js App Router",
                 "High Performance SEO",
@@ -20,7 +20,7 @@
             "id": "ai-agent",
             "title": "WhatsApp AI Assistant",
             "badge": "Live",
-            "description": "Integrasi asisten chatbot cerdas berbasis LLM ke jalur WhatsApp bisnis. Membantu mengotomatisasi respon pelanggan selama 24/7 dengan karakter suara yang bisa dipersonalisasi sesuai kebutuhan brand Anda.",
+            "description": "Asisten chatbot cerdas berbasis LLM untuk WhatsApp bisnis. Mengotomatisasi respon pelanggan 24/7 dengan persona yang dipersonalisasi sesuai brand Anda.",
             "features": [
                 "LLM Integration",
                 "WhatsApp Business API",
@@ -36,7 +36,7 @@
             "id": "hematin-app",
             "title": "Hematin - Mobile App",
             "badge": "Live",
-            "description": "Aplikasi mobile manajemen rumah tangga cerdas berbasis Flutter. Membantu pengguna melacak stok dapur, pengeluaran, dan resep berbasis AI dalam satu genggaman tangan yang praktis dan intuitif.",
+            "description": "Aplikasi manajemen rumah tangga cerdas berbasis Flutter. Membantu pelacakan stok dapur, pengeluaran, dan resep berbasis AI dalam satu genggaman intuitif.",
             "features": [
                 "Flutter Cross-Platform",
                 "AI Kitchen Assistant",
@@ -52,7 +52,7 @@
             "id": "web-admin",
             "title": "High-End Landing Page",
             "badge": "Live",
-            "description": "Eksplorasi desain landing page agensi digital dengan estetika tinggi. Dibangun dengan Next.js dan Tailwind CSS untuk memberikan kesan profesional, canggih, dan berorientasi pada konversi klien premium.",
+            "description": "Desain landing page agensi digital dengan estetika tinggi. Dibangun menggunakan Next.js dan Tailwind CSS untuk konversi klien premium yang optimal.",
             "features": [
                 "Premium UI/UX Design",
                 "Next.js 15 Integration",
@@ -68,7 +68,7 @@
             "id": "kiwarijournal",
             "title": "Kiwari Journal & Forum",
             "badge": "Live",
-            "description": "Sistem publikasi media online dan forum komunitas yang dinamis. Dirancang untuk menangani beban traffic tinggi dengan arsitektur server-side yang matang guna menjamin kecepatan akses artikel.",
+            "description": "Sistem publikasi media online dan forum komunitas dinamis. Dirancang untuk traffic tinggi dengan arsitektur server-side yang menjamin kecepatan akses.",
             "features": [
                 "Multi-Author System",
                 "Community Forum",
@@ -84,7 +84,7 @@
             "id": "kasir",
             "title": "Kasir (POS) Cloud",
             "badge": "Maintenance",
-            "description": "Sistem point of sales terpusat untuk efisiensi transaksi retail. Memfasilitasi laporan keuangan otomatis dan manajemen stok antar cabang secara real-time dari satu dashboard utama.",
+            "description": "Sistem point of sales terpusat untuk efisiensi retail. Memfasilitasi laporan keuangan otomatis dan manajemen stok antar cabang secara real-time.",
             "features": [
                 "Cloud Transaction",
                 "Auto-Stock Update",
@@ -100,7 +100,7 @@
             "id": "warehouse",
             "title": "Warehouse Logistics",
             "badge": "Maintenance",
-            "description": "Solusi manajemen logistik gudang untuk akurasi data inventaris. Membantu tim operasional dalam melacak pergerakan barang masuk dan keluar dengan sistem verifikasi digital yang ketat.",
+            "description": "Solusi manajemen logistik gudang untuk akurasi inventaris. Membantu pelacakan pergerakan barang dengan sistem verifikasi digital yang ketat.",
             "features": [
                 "Inbound/Outbound",
                 "Digital Verification",

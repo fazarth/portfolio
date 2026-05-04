@@ -108,8 +108,7 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .product-card h3 { font-size: 1.5rem; margin-bottom: 16px; }
 .product-card p {
     color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;
-    display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical;
-    overflow: hidden; min-height: 7rem;
+    min-height: 4.5rem; /* Seragam tanpa titik-titik */
 }
 
 .product-features { margin-bottom: 32px; }
@@ -145,9 +144,10 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .tech-label { font-size: 0.75rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
 .tech-stack { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 .tech-item {
-    padding: 8px 18px; background: var(--bg-soft); border-radius: 10px;
+    padding: 10px 20px; background: var(--bg-soft); border-radius: 12px;
     font-weight: 700; color: var(--secondary); font-size: 0.85rem;
     transition: var(--transition);
+    display: flex; align-items: center; gap: 10px;
 }
 .tech-item:hover { color: var(--primary); transform: scale(1.05); }
 

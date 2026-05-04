@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=8.0">
+    <link rel="stylesheet" href="css/style.css?v=9.0">
 </head>
 
 <body>
@@ -30,6 +30,7 @@
                 <li><a href="#home" class="nav-link">Beranda</a></li>
                 <li><a href="#products" class="nav-link">Produk</a></li>
                 <li><a href="#services" class="nav-link">Layanan</a></li>
+                <li><a href="#workflow" class="nav-link">Proses</a></li>
                 <li><a href="#about" class="nav-link">Tentang</a></li>
                 <li><a href="#contact" class="nav-link">Kontak</a></li>
             </ul>
@@ -42,7 +43,7 @@
             <div class="hero-text">
                 <span class="badge">Engineers at Heart</span>
                 <h1>Teknologi Tepat untuk <span class="text-accent">Masalah Nyata</span></h1>
-                <p>Kami tidak sekadar menulis kode. Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.</p>
+                <p>Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.</p>
                 <div class="hero-buttons">
                     <a href="#products" class="btn btn-primary">Lihat Project</a>
                     <a href="https://wa.me/6281222297568" target="_blank" class="btn btn-outline">Diskusi Sekarang</a>
@@ -51,7 +52,19 @@
         </div>
     </section>
 
-    <!-- Services Section (NEW) -->
+    <!-- 1. Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Portfolio</span>
+                <h2>Solusi yang <span class="text-accent">Telah Berjalan</span></h2>
+                <p>Showcase aplikasi dan sistem yang telah berhasil mengoptimalkan hasil bisnis klien kami.</p>
+            </div>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <!-- 2. Services Section (Moved to 2nd) -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
@@ -63,34 +76,23 @@
                 <div class="service-card">
                     <div class="s-icon">🌐</div>
                     <h4>Web Development</h4>
-                    <p>Membangun platform web modern berbasis Next.js dan Laravel dengan fokus pada performa dan SEO.</p>
+                    <p>Membangun platform web modern berbasis Next.js dan Laravel dengan fokus pada performa.</p>
                 </div>
                 <div class="service-card">
                     <div class="s-icon">🏢</div>
                     <h4>Enterprise System</h4>
-                    <p>Pengembangan sistem kustom menggunakan .Net dan Golang untuk skala bisnis menengah hingga besar.</p>
+                    <p>Pengembangan sistem kustom menggunakan .Net dan Golang untuk skala bisnis menengah-besar.</p>
                 </div>
                 <div class="service-card">
                     <div class="s-icon">⚙️</div>
                     <h4>Business Automation</h4>
-                    <p>Otomatisasi alur kerja menggunakan Microsoft Power Platform (Power Apps, Automate, & SharePoint).</p>
+                    <p>Otomatisasi alur kerja menggunakan Microsoft Power Platform (Apps, Automate, & SharePoint).</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Solusi yang <span class="text-accent">Telah Berjalan</span></h2>
-                <p>Showcase aplikasi dan sistem yang dibangun untuk mempermudah pekerjaan manusia dan mengoptimalkan hasil bisnis.</p>
-            </div>
-            <div class="products-grid" id="productsGrid"></div>
-        </div>
-    </section>
-
-    <!-- Workflow Section -->
+    <!-- 3. Workflow Section -->
     <section class="workflow" id="workflow">
         <div class="container">
             <div class="section-header">
@@ -123,38 +125,38 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- 4. About Section (Tech Logos Added) -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-header">
                 <h2>Partner Teknologi <span class="text-accent">Andal</span></h2>
-                <p>Kombinasi keahlian teknis dan pemahaman masalah bisnis untuk menghasilkan produk perangkat lunak yang andal.</p>
+                <p>Kombinasi keahlian teknis untuk menghasilkan produk perangkat lunak yang andal.</p>
                 
                 <div class="tech-group">
                     <p class="tech-label">Framework & Language</p>
                     <div class="tech-stack">
-                        <span class="tech-item">Laravel</span>
-                        <span class="tech-item">Next JS</span>
-                        <span class="tech-item">Golang</span>
-                        <span class="tech-item">.Net</span>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/laravel/FF2D20" width="20"> Laravel</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs/000000" width="20"> Next JS</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/go/00ADD8" width="20"> Golang</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/dotnet/512BD4" width="20"> .Net</div>
                     </div>
                 </div>
 
                 <div class="tech-group">
-                    <p class="tech-label">Database & Backend</p>
+                    <p class="tech-label">Database & Cloud</p>
                     <div class="tech-stack">
-                        <span class="tech-item">SQL Server</span>
-                        <span class="tech-item">MySQL</span>
-                        <span class="tech-item">Supabase</span>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/microsoftsqlserver/CC2927" width="20"> SQL Server</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql/4479A1" width="20"> MySQL</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/supabase/3FCF8E" width="20"> Supabase</div>
                     </div>
                 </div>
 
                 <div class="tech-group">
-                    <p class="tech-label">Power Platform</p>
+                    <p class="tech-label">Microsoft Power Platform</p>
                     <div class="tech-stack">
-                        <span class="tech-item">Power Apps</span>
-                        <span class="tech-item">SharePoint</span>
-                        <span class="tech-item">Power Automate</span>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/powerapps/742774" width="20"> Power Apps</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/microsoftsharepoint/0078D4" width="20"> SharePoint</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/powerautomate/0066FF" width="20"> Power Automate</div>
                     </div>
                 </div>
 
@@ -224,7 +226,7 @@
                             <div class="product-badge ${statusClass}">${p.badge}</div>
                             <div class="product-icon">${getIcon(p.icon)}</div>
                             <h3>${p.title}</h3>
-                            <p>${p.description}</p>
+                            <div class="p-desc-container"><p>${p.description}</p></div>
                             <ul class="product-features">
                                 ${p.features.map(f => `<li>${f}</li>`).join('')}
                             </ul>
