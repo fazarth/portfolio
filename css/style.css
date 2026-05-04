@@ -62,16 +62,22 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .nav-link:hover { color: var(--primary); }
 
 /* ========== Services Section ========== */
-.services { padding: 100px 0; background: #fff; }
-.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.services { padding: 120px 0; background: #fff; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 60px; }
 .service-card { 
-    padding: 32px; background: var(--bg-soft); border-radius: var(--radius);
-    transition: var(--transition); text-align: center;
+    padding: 48px 40px; background: #fff; border-radius: 24px;
+    transition: var(--transition); text-align: left;
+    border: 1px solid rgba(0,0,0,0.03);
 }
-.service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
-.s-icon { font-size: 2rem; margin-bottom: 20px; }
-.service-card h4 { font-size: 1.2rem; margin-bottom: 12px; }
-.service-card p { font-size: 0.9rem; color: var(--text-muted); }
+.service-card:hover { transform: translateY(-10px); box-shadow: 0 30px 60px rgba(0, 86, 210, 0.05); border-color: var(--primary-soft); }
+.s-icon-wrap { 
+    width: 56px; height: 56px; background: var(--primary-soft); color: var(--primary);
+    border-radius: 16px; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+}
+.s-icon-wrap i { width: 28px; height: 28px; }
+.service-card h4 { font-size: 1.25rem; margin-bottom: 16px; font-weight: 700; color: var(--secondary); }
+.service-card p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
 
 /* ========== Hero ========== */
 .hero { padding: 180px 0 100px; text-align: center; }

@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=13.0">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css?v=14.0">
 </head>
 
 <body>
@@ -74,19 +75,19 @@
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="s-icon">🌐</div>
+                    <div class="s-icon-wrap"><i data-lucide="globe"></i></div>
                     <h4>Web Development</h4>
-                    <p>Membangun platform web modern berbasis Next.js dan Laravel dengan fokus pada performa.</p>
+                    <p>Membangun platform web modern berbasis Next.js dan Laravel dengan fokus pada performa dan skalabilitas tinggi.</p>
                 </div>
                 <div class="service-card">
-                    <div class="s-icon">🏢</div>
+                    <div class="s-icon-wrap"><i data-lucide="layers"></i></div>
                     <h4>Enterprise System</h4>
-                    <p>Pengembangan sistem kustom menggunakan .Net dan Golang untuk skala bisnis menengah-besar.</p>
+                    <p>Pengembangan sistem kustom (ERP/CRM) menggunakan .Net dan Golang untuk efisiensi bisnis skala besar.</p>
                 </div>
                 <div class="service-card">
-                    <div class="s-icon">⚙️</div>
+                    <div class="s-icon-wrap"><i data-lucide="zap"></i></div>
                     <h4>Business Automation</h4>
-                    <p>Otomatisasi alur kerja menggunakan Microsoft Power Platform (Apps, Automate, & SharePoint).</p>
+                    <p>Otomatisasi alur kerja cerdas menggunakan Microsoft Power Platform untuk mempercepat produktivitas tim Anda.</p>
                 </div>
             </div>
         </div>
@@ -215,6 +216,9 @@
             }, observerOptions);
 
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Initialize Lucide Icons
+            lucide.createIcons();
 
             // Load Projects
             fetch('data.json')
