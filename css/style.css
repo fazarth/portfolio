@@ -107,13 +107,17 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 
 .product-card h3 { font-size: 1.5rem; margin-bottom: 16px; }
 .product-card p {
-    color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;
-    height: 6.5rem; /* Tinggi pas untuk 5 baris */
-    display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical;
-    overflow: hidden;
+    color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.product-card .btn { margin-top: auto; } /* Dorong tombol ke bawah */
+.p-content-wrap {
+    flex-grow: 1; /* Mengambil sisa ruang agar tombol terdorong ke bawah */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .btn { margin-top: 24px; width: 100%; }
 
 .product-features { margin-bottom: 32px; }
 .product-features li { 
