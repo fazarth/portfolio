@@ -3,129 +3,129 @@
         {
             "id": "onetwotripid",
             "title": "Dreamscape Tour & Trip",
-            "badge": "Portofolio",
-            "description": "Platform booking Tour & Trip berbasis web. Dibangun dengan framework Next.js dan Docker untuk memastikan performa yang cepat, struktur SEO yang wajar, dan kemudahan bagi staf dalam mengelola data reservasi di halaman admin.",
+            "badge": "Live",
+            "description": "Platform booking Tour & Trip berbasis web yang elegan. Dibangun dengan Next.js untuk memastikan performa maksimal dan struktur SEO yang optimal bagi bisnis travel modern.",
             "features": [
                 "Aplikasi berbasis Next.js",
-                "Manajemen Reservasi & CMS Dasar",
+                "Manajemen Reservasi & CMS",
                 "Optimasi Performa & Akses",
-                "Tata Letak Responsif Mobile"
+                "Tata Letak Responsif"
             ],
             "icon": "travel",
-            "link": "https://dreamscape.fazarth.my.id",
+            "link": "https://trip.nexwave-tech.my.id",
             "buttonText": "Kunjungi Situs",
+            "comingSoon": false
+        },
+        {
+            "id": "hematin",
+            "title": "Hematin - Web Admin",
+            "badge": "Live",
+            "description": "Dashboard manajemen rumah tangga cerdas. Membantu pengelolaan stok, pengeluaran, dan keluarga secara terpusat dengan teknologi web terbaru.",
+            "features": [
+                "Dashboard Admin Next.js",
+                "Manajemen Stok & Keuangan",
+                "Sinkronisasi Data Real-time",
+                "User Management & Roles"
+            ],
+            "icon": "finance",
+            "link": "https://hematin.nexwave-tech.my.id",
+            "buttonText": "Buka Dashboard",
             "comingSoon": false
         },
         {
             "id": "kiwarijournal",
             "title": "Kiwari Journal & Forum",
-            "badge": "Portofolio",
-            "description": "Sistem publikasi media online yang terintegrasi langsung dengan fitur forum komunitas. Dirancang secara responsif guna memudahkan interaksi pembaca serta manajemen artikel bagi penulis.",
+            "badge": "Live",
+            "description": "Sistem publikasi media online yang terintegrasi dengan forum komunitas. Memudahkan interaksi pembaca serta manajemen artikel yang dinamis.",
             "features": [
                 "Publikasi Multi-Author",
                 "Integrasi Forum Komunitas",
-                "Struktur Halaman Server-Side",
-                "Manajemen Konten Multimedia"
+                "Struktur Server-Side",
+                "Manajemen Multimedia"
             ],
             "icon": "forum",
-            "link": "https://kiwari-journals.fazarth.my.id",
-            "buttonText": "Kunjungi Situs",
+            "link": "https://kiwarijournals.my.id",
+            "buttonText": "Lihat Jurnal",
             "comingSoon": false
         },
         {
             "id": "ai-agent",
             "title": "WhatsApp AI Assistant",
-            "badge": "Layanan AI",
-            "description": "Integrasi layanan chatbot AI (berbasis LLM) ke jalur komunikasi WhatsApp bisnis. Asisten otomatis ini membantu merespon pertanyaan lazim dari klien secara akurat selama 24 jam sehari.",
+            "badge": "Live",
+            "description": "Integrasi asisten chatbot AI (LLM) ke jalur WhatsApp bisnis. Otomasi respon pelanggan 24/7 dengan karakter yang dipersonalisasi.",
             "features": [
-                "Pemrosesan Bahasa berbasis AI",
-                "Integrasi API WhatsApp Legal",
-                "Penyesuaian Karakter Respons",
-                "Balasan Otomatis 24 Jam"
+                "Pemrosesan Bahasa AI",
+                "Integrasi API WhatsApp",
+                "Karakter Respons Khusus",
+                "Balasan Otomatis 24/7"
             ],
             "icon": "ai",
             "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20tertarik%20dan%20ingin%20berbicara%20mengenai%20AI%20Agent.",
-            "buttonText": "Coba Chatbot Demo",
+            "buttonText": "Coba Demo",
             "comingSoon": false
         },
         {
             "id": "kasir",
             "title": "Kasir (POS) Terpusat",
-            "badge": "Dalam Sedikit Perbaikan",
-            "description": "Sistem Kasir atau Point of Sales dengan fitur pencatatan cloud. Membantu pemilik bisnis retail mencatat inventaris barang, melihat alur keuangan dasar, hingga integrasi rekapitulasi data dari beberapa cabang secara bersamaan.",
+            "badge": "Maintenance",
+            "description": "Sistem Kasir cloud untuk manajemen inventaris dan transaksi retail. Saat ini sedang dalam tahap pengembangan fitur lanjutan.",
             "features": [
-                "Pencatatan Transaksi Real-time",
-                "Sistem Pengurangan Stok",
-                "Histori Laporan Keuangan",
-                "Dukungan Manajemen Cabang"
+                "Pencatatan Real-time",
+                "Sistem Stok Otomatis",
+                "Laporan Keuangan",
+                "Manajemen Cabang"
             ],
             "icon": "pos",
             "link": "#",
-            "buttonText": "Sedang Diperbarui",
+            "buttonText": "Under Development",
             "comingSoon": true
         },
         {
             "id": "warehouse",
             "title": "Warehouse Management",
-            "badge": "Dalam Sedikit Perbaikan",
-            "description": "Aplikasi manajemen inventaris fasilitas gudang yang memfasilitasi staf untuk mencatat alur barang masuk-keluar secara akurat. Turut menyediakan panduan sistem untuk proses stock opname dan tata letak rak.",
+            "badge": "Maintenance",
+            "description": "Aplikasi inventaris gudang untuk pelacakan alur barang yang akurat. Mempermudah proses stock opname dan tata letak logistik.",
             "features": [
-                "Pelacakan Barang Masuk/Keluar",
-                "Dokumentasi Stock Opname",
-                "Registrasi Tata Letak Visual",
-                "Dashboard Data Ringkas"
+                "Pelacakan Barang",
+                "Dokumentasi Opname",
+                "Tata Letak Visual",
+                "Dashboard Logistik"
             ],
             "icon": "warehouse",
             "link": "#",
-            "buttonText": "Sedang Diperbarui",
+            "buttonText": "Under Development",
             "comingSoon": true
         },
         {
             "id": "lms",
-            "title": "E-Learning (LMS) System",
-            "badge": "Dalam Sedikit Perbaikan",
-            "description": "Platform pengelolaan tugas dan interaksi edukasi online. Siswa dapat mengakses kelas virtual dan mengerjakan uji materi yang terstruktur sementara pengajar bisa melacak progres nilai dari dashboard terpusat.",
+            "title": "E-Learning (LMS)",
+            "badge": "Maintenance",
+            "description": "Platform edukasi online untuk manajemen tugas dan kelas virtual. Mempermudah interaksi antara pengajar dan siswa.",
             "features": [
-                "Akses Kelas & Silabus Virtual",
-                "Module Quiz & Penilaian",
-                "Buku Nilai Guru Terpusat",
-                "Rekapitulasi Track Siswa"
+                "Kelas & Silabus Virtual",
+                "Module Quiz",
+                "Buku Nilai Terpusat",
+                "Track Progres Siswa"
             ],
             "icon": "lms",
             "link": "#",
-            "buttonText": "Sedang Diperbarui",
+            "buttonText": "Under Development",
             "comingSoon": true
         },
         {
-            "id": "hematin",
-            "title": "Hematin - Asisten Ibu",
-            "badge": "Portofolio",
-            "description": "Aplikasi manajemen rumah tangga cerdas untuk melacak pengeluaran, stok dapur, dan resep masakan berbasis AI. Terdiri dari aplikasi mobile Flutter dan dashboard admin Next.js.",
-            "features": [
-                "Aplikasi Mobile & Web Admin",
-                "Manajemen Stok & Pengeluaran",
-                "AI Resep & Scan Nota",
-                "Sinkronisasi Keluarga"
-            ],
-            "icon": "finance",
-            "link": "https://hematin.fazarth.my.id",
-            "buttonText": "Kunjungi Web",
-            "comingSoon": false
-        },
-        {
             "id": "next",
-            "title": "Rencana Proyek Anda?",
+            "title": "Proyek Masa Depan?",
             "badge": "Available",
-            "description": "Sedang mematangkan rencana migrasi sistem manual bisnis ke bentuk perangkat lunak digital? Sampaikan spesifikasi yang Anda butuhkan, kami menyediakan layanan penyusunan aplikasinya dari rancangan hingga stabil.",
+            "description": "Punya ide aplikasi atau butuh digitalisasi sistem bisnis? Mari diskusikan kebutuhan teknologi Anda dan bangun solusi yang tepat guna.",
             "features": [
-                "Konsultasi Analisa Kebutuhan",
-                "Perancangan Desain Tampilan",
-                "Penyusunan Kode Aplikasi",
-                "Garansi Kepemilikan Sistem"
+                "Konsultasi Kebutuhan",
+                "Desain Arsitektur",
+                "Development & QA",
+                "Support & Maintenance"
             ],
             "icon": "next",
             "link": "#contact",
-            "buttonText": "Mulai Berdiskusi",
+            "buttonText": "Mulai Diskusi",
             "comingSoon": true
         }
     ]
