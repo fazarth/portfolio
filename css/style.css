@@ -47,8 +47,20 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .text-accent { color: var(--primary); }
 
 .nav-links { display: flex; gap: 32px; }
-.nav-link { font-size: 0.9rem; font-weight: 600; color: var(--text-muted); transition: var(--transition); }
+.nav-link { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); transition: var(--transition); text-transform: uppercase; letter-spacing: 0.05em; }
 .nav-link:hover { color: var(--primary); }
+
+/* ========== Services Section ========== */
+.services { padding: 100px 0; background: #fff; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.service-card { 
+    padding: 32px; background: var(--bg-soft); border-radius: var(--radius);
+    transition: var(--transition); text-align: center;
+}
+.service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.s-icon { font-size: 2rem; margin-bottom: 20px; }
+.service-card h4 { font-size: 1.2rem; margin-bottom: 12px; }
+.service-card p { font-size: 0.9rem; color: var(--text-muted); }
 
 /* ========== Hero ========== */
 .hero { padding: 180px 0 100px; text-align: center; }
@@ -112,22 +124,29 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .product-features li::before { content: none !important; } /* Hapus Dots total */
 
 /* ========== Workflow Section ========== */
-.workflow { padding: 100px 0; background: #fff; }
+.workflow { padding: 100px 0; background: var(--bg-soft); }
 .workflow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px; }
-.workflow-item { position: relative; padding: 24px; transition: var(--transition); }
-.w-number { 
-    font-size: 3rem; font-weight: 800; color: var(--primary); 
-    opacity: 0.1; margin-bottom: 20px; font-family: 'Outfit';
+.workflow-item { 
+    background: #fff; padding: 40px 32px; border-radius: var(--radius);
+    transition: var(--transition); box-shadow: var(--shadow);
+    display: flex; flex-direction: column; height: 100%; /* Equal Height */
 }
-.workflow-item h4 { font-size: 1.15rem; margin-bottom: 12px; }
-.workflow-item p { font-size: 0.9rem; color: var(--text-muted); }
+.workflow-item:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+.w-number { 
+    font-size: 2.5rem; font-weight: 800; color: var(--primary); 
+    opacity: 0.15; margin-bottom: 16px; font-family: 'Outfit';
+}
+.workflow-item h4 { font-size: 1.1rem; margin-bottom: 12px; font-weight: 700; }
+.workflow-item p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
 
 /* ========== About & Tech Stack ========== */
-.about { padding: 120px 0; text-align: center; }
-.tech-stack { display: flex; justify-content: center; gap: 16px; margin: 40px 0; flex-wrap: wrap; }
+.about { padding: 120px 0; text-align: center; background: #fff; }
+.tech-group { margin-bottom: 40px; }
+.tech-label { font-size: 0.75rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+.tech-stack { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
 .tech-item {
-    padding: 10px 20px; background: #fff; border-radius: 12px;
-    font-weight: 700; color: var(--secondary); box-shadow: var(--shadow);
+    padding: 8px 18px; background: var(--bg-soft); border-radius: 10px;
+    font-weight: 700; color: var(--secondary); font-size: 0.85rem;
     transition: var(--transition);
 }
 .tech-item:hover { color: var(--primary); transform: scale(1.05); }

@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=7.0">
+    <link rel="stylesheet" href="css/style.css?v=8.0">
 </head>
 
 <body>
@@ -29,6 +29,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="nav-link">Beranda</a></li>
                 <li><a href="#products" class="nav-link">Produk</a></li>
+                <li><a href="#services" class="nav-link">Layanan</a></li>
                 <li><a href="#about" class="nav-link">Tentang</a></li>
                 <li><a href="#contact" class="nav-link">Kontak</a></li>
             </ul>
@@ -50,6 +51,34 @@
         </div>
     </section>
 
+    <!-- Services Section (NEW) -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Our Services</span>
+                <h2>Layanan <span class="text-accent">Unggulan</span></h2>
+                <p>Solusi teknologi komprehensif untuk mendigitalisasi dan mengotomatisasi bisnis Anda.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="s-icon">🌐</div>
+                    <h4>Web Development</h4>
+                    <p>Membangun platform web modern berbasis Next.js dan Laravel dengan fokus pada performa dan SEO.</p>
+                </div>
+                <div class="service-card">
+                    <div class="s-icon">🏢</div>
+                    <h4>Enterprise System</h4>
+                    <p>Pengembangan sistem kustom menggunakan .Net dan Golang untuk skala bisnis menengah hingga besar.</p>
+                </div>
+                <div class="service-card">
+                    <div class="s-icon">⚙️</div>
+                    <h4>Business Automation</h4>
+                    <p>Otomatisasi alur kerja menggunakan Microsoft Power Platform (Power Apps, Automate, & SharePoint).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Products Section -->
     <section class="products" id="products">
         <div class="container">
@@ -61,7 +90,7 @@
         </div>
     </section>
 
-    <!-- Workflow Section (NEW) -->
+    <!-- Workflow Section -->
     <section class="workflow" id="workflow">
         <div class="container">
             <div class="section-header">
@@ -73,7 +102,7 @@
                 <div class="workflow-item">
                     <div class="w-number">01</div>
                     <h4>Analisa & Diskusi</h4>
-                    <p>Kami mulai dengan mendengarkan masalah Anda untuk menemukan solusi teknologi yang paling efisien.</p>
+                    <p>Memahami inti masalah bisnis Anda untuk menemukan solusi teknologi yang paling efisien.</p>
                 </div>
                 <div class="workflow-item">
                     <div class="w-number">02</div>
@@ -82,12 +111,12 @@
                 </div>
                 <div class="workflow-item">
                     <div class="w-number">03</div>
-                    <h4>Pembangunan (Coding)</h4>
-                    <p>Proses coding menggunakan tech stack modern seperti Laravel, Next.js, Golang, atau .Net.</p>
+                    <h4>Pembangunan</h4>
+                    <p>Proses pengembangan menggunakan tech stack modern sesuai dengan kebutuhan spesifikasi sistem.</p>
                 </div>
                 <div class="workflow-item">
                     <div class="w-number">04</div>
-                    <h4>Deployment & Support</h4>
+                    <h4>Launch & Support</h4>
                     <p>Meluncurkan sistem ke cloud dan memastikan semuanya berjalan stabil di tangan pengguna.</p>
                 </div>
             </div>
@@ -101,11 +130,32 @@
                 <h2>Partner Teknologi <span class="text-accent">Andal</span></h2>
                 <p>Kombinasi keahlian teknis dan pemahaman masalah bisnis untuk menghasilkan produk perangkat lunak yang andal.</p>
                 
-                <div class="tech-stack">
-                    <span class="tech-item">Laravel</span>
-                    <span class="tech-item">Next JS</span>
-                    <span class="tech-item">Golang</span>
-                    <span class="tech-item">.Net</span>
+                <div class="tech-group">
+                    <p class="tech-label">Framework & Language</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">Laravel</span>
+                        <span class="tech-item">Next JS</span>
+                        <span class="tech-item">Golang</span>
+                        <span class="tech-item">.Net</span>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <p class="tech-label">Database & Backend</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">SQL Server</span>
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">Supabase</span>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <p class="tech-label">Power Platform</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">Power Apps</span>
+                        <span class="tech-item">SharePoint</span>
+                        <span class="tech-item">Power Automate</span>
+                    </div>
                 </div>
 
                 <div class="stats-row">
