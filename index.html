@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=11.0">
+    <link rel="stylesheet" href="css/style.css?v=12.0">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero reveal" id="home">
         <div class="container">
             <div class="hero-text">
                 <span class="badge">Engineers at Heart</span>
@@ -53,7 +53,7 @@
     </section>
 
     <!-- 1. Products Section -->
-    <section class="products" id="products">
+    <section class="products reveal" id="products">
         <div class="container">
             <div class="section-header">
                 <span class="badge">Portfolio</span>
@@ -65,7 +65,7 @@
     </section>
 
     <!-- 2. Services Section -->
-    <section class="services" id="services">
+    <section class="services reveal" id="services">
         <div class="container">
             <div class="section-header">
                 <span class="badge">Our Services</span>
@@ -93,7 +93,7 @@
     </section>
 
     <!-- 3. Workflow Section -->
-    <section class="workflow" id="workflow">
+    <section class="workflow reveal" id="workflow">
         <div class="container">
             <div class="section-header">
                 <span class="badge">Our Process</span>
@@ -126,7 +126,7 @@
     </section>
 
     <!-- 4. About Section -->
-    <section class="about" id="about">
+    <section class="about reveal" id="about">
         <div class="container">
             <div class="about-header">
                 <h2>Partner Teknologi <span class="text-accent">Andal</span></h2>
@@ -159,27 +159,12 @@
                         <div class="tech-item"><img src="https://cdn.simpleicons.org/powerautomate/0066FF" width="20" alt="Power Automate"> Power Automate</div>
                     </div>
                 </div>
-
-                <div class="stats-row">
-                    <div class="stat-box">
-                        <span class="stat-val">Performance</span>
-                        <span class="stat-label">Fast & Optimized</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-val">Security</span>
-                        <span class="stat-label">Enterprise Grade</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-val">Scaling</span>
-                        <span class="stat-label">Ready to Grow</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact reveal" id="contact">
         <div class="container">
             <div class="cta-banner">
                 <div class="cta-content">
@@ -209,20 +194,35 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Navbar scroll effect
             window.addEventListener('scroll', function() {
                 const nav = document.getElementById('navbar');
                 if (window.scrollY > 50) nav.classList.add('scrolled');
                 else nav.classList.remove('scrolled');
             });
 
+            // Reveal on Scroll
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Load Projects
             fetch('data.json')
                 .then(res => res.json())
                 .then(data => {
                     const grid = document.getElementById('productsGrid');
                     grid.innerHTML = data.products.map(p => {
                         const statusClass = `badge-${p.badge.toLowerCase()}`;
+                        const isRequest = p.badge.toLowerCase() === 'request';
                         return `
-                        <div class="product-card">
+                        <div class="product-card ${isRequest ? 'card-highlight' : ''}">
                             <div class="product-badge ${statusClass}">${p.badge}</div>
                             <div class="product-icon">${getIcon(p.icon)}</div>
                             <h3>${p.title}</h3>
@@ -232,7 +232,7 @@
                                     ${p.features.map(f => `<li>${f}</li>`).join('')}
                                 </ul>
                             </div>
-                            <a href="${p.link}" class="btn ${p.comingSoon ? 'btn-outline' : 'btn-primary'}" ${p.comingSoon ? '' : 'target="_blank"'}>
+                            <a href="${p.link}" class="btn ${p.comingSoon ? 'btn-outline' : (isRequest ? 'btn-accent' : 'btn-primary')}" ${p.comingSoon ? '' : 'target="_blank"'}>
                                 ${p.buttonText}
                             </a>
                         </div>

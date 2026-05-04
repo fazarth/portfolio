@@ -14,10 +14,21 @@
     --bg-main: #FFFFFF;
     --bg-soft: #F8FAFC;
     
-    --radius: 16px;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.03);
-    --shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    --shadow-premium: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
+    --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --glass: rgba(255, 255, 255, 0.7);
+}
+
+/* ========== Animations ========== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ========== Base Reset ========== */
@@ -90,18 +101,28 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px; }
 
 .product-card {
-    background: #fff; border-radius: var(--radius); padding: 40px;
-    transition: var(--transition); position: relative; box-shadow: var(--shadow);
-    display: flex; flex-direction: column; border: none; /* No Border */
+    background: var(--glass); backdrop-filter: blur(10px);
+    border-radius: var(--radius); padding: 40px;
+    transition: var(--transition); position: relative; 
+    display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,0.4);
 }
-.product-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+.product-card:hover { transform: translateY(-12px); box-shadow: var(--shadow-premium); background: #fff; }
 
-.product-badge {
-    position: absolute; top: 32px; right: 32px; font-size: 0.75rem;
-    font-weight: 800; padding: 4px 10px; border-radius: 6px;
+/* Highlight for Custom Project */
+.card-highlight {
+    background: linear-gradient(to bottom right, #fff, #F0F7FF);
+    border: 1px solid var(--primary-soft);
 }
-.badge-live { background: #DCFCE7; color: #166534; }
-.badge-maintenance { background: #FEF3C7; color: #92400E; }
+.card-highlight::after {
+    content: 'Recommended'; position: absolute; top: -12px; left: 40px;
+    background: var(--primary); color: #fff; font-size: 0.65rem;
+    padding: 4px 12px; border-radius: 20px; font-weight: 800; text-transform: uppercase;
+}
+
+.badge-request { background: var(--secondary); color: #fff; }
+
+.btn-accent { background: var(--secondary); color: #fff; }
+.btn-accent:hover { background: #000; transform: translateY(-3px); }
 
 .product-icon { font-size: 2rem; margin-bottom: 24px; width: 60px; height: 60px; background: var(--bg-soft); border-radius: 14px; display: flex; align-items: center; justify-content: center; }
 
