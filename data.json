@@ -33,22 +33,6 @@
             "comingSoon": false
         },
         {
-            "id": "custom-project",
-            "title": "Custom System Development",
-            "badge": "Request",
-            "description": "Punya masalah bisnis unik yang butuh solusi teknologi khusus? Kami siap merancang dan membangun sistem kustom yang dipersonalisasi sesuai alur kerja Anda.",
-            "features": [
-                "Custom Architecture",
-                "Personalized Solutions",
-                "Enterprise Integration",
-                "Direct Consultation"
-            ],
-            "icon": "next",
-            "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20ingin%20diskusi%20mengenai%20custom%20project%20untuk%20masalah%20bisnis%20saya.",
-            "buttonText": "Konsultasi Masalah Anda",
-            "comingSoon": false
-        },
-        {
             "id": "web-admin",
             "title": "High-End Landing Page",
             "badge": "Live",
@@ -127,6 +111,22 @@
             "link": "#",
             "buttonText": "Under Repair",
             "comingSoon": true
+        },
+        {
+            "id": "custom-project",
+            "title": "Custom System Development",
+            "badge": "Request",
+            "description": "Punya masalah bisnis unik yang butuh solusi teknologi khusus? Kami siap merancang dan membangun sistem kustom yang dipersonalisasi sesuai alur kerja Anda.",
+            "features": [
+                "Custom Architecture",
+                "Personalized Solutions",
+                "Enterprise Integration",
+                "Direct Consultation"
+            ],
+            "icon": "next",
+            "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20ingin%20diskusi%20mengenai%20custom%20project%20untuk%20masalah%20bisnis%20saya.",
+            "buttonText": "Konsultasi Masalah Anda",
+            "comingSoon": false
         }
     ]
 }
