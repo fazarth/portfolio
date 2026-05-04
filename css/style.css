@@ -1,13 +1,13 @@
 /* ============================================
    NexWave Tech - Portfolio Website Styles
-   Theme: Sleek Minimalist - V5 (Plus Jakarta Sans)
+   Theme: Sleek Minimalist - V6 (Inter)
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --primary: #0062FF; /* Vibrant Blue */
-    --primary-soft: #F0F6FF;
+    --primary: #0056D2; /* Solid Professional Blue */
+    --primary-soft: #EFF6FF;
     --secondary: #0F172A; /* Midnight Slate */
     --text-main: #1E293B;
     --text-muted: #64748B;
@@ -35,7 +35,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none !important; list-style: none !important; }
 
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--bg-main);
     color: var(--text-main);
     line-height: 1.6;
@@ -110,16 +110,17 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 
 /* Highlight for Custom Project */
 .card-highlight {
-    background: linear-gradient(to bottom right, #fff, #F0F7FF);
+    background: linear-gradient(to bottom right, #ffffff, #f4f8ff);
     border: 1px solid var(--primary-soft);
 }
 .card-highlight::after {
     content: 'Recommended'; position: absolute; top: -12px; left: 40px;
     background: var(--primary); color: #fff; font-size: 0.65rem;
-    padding: 4px 12px; border-radius: 20px; font-weight: 800; text-transform: uppercase;
+    padding: 6px 14px; border-radius: 20px; font-weight: 800; text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 86, 210, 0.3);
 }
 
-.badge-request { background: var(--secondary); color: #fff; }
+.badge-request { background: var(--secondary); color: #fff; width: max-content; }
 
 .btn-accent { background: var(--secondary); color: #fff; }
 .btn-accent:hover { background: #000; transform: translateY(-3px); }
