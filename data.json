@@ -49,6 +49,22 @@
             "comingSoon": false
         },
         {
+            "id": "web-admin",
+            "title": "High-End Landing Page",
+            "badge": "Live",
+            "description": "Desain landing page agensi digital dengan estetika tinggi. Dibangun menggunakan Next.js dan Tailwind CSS untuk konversi klien premium yang optimal.",
+            "features": [
+                "Premium UI/UX Design",
+                "Next.js 15 Integration",
+                "Smooth Animations",
+                "High-Tech Aesthetic"
+            ],
+            "icon": "next",
+            "link": "https://hematin.nexwave-tech.my.id",
+            "buttonText": "Lihat Demo",
+            "comingSoon": false
+        },
+        {
             "id": "hematin-app",
             "title": "Hematin - Mobile App",
             "badge": "Live",
@@ -92,6 +108,22 @@
                 "Multi-Outlet Sync"
             ],
             "icon": "pos",
+            "link": "#",
+            "buttonText": "Under Repair",
+            "comingSoon": true
+        },
+        {
+            "id": "warehouse",
+            "title": "Warehouse Logistics",
+            "badge": "Maintenance",
+            "description": "Solusi manajemen logistik gudang untuk akurasi inventaris. Membantu pelacakan pergerakan barang dengan sistem verifikasi digital yang ketat.",
+            "features": [
+                "Inbound/Outbound",
+                "Digital Verification",
+                "Stock Opname Tool",
+                "Logistics Dashboard"
+            ],
+            "icon": "warehouse",
             "link": "#",
             "buttonText": "Under Repair",
             "comingSoon": true
