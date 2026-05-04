@@ -111,6 +111,17 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 }
 .product-features li::before { content: none !important; } /* Hapus Dots total */
 
+/* ========== Workflow Section ========== */
+.workflow { padding: 100px 0; background: #fff; }
+.workflow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px; }
+.workflow-item { position: relative; padding: 24px; transition: var(--transition); }
+.w-number { 
+    font-size: 3rem; font-weight: 800; color: var(--primary); 
+    opacity: 0.1; margin-bottom: 20px; font-family: 'Outfit';
+}
+.workflow-item h4 { font-size: 1.15rem; margin-bottom: 12px; }
+.workflow-item p { font-size: 0.9rem; color: var(--text-muted); }
+
 /* ========== About & Tech Stack ========== */
 .about { padding: 120px 0; text-align: center; }
 .tech-stack { display: flex; justify-content: center; gap: 16px; margin: 40px 0; flex-wrap: wrap; }
