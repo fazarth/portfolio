@@ -168,17 +168,17 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .workflow { padding: 100px 0; background: var(--bg-soft); }
 .workflow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 60px; }
 .workflow-item { 
-    background: #fff; padding: 40px 32px; border-radius: var(--radius);
-    transition: var(--transition); box-shadow: var(--shadow);
-    display: flex; flex-direction: column; height: 100%; /* Equal Height */
+    background: #fff; padding: 48px 40px; border-radius: 24px;
+    transition: var(--transition); border: 1px solid rgba(0,0,0,0.03);
+    display: flex; flex-direction: column; height: 100%;
 }
-.workflow-item:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+.workflow-item:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 86, 210, 0.05); border-color: var(--primary-soft); }
 .w-number { 
-    font-size: 2.5rem; font-weight: 800; color: var(--primary); 
-    opacity: 0.15; margin-bottom: 16px; font-family: 'Outfit';
+    font-size: 3.5rem; font-weight: 800; color: var(--primary); 
+    opacity: 0.1; margin-bottom: 20px; line-height: 1;
 }
-.workflow-item h4 { font-size: 1.1rem; margin-bottom: 12px; font-weight: 700; }
-.workflow-item p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+.workflow-item h4 { font-size: 1.25rem; margin-bottom: 16px; font-weight: 700; color: var(--secondary); }
+.workflow-item p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; }
 
 /* ========== About & Tech Stack ========== */
 .about { padding: 120px 0; text-align: center; background: #fff; }
