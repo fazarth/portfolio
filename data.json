@@ -17,6 +17,22 @@
             "comingSoon": false
         },
         {
+            "id": "ai-agent",
+            "title": "WhatsApp AI Assistant",
+            "badge": "Live",
+            "description": "Integrasi asisten chatbot cerdas berbasis LLM ke jalur WhatsApp bisnis. Membantu mengotomatisasi respon pelanggan selama 24/7 dengan karakter suara yang bisa dipersonalisasi sesuai kebutuhan brand Anda.",
+            "features": [
+                "LLM Integration",
+                "WhatsApp Business API",
+                "24/7 Auto Response",
+                "Custom AI Persona"
+            ],
+            "icon": "ai",
+            "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20tertarik%20dan%20ingin%20berbicara%20mengenai%20AI%20Agent.",
+            "buttonText": "Coba Demo AI",
+            "comingSoon": false
+        },
+        {
             "id": "hematin-app",
             "title": "Hematin - Mobile App",
             "badge": "Live",
@@ -27,7 +43,7 @@
                 "Family Sync Tech",
                 "Expense Tracker"
             ],
-            "icon": "ai",
+            "icon": "finance",
             "link": "https://hematin.nexwave-tech.my.id",
             "buttonText": "Lihat Aplikasi",
             "comingSoon": false
@@ -43,7 +59,7 @@
                 "Smooth Animations",
                 "High-Tech Aesthetic"
             ],
-            "icon": "finance",
+            "icon": "next",
             "link": "https://hematin.nexwave-tech.my.id",
             "buttonText": "Lihat Demo",
             "comingSoon": false
