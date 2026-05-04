@@ -4,128 +4,96 @@
             "id": "onetwotripid",
             "title": "Dreamscape Tour & Trip",
             "badge": "Live",
-            "description": "Platform booking Tour & Trip berbasis web yang elegan. Dibangun dengan Next.js untuk memastikan performa maksimal dan struktur SEO yang optimal bagi bisnis travel modern.",
+            "description": "Platform reservasi perjalanan premium berbasis Next.js. Menawarkan pengalaman booking yang seamless dengan kecepatan loading tinggi dan sistem manajemen inventaris tour yang efisien untuk operasional travel modern.",
             "features": [
-                "Aplikasi berbasis Next.js",
-                "Manajemen Reservasi & CMS",
-                "Optimasi Performa & Akses",
-                "Tata Letak Responsif"
+                "Next.js App Router",
+                "High Performance SEO",
+                "Real-time Inventory",
+                "Responsive Experience"
             ],
             "icon": "travel",
             "link": "https://trip.nexwave-tech.my.id",
-            "buttonText": "Kunjungi Situs",
+            "buttonText": "Explore Project",
             "comingSoon": false
         },
         {
-            "id": "hematin",
-            "title": "Hematin - Web Admin",
+            "id": "hematin-app",
+            "title": "Hematin - Mobile App",
             "badge": "Live",
-            "description": "Dashboard manajemen rumah tangga cerdas. Membantu pengelolaan stok, pengeluaran, dan keluarga secara terpusat dengan teknologi web terbaru.",
+            "description": "Aplikasi mobile manajemen rumah tangga cerdas berbasis Flutter. Membantu pengguna melacak stok dapur, pengeluaran, dan resep berbasis AI dalam satu genggaman tangan yang praktis dan intuitif.",
             "features": [
-                "Dashboard Admin Next.js",
-                "Manajemen Stok & Keuangan",
-                "Sinkronisasi Data Real-time",
-                "User Management & Roles"
+                "Flutter Cross-Platform",
+                "AI Kitchen Assistant",
+                "Family Sync Tech",
+                "Expense Tracker"
+            ],
+            "icon": "ai",
+            "link": "https://hematin.nexwave-tech.my.id",
+            "buttonText": "Lihat Aplikasi",
+            "comingSoon": false
+        },
+        {
+            "id": "web-admin",
+            "title": "High-End Landing Page",
+            "badge": "Live",
+            "description": "Eksplorasi desain landing page agensi digital dengan estetika tinggi. Dibangun dengan Next.js dan Tailwind CSS untuk memberikan kesan profesional, canggih, dan berorientasi pada konversi klien premium.",
+            "features": [
+                "Premium UI/UX Design",
+                "Next.js 15 Integration",
+                "Smooth Animations",
+                "High-Tech Aesthetic"
             ],
             "icon": "finance",
             "link": "https://hematin.nexwave-tech.my.id",
-            "buttonText": "Buka Dashboard",
+            "buttonText": "Lihat Demo",
             "comingSoon": false
         },
         {
             "id": "kiwarijournal",
             "title": "Kiwari Journal & Forum",
             "badge": "Live",
-            "description": "Sistem publikasi media online yang terintegrasi dengan forum komunitas. Memudahkan interaksi pembaca serta manajemen artikel yang dinamis.",
+            "description": "Sistem publikasi media online dan forum komunitas yang dinamis. Dirancang untuk menangani beban traffic tinggi dengan arsitektur server-side yang matang guna menjamin kecepatan akses artikel.",
             "features": [
-                "Publikasi Multi-Author",
-                "Integrasi Forum Komunitas",
-                "Struktur Server-Side",
-                "Manajemen Multimedia"
+                "Multi-Author System",
+                "Community Forum",
+                "Server-Side Rendering",
+                "Dynamic Content"
             ],
             "icon": "forum",
             "link": "https://kiwarijournals.my.id",
-            "buttonText": "Lihat Jurnal",
-            "comingSoon": false
-        },
-        {
-            "id": "ai-agent",
-            "title": "WhatsApp AI Assistant",
-            "badge": "Live",
-            "description": "Integrasi asisten chatbot AI (LLM) ke jalur WhatsApp bisnis. Otomasi respon pelanggan 24/7 dengan karakter yang dipersonalisasi.",
-            "features": [
-                "Pemrosesan Bahasa AI",
-                "Integrasi API WhatsApp",
-                "Karakter Respons Khusus",
-                "Balasan Otomatis 24/7"
-            ],
-            "icon": "ai",
-            "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20tertarik%20dan%20ingin%20berbicara%20mengenai%20AI%20Agent.",
-            "buttonText": "Coba Demo",
+            "buttonText": "Kunjungi Situs",
             "comingSoon": false
         },
         {
             "id": "kasir",
-            "title": "Kasir (POS) Terpusat",
+            "title": "Kasir (POS) Cloud",
             "badge": "Maintenance",
-            "description": "Sistem Kasir cloud untuk manajemen inventaris dan transaksi retail. Saat ini sedang dalam tahap pengembangan fitur lanjutan.",
+            "description": "Sistem point of sales terpusat untuk efisiensi transaksi retail. Memfasilitasi laporan keuangan otomatis dan manajemen stok antar cabang secara real-time dari satu dashboard utama.",
             "features": [
-                "Pencatatan Real-time",
-                "Sistem Stok Otomatis",
-                "Laporan Keuangan",
-                "Manajemen Cabang"
+                "Cloud Transaction",
+                "Auto-Stock Update",
+                "Financial Reports",
+                "Multi-Outlet Sync"
             ],
             "icon": "pos",
             "link": "#",
-            "buttonText": "Under Development",
+            "buttonText": "Under Repair",
             "comingSoon": true
         },
         {
             "id": "warehouse",
-            "title": "Warehouse Management",
+            "title": "Warehouse Logistics",
             "badge": "Maintenance",
-            "description": "Aplikasi inventaris gudang untuk pelacakan alur barang yang akurat. Mempermudah proses stock opname dan tata letak logistik.",
+            "description": "Solusi manajemen logistik gudang untuk akurasi data inventaris. Membantu tim operasional dalam melacak pergerakan barang masuk dan keluar dengan sistem verifikasi digital yang ketat.",
             "features": [
-                "Pelacakan Barang",
-                "Dokumentasi Opname",
-                "Tata Letak Visual",
-                "Dashboard Logistik"
+                "Inbound/Outbound",
+                "Digital Verification",
+                "Stock Opname Tool",
+                "Logistics Dashboard"
             ],
             "icon": "warehouse",
             "link": "#",
-            "buttonText": "Under Development",
-            "comingSoon": true
-        },
-        {
-            "id": "lms",
-            "title": "E-Learning (LMS)",
-            "badge": "Maintenance",
-            "description": "Platform edukasi online untuk manajemen tugas dan kelas virtual. Mempermudah interaksi antara pengajar dan siswa.",
-            "features": [
-                "Kelas & Silabus Virtual",
-                "Module Quiz",
-                "Buku Nilai Terpusat",
-                "Track Progres Siswa"
-            ],
-            "icon": "lms",
-            "link": "#",
-            "buttonText": "Under Development",
-            "comingSoon": true
-        },
-        {
-            "id": "next",
-            "title": "Proyek Masa Depan?",
-            "badge": "Available",
-            "description": "Punya ide aplikasi atau butuh digitalisasi sistem bisnis? Mari diskusikan kebutuhan teknologi Anda dan bangun solusi yang tepat guna.",
-            "features": [
-                "Konsultasi Kebutuhan",
-                "Desain Arsitektur",
-                "Development & QA",
-                "Support & Maintenance"
-            ],
-            "icon": "next",
-            "link": "#contact",
-            "buttonText": "Mulai Diskusi",
+            "buttonText": "Under Repair",
             "comingSoon": true
         }
     ]
