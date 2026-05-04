@@ -230,7 +230,12 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 
 /* ========== Footer ========== */
 .footer { padding: 40px 0; border-top: 1px solid #F1F5F9; }
-.footer-content { display: flex; justify-content: space-between; align-items: center; color: var(--text-muted); font-size: 0.9rem; }
+.footer-content { 
+    display: flex; justify-content: space-between; align-items: center; 
+    color: var(--text-muted); font-size: 0.9rem; flex-wrap: wrap; gap: 20px;
+}
+.footer-content a { font-weight: 700; }
+.footer-content a:hover { text-decoration: underline !important; }
 
 @media (max-width: 1024px) {
     .services-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
@@ -251,4 +256,6 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
     .section-header h2 { font-size: 1.8rem; }
     .tech-stack { justify-content: center; gap: 8px; }
     .tech-item { padding: 8px 16px; font-size: 0.75rem; }
+    .nav-cta { display: none; } /* Hide button on mobile to prevent logo overlap */
+    .footer-content { justify-content: center; text-align: center; }
 }
