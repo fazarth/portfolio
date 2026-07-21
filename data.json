@@ -1,6 +1,38 @@
 {
     "products": [
         {
+            "id": "warehouse",
+            "title": "Enterprise WMS",
+            "badge": "Flagship",
+            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, returns, cycle count, aging, mobile scan, ERP API. Stock per bin+batch with StockMutation ledger.",
+            "features": [
+                "FEFO Allocation",
+                "Bin + Batch Stock",
+                "QR Scan / Mobile",
+                "ERP REST API"
+            ],
+            "icon": "warehouse",
+            "link": "https://github.com/fazarth/warehouse/blob/master/PORTFOLIO.md",
+            "buttonText": "Case Study",
+            "comingSoon": false
+        },
+        {
+            "id": "bonded-inventory",
+            "title": "Bonded Inventory (.NET)",
+            "badge": "Flagship",
+            "description": ".NET 9 API: bonded warehouse stock ledger integrated with a mock customs portal (CEISA-like demo only — not real CEISA). Document submit, portal validation, audit logs, stock on accept.",
+            "features": [
+                ".NET 9 Minimal API",
+                "Mock Portal Client",
+                "Stock Ledger",
+                "Swagger Demo"
+            ],
+            "icon": "warehouse",
+            "link": "https://github.com/fazarth/bonded-inventory",
+            "buttonText": "API Case Study",
+            "comingSoon": false
+        },
+        {
             "id": "onetwotripid",
             "title": "Dreamscape Tour & Trip",
             "badge": "Live",
@@ -92,22 +124,6 @@
                 "Multi-Outlet Sync"
             ],
             "icon": "pos",
-            "link": "#",
-            "buttonText": "Under Repair",
-            "comingSoon": true
-        },
-        {
-            "id": "warehouse",
-            "title": "Warehouse Logistics",
-            "badge": "Maintenance",
-            "description": "Solusi manajemen logistik gudang untuk akurasi inventaris. Membantu pelacakan pergerakan barang dengan sistem verifikasi digital yang ketat.",
-            "features": [
-                "Inbound/Outbound",
-                "Digital Verification",
-                "Stock Opname Tool",
-                "Logistics Dashboard"
-            ],
-            "icon": "warehouse",
             "link": "#",
             "buttonText": "Under Repair",
             "comingSoon": true

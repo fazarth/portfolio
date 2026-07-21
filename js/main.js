@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const waMessage = `Halo NexWave Tech!%0A%0ANama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0APesan:%0A${encodeURIComponent(message)}`;
             
             // Open WhatsApp with pre-filled message
-            window.open(`https://wa.me/6281234567890?text=${waMessage}`, '_blank');
+            window.open(`https://wa.me/6281222297568?text=${waMessage}`, '_blank');
             
             // Optional: Show success message
             showNotification('Pesan akan dikirim via WhatsApp!', 'success');

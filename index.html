@@ -228,27 +228,53 @@
             // Initialize Lucide Icons
             lucide.createIcons();
 
+            // Escape untrusted JSON fields before HTML render
+            function escapeHtml(value) {
+                return String(value ?? '')
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#39;');
+            }
+
+            function safeUrl(value) {
+                const raw = String(value ?? '').trim();
+                if (!raw || raw === '#') return '#';
+                try {
+                    const url = new URL(raw, window.location.origin);
+                    if (url.protocol === 'http:' || url.protocol === 'https:') return url.href;
+                } catch (_) { /* invalid */ }
+                return '#';
+            }
+
             // Load Projects
             fetch('data.json')
                 .then(res => res.json())
                 .then(data => {
                     const grid = document.getElementById('productsGrid');
-                    grid.innerHTML = data.products.map(p => {
-                        const statusClass = `badge-${p.badge.toLowerCase()}`;
-                        const isRequest = p.badge.toLowerCase() === 'request';
+                    grid.innerHTML = (data.products || []).map(p => {
+                        const badge = escapeHtml(p.badge);
+                        const statusClass = `badge-${String(p.badge || 'live').toLowerCase().replace(/[^a-z0-9-]/g, '')}`;
+                        const isRequest = String(p.badge || '').toLowerCase() === 'request';
+                        const title = escapeHtml(p.title);
+                        const description = escapeHtml(p.description);
+                        const buttonText = escapeHtml(p.buttonText);
+                        const link = safeUrl(p.link);
+                        const features = (p.features || []).map(f => `<li>${escapeHtml(f)}</li>`).join('');
                         return `
                         <div class="product-card ${isRequest ? 'card-highlight' : ''}">
-                            <div class="product-badge ${statusClass}">${p.badge}</div>
+                            <div class="product-badge ${statusClass}">${badge}</div>
                             <div class="product-icon">${getIcon(p.icon)}</div>
-                            <h3>${p.title}</h3>
+                            <h3>${title}</h3>
                             <div class="p-content-wrap">
-                                <p class="p-desc">${p.description}</p>
+                                <p class="p-desc">${description}</p>
                                 <ul class="product-features">
-                                    ${p.features.map(f => `<li>${f}</li>`).join('')}
+                                    ${features}
                                 </ul>
                             </div>
-                            <a href="${p.link}" class="btn ${p.comingSoon ? 'btn-outline' : (isRequest ? 'btn-accent' : 'btn-primary')}" ${p.comingSoon ? '' : 'target="_blank"'}>
-                                ${p.buttonText}
+                            <a href="${link}" class="btn ${p.comingSoon ? 'btn-outline' : (isRequest ? 'btn-accent' : 'btn-primary')}" ${p.comingSoon ? '' : 'target="_blank" rel="noopener noreferrer"'}>
+                                ${buttonText}
                             </a>
                         </div>
                         `;
