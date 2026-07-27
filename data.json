@@ -12,8 +12,8 @@
                 "ERP REST API"
             ],
             "icon": "warehouse",
-            "link": "https://github.com/fazarth/warehouse/blob/master/PORTFOLIO.md",
-            "buttonText": "Case Study",
+            "link": "https://wms.nexwave-tech.my.id",
+            "buttonText": "Open WMS",
             "comingSoon": false
         },
         {
@@ -28,8 +28,8 @@
                 "Swagger Demo"
             ],
             "icon": "warehouse",
-            "link": "https://github.com/fazarth/bonded-inventory",
-            "buttonText": "API Case Study",
+            "link": "https://bonded.nexwave-tech.my.id",
+            "buttonText": "Open Demo",
             "comingSoon": false
         },
         {
@@ -62,6 +62,22 @@
             "icon": "ai",
             "link": "https://rag.nexwave-tech.my.id",
             "buttonText": "Open RAG",
+            "comingSoon": false
+        },
+        {
+            "id": "talkozy",
+            "title": "Talkozy",
+            "badge": "Live",
+            "description": "English voice coach: JWT cookie auth, learning flows, OpenRouter/Ollama + Whisper/Kokoro path.",
+            "features": [
+                "JWT cookies",
+                "Voice coach",
+                "RBAC",
+                "OpenRouter"
+            ],
+            "icon": "ai",
+            "link": "https://talkozy.nexwave-tech.my.id",
+            "buttonText": "Open Talkozy",
             "comingSoon": false
         },
         {
