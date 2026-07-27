@@ -33,6 +33,38 @@
             "comingSoon": false
         },
         {
+            "id": "nexwaveteam",
+            "title": "NexWaveTeam",
+            "badge": "Live",
+            "description": "AI agency OS: CRM, delivery, content studio, multi-agent pipelines, client portal. Next.js + Prisma.",
+            "features": [
+                "CRM + Delivery",
+                "Content Studio",
+                "AI Agent Pipeline",
+                "Client Portal"
+            ],
+            "icon": "ai",
+            "link": "https://team.nexwave-tech.my.id",
+            "buttonText": "Open App",
+            "comingSoon": false
+        },
+        {
+            "id": "tanyadoc",
+            "title": "TanyaDoc AI (RAG)",
+            "badge": "Live",
+            "description": "Document RAG chat: upload corpus, ask with context, model settings. Multi-sector workspace path on local stack.",
+            "features": [
+                "Doc upload",
+                "RAG chat",
+                "OpenRouter models",
+                "Workspace packs"
+            ],
+            "icon": "ai",
+            "link": "https://rag.nexwave-tech.my.id",
+            "buttonText": "Open RAG",
+            "comingSoon": false
+        },
+        {
             "id": "onetwotripid",
             "title": "Dreamscape Tour & Trip",
             "badge": "Live",
