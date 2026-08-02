@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NexWave Tech — Demo Server Status & System Maintenance</title>
   <meta name="description" content="Status server demo sistem manufaktur (WHS, PPIC, Logistik) dan NexWaveTeam AI OS.">
-  <script font-src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
   <header class="max-w-5xl mx-auto w-full flex items-center justify-between z-10">
     <div class="flex items-center gap-3">
       <div class="h-10 w-10 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-400 p-0.5 shadow-lg shadow-emerald-500/20">
-        <div className="h-full w-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+        <div class="h-full w-full bg-slate-950 rounded-[14px] flex items-center justify-center">
           <svg class="h-5 w-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0H7m4 0h4"></path>
           </svg>
@@ -84,7 +84,7 @@
 
     <!-- Call to Action Buttons -->
     <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
-      <a href="https://wa.me/6281234567890?text=Halo%20NexWave%20Tech,%20saya%20ingin%20jadwal%20Live%20Demo%20Sistem%20Manufaktur%20dan%20AI%20OS" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-600/25 transition-all duration-200">
+      <a href="#" onclick="openContact('wa', event)" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-600/25 transition-all duration-200 cursor-pointer">
         📞 Minta Schedule Live Demo 24/7
       </a>
 
@@ -98,5 +98,19 @@
   <footer class="max-w-5xl mx-auto w-full text-center text-xs text-slate-500 z-10 pt-8 border-t border-slate-900">
     <p>© 2026 NexWave Tech. Smart Manufacturing Systems &amp; AI Agency OS.</p>
   </footer>
+
+  <script>
+    function openContact(type, event) {
+      if (event) event.preventDefault();
+      if (type === 'wa') {
+        const country = '62';
+        const num1 = '812';
+        const num2 = '2229';
+        const num3 = '7568';
+        const msg = encodeURIComponent('Halo NexWave Tech, saya ingin jadwal Live Demo Sistem Manufaktur dan AI OS');
+        window.open('https://wa.me/' + country + num1 + num2 + num3 + '?text=' + msg, '_blank');
+      }
+    }
+  </script>
 </body>
 </html>
