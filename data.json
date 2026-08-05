@@ -21,9 +21,9 @@
         {
             "id": "warehouse",
             "title": "Enterprise WMS",
-            "badge": "Flagship",
+            "badge": "Live",
             "category": "enterprise",
-            "featured": true,
+            "featured": false,
             "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API. Stok per bin+batch dengan StockMutation ledger.",
             "features": [
                 "FEFO Allocation",
@@ -39,7 +39,7 @@
         {
             "id": "bonded-inventory",
             "title": "Bonded Inventory (.NET 9)",
-            "badge": "Flagship",
+            "badge": "Live",
             "category": "enterprise",
             "featured": false,
             "description": ".NET 9 Minimal API: bonded warehouse stock ledger terintegrasi dengan portal bea cukai (CEISA-like demo). Document submit, portal validation, audit logs, & stock on accept.",
@@ -56,7 +56,7 @@
         },
         {
             "id": "tanyadoc",
-            "title": "TanyaDoc AI (RAG System)",
+            "title": "Sciens AI",
             "badge": "Live",
             "category": "ai",
             "featured": false,
@@ -69,7 +69,7 @@
             ],
             "icon": "ai",
             "link": "https://rag.nexwave-tech.my.id",
-            "buttonText": "Open RAG Demo",
+            "buttonText": "Open Sciens AI",
             "comingSoon": false
         },
         {
