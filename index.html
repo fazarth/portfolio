@@ -54,8 +54,8 @@
                 <h1>Teknologi Tepat untuk <span class="text-accent">Masalah Nyata</span></h1>
                 <p>Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.</p>
                 <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">Lihat Project</a>
-                    <a href="https://wa.me/6281222297568" target="_blank" class="btn btn-outline">Diskusi Sekarang</a>
+                    <button id="openAiQuoteBtn" class="btn btn-primary">🤖 Hitung Estimasi AI Instant</button>
+                    <a href="#products" class="btn btn-outline">Lihat Project</a>
                 </div>
             </div>
         </div>
@@ -315,7 +315,170 @@
                 const icons = { travel: '✈️', finance: '📊', forum: '📰', ai: '🤖', pos: '💳', warehouse: '📦', lms: '🎓', next: '✨' };
                 return icons[type] || '🚀';
             }
+
+            // ========== AI INSTANT QUOTE CALCULATOR MODAL LOGIC ==========
+            const modal = document.getElementById('aiQuoteModal');
+            const openBtn = document.getElementById('openAiQuoteBtn');
+            const closeBtn = document.getElementById('closeAiQuoteBtn');
+            const quoteForm = document.getElementById('aiQuoteForm');
+            const resultBox = document.getElementById('quoteResultBox');
+            const calcBtn = document.getElementById('calcSubmitBtn');
+
+            if (openBtn && modal) {
+                openBtn.addEventListener('click', () => modal.classList.add('active'));
+            }
+            if (closeBtn && modal) {
+                closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+            }
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) modal.classList.remove('active');
+                });
+            }
+
+            if (quoteForm) {
+                quoteForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const category = document.getElementById('quoteCategory').value;
+                    const industry = document.getElementById('quoteIndustry').value;
+                    const prompt = document.getElementById('quotePrompt').value.trim();
+
+                    calcBtn.disabled = true;
+                    calcBtn.innerHTML = '⚡ Menganalisis Arsitektur AI...';
+
+                    setTimeout(() => {
+                        calcBtn.disabled = false;
+                        calcBtn.innerHTML = '⚡ Generasi Estimasi AI Now';
+
+                        // Smart Presets based on Category
+                        let timeStr = "2 - 3 Minggu";
+                        let stackStr = "Next.js 15, PWA, Tailwind CSS, PostgreSQL";
+                        let featArr = [
+                            "Arsitektur PWA Responsive & Super Cepat",
+                            "Panel Admin Real-Time & Management Dashboard",
+                            "Akses Client Portal Live Transparency Tracking"
+                        ];
+
+                        if (category.includes("WMS") || category.includes("ERP")) {
+                            timeStr = "3 - 5 Minggu";
+                            stackStr = ".NET 10 Minimal API, Next.js, PostgreSQL, Docker";
+                            featArr = [
+                                "Modul WMS Bin/Batch FEFO Stock Ledger",
+                                "Mobile Barcode Scanner PWA & Integration API",
+                                "Multi-warehouse Audit Trail & Reporting"
+                            ];
+                        } else if (category.includes("SEO")) {
+                            timeStr = "1 - 3 Bulan";
+                            stackStr = "Next.js SSR, Google Search Console API, Schema Markup";
+                            featArr = [
+                                "Audit SEO Teknis & Speed Optimization 90+",
+                                "Authority Content Strategy & Keywords Halaman 1",
+                                "Dashboard Laporan Trafik & Ranking Realtime"
+                            ];
+                        } else if (category.includes("Digital Marketing")) {
+                            timeStr = "1 Minggu Setup (Running Monthly)";
+                            stackStr = "NexWave Agency OS, Content Studio, Threads Automation";
+                            featArr = [
+                                "Jadwal Konten Otomatis 2x/Hari Berbasis AI",
+                                "High Conversion Copywriting & Visual Assets",
+                                "Laporan Engagement & Multi-Channel Pipeline"
+                            ];
+                        }
+
+                        document.getElementById('resTitle').textContent = `Estimasi Solusi: ${category} (${industry})`;
+                        document.getElementById('resTime').textContent = timeStr;
+                        document.getElementById('resStack').textContent = stackStr;
+                        document.getElementById('resFeatures').innerHTML = featArr.map(f => `<li>✓ ${f}</li>`).join('');
+
+                        resultBox.style.display = 'block';
+
+                        // Prepare WhatsApp Message Deep Link
+                        const waText = `Halo NexWave Tech! Saya baru mencoba AI Quote Calculator di website:%0A%0A📌 Kategori: ${encodeURIComponent(category)}%0A🏢 Industri: ${encodeURIComponent(industry)}%0A⏱️ Estimasi Waktu: ${encodeURIComponent(timeStr)}%0A⚡ Tech Stack: ${encodeURIComponent(stackStr)}%0A%0APesan Tambahan:%0A${encodeURIComponent(prompt || 'Saya ingin konsultasi lebih lanjut mengenai estimasi proyek ini.')}`;
+                        document.getElementById('sendWaQuoteBtn').href = `https://wa.me/6281222297568?text=${waText}`;
+                    }, 800);
+                });
+            }
         });
     </script>
+
+    <!-- AI Instant Quote Calculator Modal -->
+    <div id="aiQuoteModal" class="quote-modal-backdrop">
+        <div class="quote-modal">
+            <div class="quote-modal-header">
+                <div class="quote-modal-title">
+                    <span class="quote-icon">🤖</span>
+                    <div>
+                        <h3>AI Instant Project & Quote Calculator</h3>
+                        <p>Hitung estimasi arsitektur, biaya, & waktu pengerjaan proyek Anda dalam 30 detik!</p>
+                    </div>
+                </div>
+                <button id="closeAiQuoteBtn" class="quote-close-btn">&times;</button>
+            </div>
+            
+            <div class="quote-modal-body">
+                <form id="aiQuoteForm" class="quote-form">
+                    <div class="form-group">
+                        <label class="form-label">Kategori Layanan:</label>
+                        <select id="quoteCategory" class="form-input" required>
+                            <option value="Custom App / Mobile PWA">📱 Custom App / Mobile PWA (Kasir, Booking, Inventory)</option>
+                            <option value="Enterprise WMS & ERP">🏢 Enterprise WMS & Custom ERP (.NET / Next.js)</option>
+                            <option value="SEO Growth & Authority">🔍 SEO Growth & Halaman 1 Google (Optimasi Next.js SSR)</option>
+                            <option value="Digital Marketing & Automation">📲 Digital Marketing & Content Automation (Threads/Sosmed)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Segmen Industri Bisnis:</label>
+                        <select id="quoteIndustry" class="form-input" required>
+                            <option value="Retail & E-Commerce">🛒 Retail & E-Commerce</option>
+                            <option value="Corporate & B2B Services">🏢 Corporate & B2B Services</option>
+                            <option value="Logistics & Supply Chain">🚚 Logistik, Gudang, & Fleet</option>
+                            <option value="F&B, Clinic & Hospitality">🍜 F&B, Klinik Kesehatan, & Jasa</option>
+                            <option value="Tech Startup & Software House">🚀 Tech Startup & Product Development</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Deskripsi Masalah / Fitur Khusus (Opsional):</label>
+                        <textarea id="quotePrompt" class="form-input form-textarea" placeholder="Contoh: Saya butuh PWA kasir barcode dengan cetak resi thermal dan sync stok real-time ke toko e-commerce."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="calcSubmitBtn">
+                        ⚡ Generasi Estimasi AI Now
+                    </button>
+                </form>
+
+                <!-- AI Output Result Box -->
+                <div id="quoteResultBox" class="quote-result-box" style="display: none;">
+                    <div class="result-badge">✓ AI Proposal Analysis Complete</div>
+                    <h4 id="resTitle" class="result-title">Estimasi Solusi: Custom App PWA</h4>
+                    
+                    <div class="result-grid">
+                        <div class="res-item">
+                            <span class="res-label">⏱️ Estimasi Waktu</span>
+                            <span id="resTime" class="res-val">2 - 3 Minggu</span>
+                        </div>
+                        <div class="res-item">
+                            <span class="res-label">⚡ Tech Stack Disarankan</span>
+                            <span id="resStack" class="res-val">Next.js 15, PWA, Tailwind CSS, PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="res-features-wrap">
+                        <span class="res-label">📋 Ruang Lingkup & Fitur Utama:</span>
+                        <ul id="resFeatures" class="res-features">
+                            <li>Integrasi Barcode Scan Camera & Thermal Printer</li>
+                            <li>Offline First Sync & Multi-branch Stock Ledger</li>
+                            <li>Client Portal Access & Live Progress Tracking</li>
+                        </ul>
+                    </div>
+
+                    <a id="sendWaQuoteBtn" href="#" target="_blank" class="btn btn-primary btn-block btn-wa-send">
+                        💬 Kirim Hasil Estimasi Ini ke WhatsApp NexWave →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
