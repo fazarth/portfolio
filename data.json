@@ -6,7 +6,8 @@
             "badge": "Flagship",
             "category": "ai",
             "featured": true,
-            "description": "Sistem operasi agency AI generasi 2026: CRM, manajemen delivery, content studio otomatis, multi-agent AI pipeline, & client portal.",
+            "description": "Next-gen 2026 AI agency operating system: CRM, delivery management, automated content studio, multi-agent AI pipelines, & client portal.",
+            "description_id": "Sistem operasi agency AI generasi 2026: CRM, manajemen delivery, content studio otomatis, multi-agent AI pipeline, & client portal.",
             "features": [
                 "12 AI Employees",
                 "Content Studio Threads",
@@ -24,7 +25,8 @@
             "badge": "Live",
             "category": "enterprise",
             "featured": false,
-            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API. Stok per bin+batch dengan StockMutation ledger.",
+            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, returns, cycle count, stock aging, mobile barcode scanning & ERP API.",
+            "description_id": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API.",
             "features": [
                 "FEFO Allocation",
                 "Bin + Batch Stock Ledger",
@@ -42,7 +44,8 @@
             "badge": "Live",
             "category": "enterprise",
             "featured": false,
-            "description": ".NET 9 Minimal API: bonded warehouse stock ledger terintegrasi dengan portal bea cukai (CEISA-like demo). Document submit, portal validation, audit logs, & stock on accept.",
+            "description": ".NET 9 Minimal API: bonded warehouse stock ledger integrated with customs portal (CEISA-like demo). Document submit, audit logs, & stock on accept.",
+            "description_id": ".NET 9 Minimal API: bonded warehouse stock ledger terintegrasi dengan portal bea cukai (CEISA-like demo). Document submit, audit logs, & stock on accept.",
             "features": [
                 ".NET 9 Minimal API",
                 "Mock Customs Portal",
@@ -60,7 +63,8 @@
             "badge": "Live",
             "category": "ai",
             "featured": false,
-            "description": "Document RAG chat platform: upload dokumen perusahaan, tanya jawab kontekstual, & model settings. Multi-sector workspace path.",
+            "description": "Document RAG chat platform: upload company docs, contextual QA, & model customization settings. Multi-sector workspace packs.",
+            "description_id": "Document RAG chat platform: upload dokumen perusahaan, tanya jawab kontekstual, & model settings. Multi-sector workspace path.",
             "features": [
                 "Doc Upload Parsing",
                 "RAG Context Chat",
@@ -78,7 +82,8 @@
             "badge": "Live",
             "category": "ai",
             "featured": false,
-            "description": "Pelatih bahasa Inggris interaktif suara berbasis AI: JWT cookie auth, flow pembelajaran personal, & integrasi model audio Whisper/Kokoro.",
+            "description": "Interactive AI-powered voice English coach: JWT cookie auth, personalized learning flows, & Whisper/Kokoro audio model integration.",
+            "description_id": "Pelatih bahasa Inggris interaktif suara berbasis AI: JWT cookie auth, flow pembelajaran personal, & integrasi model audio Whisper/Kokoro.",
             "features": [
                 "JWT Cookie Auth",
                 "Voice AI Coach",
@@ -96,7 +101,8 @@
             "badge": "Live",
             "category": "ai",
             "featured": false,
-            "description": "Asisten chatbot cerdas berbasis LLM untuk WhatsApp bisnis. Mengotomatisasi respon pelanggan 24/7 dengan persona yang dipersonalisasi sesuai brand Anda.",
+            "description": "Intelligent LLM-powered chatbot assistant for business WhatsApp. Automate 24/7 customer support with personalized brand personas.",
+            "description_id": "Asisten chatbot cerdas berbasis LLM untuk WhatsApp bisnis. Mengotomatisasi respon pelanggan 24/7 dengan persona yang dipersonalisasi sesuai brand Anda.",
             "features": [
                 "LLM Integration",
                 "WhatsApp Business API",
@@ -105,7 +111,8 @@
             ],
             "icon": "ai",
             "link": "action:wa_agent",
-            "buttonText": "Coba Demo AI",
+            "buttonText": "Try AI Demo",
+            "buttonText_id": "Coba Demo AI",
             "comingSoon": false
         },
         {
@@ -114,7 +121,8 @@
             "badge": "Live",
             "category": "web",
             "featured": false,
-            "description": "Platform reservasi perjalanan premium berbasis Next.js App Router. Booking seamless dengan performa tinggi dan manajemen inventaris tour realtime.",
+            "description": "Premium travel booking platform built on Next.js App Router. Seamless booking with high performance SEO & real-time inventory management.",
+            "description_id": "Platform reservasi perjalanan premium berbasis Next.js App Router. Booking seamless dengan performa tinggi dan manajemen inventaris tour realtime.",
             "features": [
                 "Next.js App Router",
                 "High Performance SEO",
@@ -132,7 +140,8 @@
             "badge": "Live",
             "category": "web",
             "featured": false,
-            "description": "Desain landing page agensi digital dengan estetika tinggi. Dibangun menggunakan Next.js dan Tailwind CSS untuk konversi klien premium yang optimal.",
+            "description": "Digital agency landing page with high aesthetics. Built using Next.js and Tailwind CSS for optimal premium client conversion.",
+            "description_id": "Desain landing page agensi digital dengan estetika tinggi. Dibangun menggunakan Next.js dan Tailwind CSS untuk konversi klien premium yang optimal.",
             "features": [
                 "Premium UI/UX Design",
                 "Next.js 15 Integration",
@@ -141,7 +150,8 @@
             ],
             "icon": "next",
             "link": "https://hematin.nexwave-tech.my.id",
-            "buttonText": "Lihat Demo",
+            "buttonText": "View Demo",
+            "buttonText_id": "Lihat Demo",
             "comingSoon": false
         },
         {
@@ -150,7 +160,8 @@
             "badge": "Live",
             "category": "web",
             "featured": false,
-            "description": "Aplikasi manajemen rumah tangga cerdas berbasis Flutter. Membantu pelacakan stok dapur, pengeluaran, dan resep berbasis AI dalam satu genggaman intuitif.",
+            "description": "Smart household management mobile app built with Flutter. Track kitchen inventory, expenses, and AI-driven recipes in one intuitive app.",
+            "description_id": "Aplikasi manajemen rumah tangga cerdas berbasis Flutter. Membantu pelacakan stok dapur, pengeluaran, dan resep berbasis AI dalam satu genggaman intuitif.",
             "features": [
                 "Flutter Cross-Platform",
                 "AI Kitchen Assistant",
@@ -159,7 +170,8 @@
             ],
             "icon": "finance",
             "link": "https://hematin.nexwave-tech.my.id",
-            "buttonText": "Lihat Aplikasi",
+            "buttonText": "View Mobile App",
+            "buttonText_id": "Lihat Aplikasi",
             "comingSoon": false
         },
         {
@@ -168,7 +180,8 @@
             "badge": "Live",
             "category": "web",
             "featured": false,
-            "description": "Sistem publikasi media online dan forum komunitas dinamis. Dirancang untuk traffic tinggi dengan arsitektur server-side yang menjamin kecepatan akses.",
+            "description": "Online media publication and dynamic community forum. Engineered for high traffic with fast server-side rendering architecture.",
+            "description_id": "Sistem publikasi media online dan forum komunitas dinamis. Dirancang untuk traffic tinggi dengan arsitektur server-side yang menjamin kecepatan akses.",
             "features": [
                 "Multi-Author System",
                 "Community Forum",
@@ -177,7 +190,8 @@
             ],
             "icon": "forum",
             "link": "https://kiwarijournals.my.id",
-            "buttonText": "Kunjungi Situs",
+            "buttonText": "Visit Site",
+            "buttonText_id": "Kunjungi Situs",
             "comingSoon": false
         },
         {
@@ -186,7 +200,8 @@
             "badge": "Request",
             "category": "enterprise",
             "featured": true,
-            "description": "Punya masalah bisnis unik yang butuh solusi teknologi khusus? Kami siap merancang dan membangun sistem kustom (PWA, Enterprise ERP, SEO, atau AI) yang dipersonalisasi.",
+            "description": "Have unique business requirements? We design and build custom software solutions (Mobile PWA, Enterprise ERP, SEO, or AI) tailored to your workflow.",
+            "description_id": "Punya masalah bisnis unik yang butuh solusi teknologi khusus? Kami siap merancang dan membangun sistem kustom (PWA, Enterprise ERP, SEO, atau AI) yang dipersonalisasi.",
             "features": [
                 "Custom Architecture",
                 "Personalized Solutions",
@@ -195,7 +210,8 @@
             ],
             "icon": "next",
             "link": "action:wa_custom",
-            "buttonText": "Konsultasi Masalah Anda",
+            "buttonText": "Consult Your Project",
+            "buttonText_id": "Konsultasi Masalah Anda",
             "comingSoon": false
         }
     ]

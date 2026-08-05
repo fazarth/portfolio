@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NexWave Tech - Software Engineering Partner. Menyelesaikan masalah bisnis dengan solusi digital yang tepat, modern, dan scalable.">
-    <meta name="keywords" content="Software House, Web Development, Laravel, Next.js, Golang, .NET, Enterprise System, ERP, CRM, Power Platform, Konsultan IT">
-    <meta name="author" content="NexWave Tech">
+    <title>NexWave Tech - Right Technology for Real Problems</title>
+    <meta name="description" content="Independent technology practice for custom web apps, enterprise systems (WMS/ERP), workflow automation, and AI agents.">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="NexWave Tech | Solusi Digital Tepat Guna">
-    <meta property="og:description" content="Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="NexWave Tech - Right Technology for Real Problems">
+    <meta property="og:description" content="Independent technology practice for custom web apps, enterprise systems, and AI automation.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.nexwave-tech.my.id">
+    <meta property="og:url" content="https://nexwave-tech.my.id">
     
-    <title>NexWave Tech | Solusi Digital Tepat Guna</title>
-
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="css/style.css?v=14.0">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Navigation -->
+
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
@@ -34,14 +36,18 @@
                 <span>NexWave<span class="text-accent">Tech</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link">Beranda</a></li>
-                <li><a href="#products" class="nav-link">Produk</a></li>
-                <li><a href="#services" class="nav-link">Layanan</a></li>
-                <li><a href="#workflow" class="nav-link">Proses</a></li>
-                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="#products" class="nav-link" data-i18n="nav_products">Products</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+                <li><a href="#workflow" class="nav-link" data-i18n="nav_process">Process</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="#" onclick="openContact('wa', event)" class="btn btn-primary btn-sm">Konsultasi Gratis</a>
+                <div class="lang-toggle-wrap">
+                    <button id="langEnBtn" class="lang-btn active">EN</button>
+                    <button id="langIdBtn" class="lang-btn">ID</button>
+                </div>
+                <a href="#" onclick="openContact('wa', event)" class="btn btn-primary btn-sm" data-i18n="nav_cta">Free Consultation</a>
             </div>
         </div>
     </nav>
@@ -50,12 +56,12 @@
     <section class="hero reveal" id="home">
         <div class="container">
             <div class="hero-text">
-                <span class="badge">Engineers at Heart</span>
-                <h1>Teknologi Tepat untuk <span class="text-accent">Masalah Nyata</span></h1>
-                <p>Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.</p>
+                <span class="badge" data-i18n="hero_badge">Engineers at Heart</span>
+                <h1 data-i18n="hero_title">Right Technology for <span class="text-accent">Real Problems</span></h1>
+                <p data-i18n="hero_desc">We build tailored digital solutions designed specifically to solve operational bottlenecks and accelerate your business growth.</p>
                 <div class="hero-buttons">
-                    <button id="openAiQuoteBtn" class="btn btn-primary">🤖 Hitung Estimasi AI Instant</button>
-                    <a href="#products" class="btn btn-outline">Lihat Project</a>
+                    <button id="openAiQuoteBtn" class="btn btn-primary" data-i18n="hero_calc_btn">🤖 Instant AI Quote Calculator</button>
+                    <a href="#products" class="btn btn-outline" data-i18n="hero_projects_btn">Explore Projects</a>
                 </div>
             </div>
         </div>
@@ -65,15 +71,15 @@
     <section class="products reveal" id="products">
         <div class="container">
             <div class="section-header">
-                <span class="badge">Portfolio</span>
-                <h2>Solusi yang <span class="text-accent">Telah Berjalan</span></h2>
-                <p>Showcase aplikasi dan sistem yang telah berhasil mengoptimalkan hasil bisnis klien kami.</p>
+                <span class="badge" data-i18n="prod_badge">Portfolio</span>
+                <h2 data-i18n="prod_title">Proven <span class="text-accent">Live Solutions</span></h2>
+                <p data-i18n="prod_desc">Showcase of applications and systems that have successfully optimized results for our clients.</p>
             </div>
             <div class="category-filter-bar" id="categoryFilterBar">
-                <button class="filter-tab active" data-category="all">Semua Project</button>
-                <button class="filter-tab" data-category="ai">🤖 AI & Automations</button>
-                <button class="filter-tab" data-category="enterprise">🏢 Enterprise & WMS</button>
-                <button class="filter-tab" data-category="web">📱 Web & Mobile Apps</button>
+                <button class="filter-tab active" data-category="all" data-i18n="filter_all">All Projects</button>
+                <button class="filter-tab" data-category="ai" data-i18n="filter_ai">🤖 AI & Automations</button>
+                <button class="filter-tab" data-category="enterprise" data-i18n="filter_enterprise">🏢 Enterprise & WMS</button>
+                <button class="filter-tab" data-category="web" data-i18n="filter_web">📱 Web & Mobile Apps</button>
             </div>
             <div class="products-grid" id="productsGrid"></div>
         </div>
@@ -83,25 +89,25 @@
     <section class="services reveal" id="services">
         <div class="container">
             <div class="section-header">
-                <span class="badge">Our Services</span>
-                <h2>Layanan <span class="text-accent">Unggulan</span></h2>
-                <p>Solusi teknologi komprehensif untuk mendigitalisasi dan mengotomatisasi bisnis Anda.</p>
+                <span class="badge" data-i18n="serv_badge">Our Services</span>
+                <h2 data-i18n="serv_title">Core <span class="text-accent">Capabilities</span></h2>
+                <p data-i18n="serv_desc">Comprehensive engineering solutions to digitize and automate your business operations.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="s-icon-wrap"><i data-lucide="globe"></i></div>
-                    <h4>Web Development</h4>
-                    <p>Membangun platform web modern berbasis Next.js dan Laravel dengan fokus pada performa dan skalabilitas tinggi.</p>
+                    <h4 data-i18n="serv_1_title">Web & Mobile Apps</h4>
+                    <p data-i18n="serv_1_desc">Building modern web and mobile applications using Next.js, React, and Flutter with focus on high performance and scalability.</p>
                 </div>
                 <div class="service-card">
                     <div class="s-icon-wrap"><i data-lucide="layers"></i></div>
-                    <h4>Enterprise System</h4>
-                    <p>Pengembangan sistem kustom (ERP/CRM) menggunakan .Net dan Golang untuk efisiensi bisnis skala besar.</p>
+                    <h4 data-i18n="serv_2_title">Enterprise Systems (WMS/ERP)</h4>
+                    <p data-i18n="serv_2_desc">Custom enterprise solutions using .NET Core and Golang for inventory control, stock ledger, and high-load business ops.</p>
                 </div>
                 <div class="service-card">
                     <div class="s-icon-wrap"><i data-lucide="zap"></i></div>
-                    <h4>Business Automation</h4>
-                    <p>Otomatisasi alur kerja cerdas menggunakan Microsoft Power Platform untuk mempercepat produktivitas tim Anda.</p>
+                    <h4 data-i18n="serv_3_title">AI Agents & Automation</h4>
+                    <p data-i18n="serv_3_desc">Intelligent AI agents, automated workflow pipelines, and custom WhatsApp bots to boost team productivity 24/7.</p>
                 </div>
             </div>
         </div>
@@ -111,30 +117,30 @@
     <section class="workflow reveal" id="workflow">
         <div class="container">
             <div class="section-header">
-                <span class="badge">Our Process</span>
-                <h2>Gimana Kami <span class="text-accent">Bekerja?</span></h2>
-                <p>Proses kerja yang terukur untuk memastikan setiap baris kode memberikan dampak nyata bagi bisnis Anda.</p>
+                <span class="badge" data-i18n="flow_badge">Our Process</span>
+                <h2 data-i18n="flow_title">How We <span class="text-accent">Deliver</span></h2>
+                <p data-i18n="flow_desc">A structured engineering process ensuring every line of code creates measurable business value.</p>
             </div>
             <div class="workflow-grid">
                 <div class="workflow-item">
                     <div class="w-number">01</div>
-                    <h4>Analisa & Diskusi</h4>
-                    <p>Memahami inti masalah bisnis Anda untuk menemukan solusi teknologi yang paling efisien.</p>
+                    <h4 data-i18n="flow_1_title">Discovery & Audit</h4>
+                    <p data-i18n="flow_1_desc">Understanding your core business bottlenecks to architect the most efficient technical solution.</p>
                 </div>
                 <div class="workflow-item">
                     <div class="w-number">02</div>
-                    <h4>Arsitektur & Desain</h4>
-                    <p>Menyusun cetak biru sistem dan desain UI/UX yang fokus pada kemudahan penggunaan.</p>
+                    <h4 data-i18n="flow_2_title">Architecture & UI/UX</h4>
+                    <p data-i18n="flow_2_desc">Designing technical blueprints and intuitive user experiences focused on ease of operation.</p>
                 </div>
                 <div class="workflow-item">
                     <div class="w-number">03</div>
-                    <h4>Pembangunan</h4>
-                    <p>Proses pengembangan menggunakan tech stack modern sesuai dengan kebutuhan spesifikasi sistem.</p>
+                    <h4 data-i18n="flow_3_title">Agile Engineering</h4>
+                    <p data-i18n="flow_3_desc">Rapid development cycles using production-grade modern tech stacks tailored to your requirements.</p>
                 </div>
                 <div class="workflow-item">
                     <div class="w-number">04</div>
-                    <h4>Launch & Support</h4>
-                    <p>Meluncurkan sistem ke cloud dan memastikan semuanya berjalan stabil di tangan pengguna.</p>
+                    <h4 data-i18n="flow_4_title">Deployment & SLA</h4>
+                    <p data-i18n="flow_4_desc">Deploying to cloud infrastructure with continuous monitoring, maintenance, and reliability support.</p>
                 </div>
             </div>
         </div>
@@ -144,11 +150,11 @@
     <section class="about reveal" id="about">
         <div class="container">
             <div class="about-header">
-                <h2>Partner Teknologi <span class="text-accent">Andal</span></h2>
-                <p>Kombinasi keahlian teknis untuk menghasilkan produk perangkat lunak yang andal.</p>
+                <h2 data-i18n="about_title">Trusted Technology <span class="text-accent">Partner</span></h2>
+                <p data-i18n="about_desc">Engineering discipline combined with modern tech stacks to build resilient software products.</p>
                 
                 <div class="tech-group">
-                    <p class="tech-label">Framework & Language</p>
+                    <p class="tech-label" data-i18n="tech_label_1">Frameworks & Languages</p>
                     <div class="tech-stack">
                         <div class="tech-item"><img src="https://cdn.simpleicons.org/laravel" width="20" alt="Laravel"> Laravel</div>
                         <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs" width="20" alt="Next.js"> Next JS</div>
@@ -160,7 +166,7 @@
                 </div>
 
                 <div class="tech-group">
-                    <p class="tech-label">Database & Cloud</p>
+                    <p class="tech-label" data-i18n="tech_label_2">Database & Cloud</p>
                     <div class="tech-stack">
                         <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" width="20" alt="SQL Server"> SQL Server</div>
                         <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql" width="20" alt="MySQL"> MySQL</div>
@@ -170,7 +176,7 @@
                 </div>
 
                 <div class="tech-group">
-                    <p class="tech-label">Microsoft Power Platform</p>
+                    <p class="tech-label" data-i18n="tech_label_3">Microsoft Power Platform</p>
                     <div class="tech-stack">
                         <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerapps.svg" width="20" alt="Power Apps"> Power Apps</div>
                         <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftsharepoint.svg" width="20" alt="SharePoint"> SharePoint</div>
@@ -186,12 +192,12 @@
         <div class="container">
             <div class="cta-banner">
                 <div class="cta-content">
-                    <h2>Siap Memulai <span class="text-accent">Project?</span></h2>
-                    <p>Wujudkan sistem impian Anda dengan dukungan teknis profesional. Hubungi kami melalui WhatsApp untuk konsultasi cepat.</p>
+                    <h2 data-i18n="contact_title">Ready to Launch Your <span class="text-accent">Project?</span></h2>
+                    <p data-i18n="contact_desc">Turn your technical requirements into high-performing reality. Contact us via WhatsApp for instant technical consultation.</p>
                 </div>
                 <div class="cta-action">
-                    <a href="#" onclick="openContact('wa', event)" class="btn btn-primary">
-                        Chat WhatsApp →
+                    <a href="#" onclick="openContact('wa', event)" class="btn btn-primary" data-i18n="contact_btn">
+                        Chat on WhatsApp →
                     </a>
                 </div>
             </div>
@@ -210,7 +216,85 @@
         </div>
     </footer>
 
-    <!-- Dynamic Encrypted WhatsApp Link Helper (Prevents Bot Scraping) -->
+    <!-- AI Instant Quote Calculator Modal -->
+    <div id="aiQuoteModal" class="quote-modal-backdrop">
+        <div class="quote-modal">
+            <div class="quote-modal-header">
+                <div class="quote-modal-title">
+                    <span class="quote-icon">🤖</span>
+                    <div>
+                        <h3 data-i18n="modal_title">AI Instant Project & Quote Calculator</h3>
+                        <p data-i18n="modal_desc">Calculate architecture estimates, tech stack, and timeline breakdown in 30 seconds!</p>
+                    </div>
+                </div>
+                <button id="closeAiQuoteBtn" class="quote-close-btn">&times;</button>
+            </div>
+            
+            <div class="quote-modal-body">
+                <form id="aiQuoteForm" class="quote-form">
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="modal_cat_label">Service Category:</label>
+                        <select id="quoteCategory" class="form-input" required>
+                            <option value="Custom App / Mobile PWA">Custom App / Mobile PWA (POS, Booking, Inventory)</option>
+                            <option value="Enterprise WMS & ERP">Enterprise WMS & Custom ERP (.NET / Next.js)</option>
+                            <option value="SEO Growth & Authority">SEO Growth & Google Rank #1 (Next.js SSR)</option>
+                            <option value="Digital Marketing & Automation">Digital Marketing & Content Automation (Threads/Social)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="modal_ind_label">Business Industry Segment:</label>
+                        <select id="quoteIndustry" class="form-input" required>
+                            <option value="Retail & E-Commerce">Retail & E-Commerce</option>
+                            <option value="Corporate & B2B Services">Corporate & B2B Services</option>
+                            <option value="Logistics & Supply Chain">Logistics, Warehouse & Fleet</option>
+                            <option value="F&B, Clinic & Hospitality">F&B, Healthcare Clinics & Services</option>
+                            <option value="Tech Startup & Software House">Tech Startup & Product Development</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" data-i18n="modal_prompt_label">Problem Description / Special Features (Optional):</label>
+                        <textarea id="quotePrompt" class="form-input form-textarea" placeholder="Example: Need a barcode scanning PWA with thermal receipt printing and real-time stock sync to e-commerce store."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="calcSubmitBtn" data-i18n="modal_submit_btn">
+                        ⚡ Generate AI Estimate Now
+                    </button>
+                </form>
+
+                <!-- AI Output Result Box -->
+                <div id="quoteResultBox" class="quote-result-box" style="display: none;">
+                    <div class="result-badge" data-i18n="modal_res_badge">✓ AI Architecture Analysis Complete</div>
+                    <h4 id="resTitle" class="res-title">Estimated Solution</h4>
+                    
+                    <div class="res-grid">
+                        <div class="res-item">
+                            <span class="res-label" data-i18n="res_time_label">Estimated Timeline</span>
+                            <span id="resTime" class="res-val">2 - 3 Weeks</span>
+                        </div>
+                        <div class="res-item">
+                            <span class="res-label" data-i18n="res_stack_label">Recommended Tech Stack</span>
+                            <span id="resStack" class="res-val">Next.js 15, PWA, Tailwind CSS, PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="res-features-wrap">
+                        <span class="res-label" data-i18n="res_feat_label">Key Architectural Features:</span>
+                        <ul id="resFeatures" class="res-features"></ul>
+                    </div>
+
+                    <div class="res-action">
+                        <button id="sendWaQuoteBtn" class="btn btn-accent btn-block" data-i18n="res_wa_btn">
+                            💬 Send AI Architecture Proposal to WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dynamic Encrypted WhatsApp Link Helper & Bilingual Engine -->
     <script>
         function openContact(type, event, text) {
             if (event) event.preventDefault();
@@ -227,7 +311,171 @@
             }
         }
 
+        // i18n Translation Dictionary
+        const i18n = {
+            en: {
+                nav_home: "Home",
+                nav_products: "Products",
+                nav_services: "Services",
+                nav_process: "Process",
+                nav_about: "About",
+                nav_cta: "Free Consultation",
+                hero_badge: "Engineers at Heart",
+                hero_title: 'Right Technology for <span class="text-accent">Real Problems</span>',
+                hero_desc: "We build tailored digital solutions designed specifically to solve operational bottlenecks and accelerate your business growth.",
+                hero_calc_btn: "🤖 Instant AI Quote Calculator",
+                hero_projects_btn: "Explore Projects",
+                prod_badge: "Portfolio",
+                prod_title: 'Proven <span class="text-accent">Live Solutions</span>',
+                prod_desc: "Showcase of applications and systems that have successfully optimized results for our clients.",
+                filter_all: "All Projects",
+                filter_ai: "🤖 AI & Automations",
+                filter_enterprise: "🏢 Enterprise & WMS",
+                filter_web: "📱 Web & Mobile Apps",
+                serv_badge: "Our Services",
+                serv_title: 'Core <span class="text-accent">Capabilities</span>',
+                serv_desc: "Comprehensive engineering solutions to digitize and automate your business operations.",
+                serv_1_title: "Web & Mobile Apps",
+                serv_1_desc: "Building modern web and mobile applications using Next.js, React, and Flutter with focus on high performance and scalability.",
+                serv_2_title: "Enterprise Systems (WMS/ERP)",
+                serv_2_desc: "Custom enterprise solutions using .NET Core and Golang for inventory control, stock ledger, and high-load business ops.",
+                serv_3_title: "AI Agents & Automation",
+                serv_3_desc: "Intelligent AI agents, automated workflow pipelines, and custom WhatsApp bots to boost team productivity 24/7.",
+                flow_badge: "Our Process",
+                flow_title: 'How We <span class="text-accent">Deliver</span>',
+                flow_desc: "A structured engineering process ensuring every line of code creates measurable business value.",
+                flow_1_title: "Discovery & Audit",
+                flow_1_desc: "Understanding your core business bottlenecks to architect the most efficient technical solution.",
+                flow_2_title: "Architecture & UI/UX",
+                flow_2_desc: "Designing technical blueprints and intuitive user experiences focused on ease of operation.",
+                flow_3_title: "Agile Engineering",
+                flow_3_desc: "Rapid development cycles using production-grade modern tech stacks tailored to your requirements.",
+                flow_4_title: "Deployment & SLA",
+                flow_4_desc: "Deploying to cloud infrastructure with continuous monitoring, maintenance, and reliability support.",
+                about_title: 'Trusted Technology <span class="text-accent">Partner</span>',
+                about_desc: "Engineering discipline combined with modern tech stacks to build resilient software products.",
+                tech_label_1: "Frameworks & Languages",
+                tech_label_2: "Database & Cloud",
+                tech_label_3: "Microsoft Power Platform",
+                contact_title: 'Ready to Launch Your <span class="text-accent">Project?</span>',
+                contact_desc: "Turn your technical requirements into high-performing reality. Contact us via WhatsApp for instant technical consultation.",
+                contact_btn: "Chat on WhatsApp →",
+                modal_title: "AI Instant Project & Quote Calculator",
+                modal_desc: "Calculate architecture estimates, tech stack, and timeline breakdown in 30 seconds!",
+                modal_cat_label: "Service Category:",
+                modal_ind_label: "Business Industry Segment:",
+                modal_prompt_label: "Problem Description / Special Features (Optional):",
+                modal_submit_btn: "⚡ Generate AI Estimate Now",
+                modal_res_badge: "✓ AI Architecture Analysis Complete",
+                res_time_label: "Estimated Timeline",
+                res_stack_label: "Recommended Tech Stack",
+                res_feat_label: "Key Architectural Features:",
+                res_wa_btn: "💬 Send AI Architecture Proposal to WhatsApp",
+                prompt_placeholder: "Example: Need a barcode scanning PWA with thermal receipt printing and real-time stock sync to e-commerce store."
+            },
+            id: {
+                nav_home: "Beranda",
+                nav_products: "Produk",
+                nav_services: "Layanan",
+                nav_process: "Proses",
+                nav_about: "Tentang",
+                nav_cta: "Konsultasi Gratis",
+                hero_badge: "Engineers at Heart",
+                hero_title: 'Teknologi Tepat untuk <span class="text-accent">Masalah Nyata</span>',
+                hero_desc: "Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.",
+                hero_calc_btn: "🤖 Hitung Estimasi AI Instant",
+                hero_projects_btn: "Lihat Project",
+                prod_badge: "Portfolio",
+                prod_title: 'Solusi yang <span class="text-accent">Telah Berjalan</span>',
+                prod_desc: "Showcase aplikasi dan sistem yang telah berhasil mengoptimalkan hasil bisnis klien kami.",
+                filter_all: "Semua Project",
+                filter_ai: "🤖 AI & Automations",
+                filter_enterprise: "🏢 Enterprise & WMS",
+                filter_web: "📱 Web & Mobile Apps",
+                serv_badge: "Our Services",
+                serv_title: 'Layanan <span class="text-accent">Unggulan</span>',
+                serv_desc: "Solusi teknologi komprehensif untuk mendigitalisasi dan mengotomatisasi bisnis Anda.",
+                serv_1_title: "Web & Mobile Apps",
+                serv_1_desc: "Membangun platform web dan mobile modern berbasis Next.js, React, dan Flutter dengan fokus pada performa dan skalabilitas tinggi.",
+                serv_2_title: "Enterprise Systems (WMS/ERP)",
+                serv_2_desc: "Pengembangan sistem kustom (ERP/WMS) menggunakan .NET Core dan Golang untuk efisiensi bisnis dan kelola stok skala besar.",
+                serv_3_title: "AI Agents & Automations",
+                serv_3_desc: "Asisten AI cerdas, otomatisasi workflow, dan chatbot WhatsApp kustom untuk meningkatkan produktivitas tim Anda 24/7.",
+                flow_badge: "Our Process",
+                flow_title: 'Gimana Kami <span class="text-accent">Bekerja?</span>',
+                flow_desc: "Proses kerja terukur untuk memastikan setiap baris kode memberikan dampak nyata bagi bisnis Anda.",
+                flow_1_title: "Analisa & Diskusi",
+                flow_1_desc: "Memahami inti masalah bisnis Anda untuk menemukan solusi teknologi yang paling efisien.",
+                flow_2_title: "Arsitektur & Desain",
+                flow_2_desc: "Menyusun cetak biru sistem dan desain UI/UX yang fokus pada kemudahan penggunaan.",
+                flow_3_title: "Pembangunan",
+                flow_3_desc: "Proses pengembangan menggunakan tech stack modern sesuai dengan kebutuhan spesifikasi sistem.",
+                flow_4_title: "Launch & Support",
+                flow_4_desc: "Meluncurkan sistem ke cloud dan memastikan semuanya berjalan stabil di tangan pengguna.",
+                about_title: 'Partner Teknologi <span class="text-accent">Andal</span>',
+                about_desc: "Kombinasi keahlian teknis untuk menghasilkan produk perangkat lunak yang andal.",
+                tech_label_1: "Framework & Language",
+                tech_label_2: "Database & Cloud",
+                tech_label_3: "Microsoft Power Platform",
+                contact_title: 'Siap Memulai <span class="text-accent">Project?</span>',
+                contact_desc: "Wujudkan sistem impian Anda dengan dukungan teknis profesional. Hubungi kami melalui WhatsApp untuk konsultasi cepat.",
+                contact_btn: "Chat WhatsApp →",
+                modal_title: "AI Instant Project & Quote Calculator",
+                modal_desc: "Hitung estimasi arsitektur, biaya, & waktu pengerjaan proyek Anda dalam 30 detik!",
+                modal_cat_label: "Kategori Layanan:",
+                modal_ind_label: "Segmen Industri Bisnis:",
+                modal_prompt_label: "Deskripsi Masalah / Fitur Khusus (Opsional):",
+                modal_submit_btn: "⚡ Generasi Estimasi AI Now",
+                modal_res_badge: "✓ AI Proposal Analysis Complete",
+                res_time_label: "Estimasi Waktu",
+                res_stack_label: "Rekomendasi Tech Stack",
+                res_feat_label: "Fitur Utilitas Utama:",
+                res_wa_btn: "💬 Kirim Proposal AI Ke WhatsApp",
+                prompt_placeholder: "Contoh: Saya butuh PWA kasir barcode dengan cetak resi thermal dan sync stok real-time ke toko e-commerce."
+            }
+        };
+
+        let currentLang = localStorage.getItem('nexwave_lang') || 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('nexwave_lang', lang);
+            
+            // Toggle active buttons
+            const btnEn = document.getElementById('langEnBtn');
+            const btnId = document.getElementById('langIdBtn');
+            if (btnEn && btnId) {
+                btnEn.classList.toggle('active', lang === 'en');
+                btnId.classList.toggle('active', lang === 'id');
+            }
+
+            // Translate all elements with data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.innerHTML = i18n[lang][key];
+                }
+            });
+
+            // Placeholder translation
+            const promptTextarea = document.getElementById('quotePrompt');
+            if (promptTextarea && i18n[lang].prompt_placeholder) {
+                promptTextarea.placeholder = i18n[lang].prompt_placeholder;
+            }
+
+            // Re-render products for language change
+            if (typeof window.renderProductsCurrent === 'function') {
+                window.renderProductsCurrent();
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
+            // Language Switcher Handlers
+            const btnEn = document.getElementById('langEnBtn');
+            const btnId = document.getElementById('langIdBtn');
+            if (btnEn) btnEn.addEventListener('click', () => setLanguage('en'));
+            if (btnId) btnId.addEventListener('click', () => setLanguage('id'));
+
             // Navbar scroll effect
             window.addEventListener('scroll', function() {
                 const nav = document.getElementById('navbar');
@@ -272,9 +520,13 @@
 
             // Load & Filter Projects
             let allProducts = [];
+            let currentFilter = 'all';
 
             function renderProducts(categoryFilter = 'all') {
+                currentFilter = categoryFilter;
                 const grid = document.getElementById('productsGrid');
+                if (!grid) return;
+
                 const filtered = categoryFilter === 'all' 
                     ? allProducts 
                     : allProducts.filter(p => (p.category || '').toLowerCase() === categoryFilter.toLowerCase());
@@ -285,18 +537,23 @@
                     const isRequest = String(p.badge || '').toLowerCase() === 'request';
                     const isFeatured = Boolean(p.featured);
                     const title = escapeHtml(p.title);
-                    const description = escapeHtml(p.description);
-                    const buttonText = escapeHtml(p.buttonText);
+
+                    // Pick language-specific description and button text
+                    const description = escapeHtml(currentLang === 'id' ? (p.description_id || p.description) : p.description);
+                    const buttonText = escapeHtml(currentLang === 'id' ? (p.buttonText_id || p.buttonText) : p.buttonText);
+
                     const link = p.link || '#';
                     const isWaAction = link.startsWith('action:wa');
                     const safeHref = isWaAction ? '#' : safeUrl(link);
                     const waTextPrompt = link === 'action:wa_agent' 
-                        ? 'Halo, saya tertarik dan ingin berbicara mengenai WhatsApp AI Agent.' 
-                        : 'Halo, saya ingin diskusi mengenai custom project untuk masalah bisnis saya.';
+                        ? (currentLang === 'id' ? 'Halo, saya tertarik dan ingin berbicara mengenai WhatsApp AI Agent.' : 'Hello, I am interested in discussing your WhatsApp AI Agent solution.')
+                        : (currentLang === 'id' ? 'Halo, saya ingin diskusi mengenai custom project untuk masalah bisnis saya.' : 'Hello, I would like to discuss a custom project for my business requirements.');
+                    
                     const clickAttr = isWaAction 
                         ? `onclick="openContact('wa', event, '${waTextPrompt}')"` 
                         : '';
                     const features = (p.features || []).map(f => `<li>${escapeHtml(f)}</li>`).join('');
+
                     return `
                     <div class="product-card ${isFeatured ? 'card-featured' : (isRequest ? 'card-highlight' : '')}">
                         ${isFeatured ? '<div class="featured-ribbon">⭐ Flagship Platform</div>' : ''}
@@ -316,6 +573,10 @@
                     `;
                 }).join('');
             }
+
+            window.renderProductsCurrent = function() {
+                renderProducts(currentFilter);
+            };
 
             fetch('data.json')
                 .then(res => res.json())
@@ -339,6 +600,9 @@
                 const icons = { travel: '✈️', finance: '📊', forum: '📰', ai: '🤖', pos: '💳', warehouse: '📦', lms: '🎓', next: '✨' };
                 return icons[type] || '🚀';
             }
+
+            // Apply initial language setting (Default EN)
+            setLanguage(currentLang);
 
             // ========== AI INSTANT QUOTE CALCULATOR MODAL LOGIC ==========
             const modal = document.getElementById('aiQuoteModal');
@@ -369,48 +633,64 @@
                     const prompt = document.getElementById('quotePrompt').value.trim();
 
                     calcBtn.disabled = true;
-                    calcBtn.innerHTML = '⚡ Menganalisis Arsitektur AI...';
+                    calcBtn.innerHTML = currentLang === 'id' ? '⚡ Menganalisis Arsitektur AI...' : '⚡ Analyzing AI Architecture...';
 
                     setTimeout(() => {
                         calcBtn.disabled = false;
-                        calcBtn.innerHTML = '⚡ Generasi Estimasi AI Now';
+                        calcBtn.innerHTML = currentLang === 'id' ? '⚡ Generasi Estimasi AI Now' : '⚡ Generate AI Estimate Now';
 
                         // Smart Presets based on Category
-                        let timeStr = "2 - 3 Minggu";
+                        let timeStr = currentLang === 'id' ? "2 - 3 Minggu" : "2 - 3 Weeks";
                         let stackStr = "Next.js 15, PWA, Tailwind CSS, PostgreSQL";
-                        let featArr = [
+                        let featArr = currentLang === 'id' ? [
                             "Arsitektur PWA Responsive & Super Cepat",
                             "Panel Admin Real-Time & Management Dashboard",
                             "Akses Client Portal Live Transparency Tracking"
+                        ] : [
+                            "Responsive & Ultra-fast PWA Architecture",
+                            "Real-Time Admin Management Dashboard",
+                            "Client Portal Live Transparency Tracking Access"
                         ];
 
                         if (category.includes("WMS") || category.includes("ERP")) {
-                            timeStr = "3 - 5 Minggu";
+                            timeStr = currentLang === 'id' ? "3 - 5 Minggu" : "3 - 5 Weeks";
                             stackStr = ".NET 10 Minimal API, Next.js, PostgreSQL, Docker";
-                            featArr = [
+                            featArr = currentLang === 'id' ? [
                                 "Modul WMS Bin/Batch FEFO Stock Ledger",
                                 "Mobile Barcode Scanner PWA & Integration API",
                                 "Multi-warehouse Audit Trail & Reporting"
+                            ] : [
+                                "WMS Bin/Batch FEFO Stock Ledger Module",
+                                "Mobile Barcode Scanner PWA & ERP Integration API",
+                                "Multi-warehouse Audit Trail & Reporting"
                             ];
                         } else if (category.includes("SEO")) {
-                            timeStr = "1 - 3 Bulan";
+                            timeStr = currentLang === 'id' ? "1 - 3 Bulan" : "1 - 3 Months";
                             stackStr = "Next.js SSR, Google Search Console API, Schema Markup";
-                            featArr = [
+                            featArr = currentLang === 'id' ? [
                                 "Audit SEO Teknis & Speed Optimization 90+",
                                 "Authority Content Strategy & Keywords Halaman 1",
                                 "Dashboard Laporan Trafik & Ranking Realtime"
+                            ] : [
+                                "Technical SEO Audit & 90+ PageSpeed Optimization",
+                                "Authority Content Strategy & Google Rank #1 Keywords",
+                                "Real-time Traffic & Keyword Ranking Dashboard"
                             ];
                         } else if (category.includes("Digital Marketing")) {
-                            timeStr = "1 Minggu Setup (Running Monthly)";
+                            timeStr = currentLang === 'id' ? "1 Minggu Setup (Monthly)" : "1 Week Setup (Running Monthly)";
                             stackStr = "NexWave Agency OS, Content Studio, Threads Automation";
-                            featArr = [
+                            featArr = currentLang === 'id' ? [
                                 "Jadwal Konten Otomatis 2x/Hari Berbasis AI",
                                 "High Conversion Copywriting & Visual Assets",
                                 "Laporan Engagement & Multi-Channel Pipeline"
+                            ] : [
+                                "Automated AI Content Scheduling (2x Daily)",
+                                "High Conversion Copywriting & Visual Brand Assets",
+                                "Multi-Channel Engagement & Pipeline Reporting"
                             ];
                         }
 
-                        document.getElementById('resTitle').textContent = `Estimasi Solusi: ${category} (${industry})`;
+                        document.getElementById('resTitle').textContent = currentLang === 'id' ? `Estimasi Solusi: ${category} (${industry})` : `Solution Estimate: ${category} (${industry})`;
                         document.getElementById('resTime').textContent = timeStr;
                         document.getElementById('resStack').textContent = stackStr;
                         document.getElementById('resFeatures').innerHTML = featArr.map(f => `<li>✓ ${f}</li>`).join('');
@@ -418,7 +698,9 @@
                         resultBox.style.display = 'block';
 
                         // Prepare Encrypted WhatsApp Message
-                        lastGeneratedWaText = `Halo NexWave Tech! Saya baru mencoba AI Quote Calculator di website:\n\n📌 Kategori: ${category}\n🏢 Industri: ${industry}\n⏱️ Estimasi Waktu: ${timeStr}\n⚡ Tech Stack: ${stackStr}\n\nPesan Tambahan:\n${prompt || 'Saya ingin konsultasi lebih lanjut mengenai estimasi proyek ini.'}`;
+                        lastGeneratedWaText = currentLang === 'id' 
+                            ? `Halo NexWave Tech! Saya baru mencoba AI Quote Calculator di website:\n\n📌 Kategori: ${category}\n🏢 Industri: ${industry}\n⏱️ Estimasi Waktu: ${timeStr}\n⚡ Tech Stack: ${stackStr}\n\nPesan Tambahan:\n${prompt || 'Saya ingin konsultasi lebih lanjut mengenai estimasi proyek ini.'}`
+                            : `Hello NexWave Tech! I just calculated a project estimate on your website:\n\n📌 Category: ${category}\n🏢 Industry: ${industry}\n⏱️ Est. Timeline: ${timeStr}\n⚡ Tech Stack: ${stackStr}\n\nAdditional Notes:\n${prompt || 'I would like to consult further regarding this project architecture.'}`;
                     }, 800);
                 });
             }
@@ -431,85 +713,5 @@
             }
         });
     </script>
-
-    <!-- AI Instant Quote Calculator Modal -->
-    <div id="aiQuoteModal" class="quote-modal-backdrop">
-        <div class="quote-modal">
-            <div class="quote-modal-header">
-                <div class="quote-modal-title">
-                    <span class="quote-icon">🤖</span>
-                    <div>
-                        <h3>AI Instant Project & Quote Calculator</h3>
-                        <p>Hitung estimasi arsitektur, biaya, & waktu pengerjaan proyek Anda dalam 30 detik!</p>
-                    </div>
-                </div>
-                <button id="closeAiQuoteBtn" class="quote-close-btn">&times;</button>
-            </div>
-            
-            <div class="quote-modal-body">
-                <form id="aiQuoteForm" class="quote-form">
-                    <div class="form-group">
-                        <label class="form-label">Kategori Layanan:</label>
-                        <select id="quoteCategory" class="form-input" required>
-                            <option value="Custom App / Mobile PWA">Custom App / Mobile PWA (Kasir, Booking, Inventory)</option>
-                            <option value="Enterprise WMS & ERP">Enterprise WMS & Custom ERP (.NET / Next.js)</option>
-                            <option value="SEO Growth & Authority">SEO Growth & Halaman 1 Google (Optimasi Next.js SSR)</option>
-                            <option value="Digital Marketing & Automation">Digital Marketing & Content Automation (Threads/Sosmed)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Segmen Industri Bisnis:</label>
-                        <select id="quoteIndustry" class="form-input" required>
-                            <option value="Retail & E-Commerce">Retail & E-Commerce</option>
-                            <option value="Corporate & B2B Services">Corporate & B2B Services</option>
-                            <option value="Logistics & Supply Chain">Logistik, Gudang, & Fleet</option>
-                            <option value="F&B, Clinic & Hospitality">F&B, Klinik Kesehatan, & Jasa</option>
-                            <option value="Tech Startup & Software House">Tech Startup & Product Development</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label">Deskripsi Masalah / Fitur Khusus (Opsional):</label>
-                        <textarea id="quotePrompt" class="form-input form-textarea" placeholder="Contoh: Saya butuh PWA kasir barcode dengan cetak resi thermal dan sync stok real-time ke toko e-commerce."></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-block" id="calcSubmitBtn">
-                        ⚡ Generasi Estimasi AI Now
-                    </button>
-                </form>
-
-                <!-- AI Output Result Box -->
-                <div id="quoteResultBox" class="quote-result-box" style="display: none;">
-                    <div class="result-badge">✓ AI Proposal Analysis Complete</div>
-                    <h4 id="resTitle" class="result-title">Estimasi Solusi: Custom App PWA</h4>
-                    
-                    <div class="result-grid">
-                        <div class="res-item">
-                            <span class="res-label">⏱️ Estimasi Waktu</span>
-                            <span id="resTime" class="res-val">2 - 3 Minggu</span>
-                        </div>
-                        <div class="res-item">
-                            <span class="res-label">⚡ Tech Stack Disarankan</span>
-                            <span id="resStack" class="res-val">Next.js 15, PWA, Tailwind CSS, PostgreSQL</span>
-                        </div>
-                    </div>
-
-                    <div class="res-features-wrap">
-                        <span class="res-label">📋 Ruang Lingkup & Fitur Utama:</span>
-                        <ul id="resFeatures" class="res-features">
-                            <li>Integrasi Barcode Scan Camera & Thermal Printer</li>
-                            <li>Offline First Sync & Multi-branch Stock Ledger</li>
-                            <li>Client Portal Access & Live Progress Tracking</li>
-                        </ul>
-                    </div>
-
-                    <a id="sendWaQuoteBtn" href="#" target="_blank" class="btn btn-primary btn-block btn-wa-send">
-                        💬 Kirim Hasil Estimasi Ini ke WhatsApp NexWave →
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

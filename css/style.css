@@ -58,8 +58,23 @@ h1, h2, h3 { color: var(--secondary); font-weight: 800; letter-spacing: -0.03em;
 .text-accent { color: var(--primary); }
 
 .nav-links { display: flex; gap: 32px; }
-.nav-link { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); transition: var(--transition); text-transform: uppercase; letter-spacing: 0.05em; }
+.nav-link { color: var(--text-muted); font-weight: 500; transition: var(--transition); }
 .nav-link:hover { color: var(--primary); }
+
+/* Language Switcher Toggle */
+.nav-cta { display: flex; align-items: center; gap: 12px; }
+.lang-toggle-wrap {
+    display: inline-flex; align-items: center; background: #f1f5f9;
+    padding: 3px; border-radius: 20px; border: 1px solid rgba(0, 86, 210, 0.15);
+}
+.lang-btn {
+    border: none; background: transparent; padding: 4px 10px; border-radius: 16px;
+    font-size: 0.78rem; font-weight: 700; color: #64748b; cursor: pointer;
+    transition: all 0.2s ease;
+}
+.lang-btn.active {
+    background: var(--primary); color: #ffffff; box-shadow: 0 2px 8px rgba(0, 86, 210, 0.25);
+}
 
 .btn-sm { padding: 10px 20px; font-size: 0.85rem; border-radius: 8px; }
 
