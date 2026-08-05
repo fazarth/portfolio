@@ -69,6 +69,12 @@
                 <h2>Solusi yang <span class="text-accent">Telah Berjalan</span></h2>
                 <p>Showcase aplikasi dan sistem yang telah berhasil mengoptimalkan hasil bisnis klien kami.</p>
             </div>
+            <div class="category-filter-bar" id="categoryFilterBar">
+                <button class="filter-tab active" data-category="all">Semua Project</button>
+                <button class="filter-tab" data-category="ai">🤖 AI & Automations</button>
+                <button class="filter-tab" data-category="enterprise">🏢 Enterprise & WMS</button>
+                <button class="filter-tab" data-category="web">📱 Web & Mobile Apps</button>
+            </div>
             <div class="products-grid" id="productsGrid"></div>
         </div>
     </section>
@@ -248,37 +254,61 @@
                 return '#';
             }
 
-            // Load Projects
+            // Load & Filter Projects
+            let allProducts = [];
+
+            function renderProducts(categoryFilter = 'all') {
+                const grid = document.getElementById('productsGrid');
+                const filtered = categoryFilter === 'all' 
+                    ? allProducts 
+                    : allProducts.filter(p => (p.category || '').toLowerCase() === categoryFilter.toLowerCase());
+
+                grid.innerHTML = filtered.map(p => {
+                    const badge = escapeHtml(p.badge);
+                    const statusClass = `badge-${String(p.badge || 'live').toLowerCase().replace(/[^a-z0-9-]/g, '')}`;
+                    const isRequest = String(p.badge || '').toLowerCase() === 'request';
+                    const isFeatured = Boolean(p.featured);
+                    const title = escapeHtml(p.title);
+                    const description = escapeHtml(p.description);
+                    const buttonText = escapeHtml(p.buttonText);
+                    const link = safeUrl(p.link);
+                    const features = (p.features || []).map(f => `<li>${escapeHtml(f)}</li>`).join('');
+                    return `
+                    <div class="product-card ${isFeatured ? 'card-featured' : (isRequest ? 'card-highlight' : '')}">
+                        ${isFeatured ? '<div class="featured-ribbon">⭐ Flagship Platform</div>' : ''}
+                        <div class="product-badge ${statusClass}">${badge}</div>
+                        <div class="product-icon">${getIcon(p.icon)}</div>
+                        <h3>${title}</h3>
+                        <div class="p-content-wrap">
+                            <p class="p-desc">${description}</p>
+                            <ul class="product-features">
+                                ${features}
+                            </ul>
+                        </div>
+                        <a href="${link}" class="btn ${p.comingSoon ? 'btn-outline' : (isRequest || isFeatured ? 'btn-accent' : 'btn-primary')}" ${p.comingSoon ? '' : 'target="_blank" rel="noopener noreferrer"'}>
+                            ${buttonText}
+                        </a>
+                    </div>
+                    `;
+                }).join('');
+            }
+
             fetch('data.json')
                 .then(res => res.json())
                 .then(data => {
-                    const grid = document.getElementById('productsGrid');
-                    grid.innerHTML = (data.products || []).map(p => {
-                        const badge = escapeHtml(p.badge);
-                        const statusClass = `badge-${String(p.badge || 'live').toLowerCase().replace(/[^a-z0-9-]/g, '')}`;
-                        const isRequest = String(p.badge || '').toLowerCase() === 'request';
-                        const title = escapeHtml(p.title);
-                        const description = escapeHtml(p.description);
-                        const buttonText = escapeHtml(p.buttonText);
-                        const link = safeUrl(p.link);
-                        const features = (p.features || []).map(f => `<li>${escapeHtml(f)}</li>`).join('');
-                        return `
-                        <div class="product-card ${isRequest ? 'card-highlight' : ''}">
-                            <div class="product-badge ${statusClass}">${badge}</div>
-                            <div class="product-icon">${getIcon(p.icon)}</div>
-                            <h3>${title}</h3>
-                            <div class="p-content-wrap">
-                                <p class="p-desc">${description}</p>
-                                <ul class="product-features">
-                                    ${features}
-                                </ul>
-                            </div>
-                            <a href="${link}" class="btn ${p.comingSoon ? 'btn-outline' : (isRequest ? 'btn-accent' : 'btn-primary')}" ${p.comingSoon ? '' : 'target="_blank" rel="noopener noreferrer"'}>
-                                ${buttonText}
-                            </a>
-                        </div>
-                        `;
-                    }).join('');
+                    allProducts = data.products || [];
+                    renderProducts('all');
+
+                    // Filter tab click handlers
+                    const tabs = document.querySelectorAll('.filter-tab');
+                    tabs.forEach(tab => {
+                        tab.addEventListener('click', function() {
+                            tabs.forEach(t => t.classList.remove('active'));
+                            this.classList.add('active');
+                            const cat = this.getAttribute('data-category');
+                            renderProducts(cat);
+                        });
+                    });
                 });
 
             function getIcon(type) {

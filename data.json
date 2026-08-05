@@ -1,79 +1,89 @@
 {
     "products": [
         {
+            "id": "nexwaveteam",
+            "title": "NexWaveTeam AI Agency OS",
+            "badge": "Flagship",
+            "category": "ai",
+            "featured": true,
+            "description": "Sistem operasi agency AI generasi 2026: CRM, manajemen delivery, content studio otomatis, multi-agent AI pipeline, & client portal.",
+            "features": [
+                "12 AI Employees",
+                "Content Studio Threads",
+                "Multi-Agent Pipelines",
+                "Client Portal Token"
+            ],
+            "icon": "ai",
+            "link": "https://team.nexwave-tech.my.id",
+            "buttonText": "Open App Demo",
+            "comingSoon": false
+        },
+        {
             "id": "warehouse",
             "title": "Enterprise WMS",
             "badge": "Flagship",
-            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, returns, cycle count, aging, mobile scan, ERP API. Stock per bin+batch with StockMutation ledger.",
+            "category": "enterprise",
+            "featured": true,
+            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API. Stok per bin+batch dengan StockMutation ledger.",
             "features": [
                 "FEFO Allocation",
-                "Bin + Batch Stock",
-                "QR Scan / Mobile",
-                "ERP REST API"
+                "Bin + Batch Stock Ledger",
+                "QR Scan Mobile PWA",
+                "REST API ERP Integration"
             ],
             "icon": "warehouse",
             "link": "https://wms.nexwave-tech.my.id",
-            "buttonText": "Open WMS",
+            "buttonText": "Open WMS Demo",
             "comingSoon": false
         },
         {
             "id": "bonded-inventory",
-            "title": "Bonded Inventory (.NET)",
+            "title": "Bonded Inventory (.NET 9)",
             "badge": "Flagship",
-            "description": ".NET 9 API: bonded warehouse stock ledger integrated with a mock customs portal (CEISA-like demo only — not real CEISA). Document submit, portal validation, audit logs, stock on accept.",
+            "category": "enterprise",
+            "featured": false,
+            "description": ".NET 9 Minimal API: bonded warehouse stock ledger terintegrasi dengan portal bea cukai (CEISA-like demo). Document submit, portal validation, audit logs, & stock on accept.",
             "features": [
                 ".NET 9 Minimal API",
-                "Mock Portal Client",
-                "Stock Ledger",
-                "Swagger Demo"
+                "Mock Customs Portal",
+                "Audit Log Ledger",
+                "Swagger OpenAPI Specs"
             ],
             "icon": "warehouse",
             "link": "https://bonded.nexwave-tech.my.id",
-            "buttonText": "Open Demo",
-            "comingSoon": false
-        },
-        {
-            "id": "nexwaveteam",
-            "title": "NexWaveTeam",
-            "badge": "Live",
-            "description": "AI agency OS: CRM, delivery, content studio, multi-agent pipelines, client portal. Next.js + Prisma.",
-            "features": [
-                "CRM + Delivery",
-                "Content Studio",
-                "AI Agent Pipeline",
-                "Client Portal"
-            ],
-            "icon": "ai",
-            "link": "https://team.nexwave-tech.my.id",
-            "buttonText": "Open App",
+            "buttonText": "Open .NET Demo",
             "comingSoon": false
         },
         {
             "id": "tanyadoc",
-            "title": "TanyaDoc AI (RAG)",
+            "title": "TanyaDoc AI (RAG System)",
             "badge": "Live",
-            "description": "Document RAG chat: upload corpus, ask with context, model settings. Multi-sector workspace path on local stack.",
+            "category": "ai",
+            "featured": false,
+            "description": "Document RAG chat platform: upload dokumen perusahaan, tanya jawab kontekstual, & model settings. Multi-sector workspace path.",
             "features": [
-                "Doc upload",
-                "RAG chat",
-                "OpenRouter models",
-                "Workspace packs"
+                "Doc Upload Parsing",
+                "RAG Context Chat",
+                "OpenRouter AI Models",
+                "Workspace Knowledge Packs"
             ],
             "icon": "ai",
             "link": "https://rag.nexwave-tech.my.id",
-            "buttonText": "Open RAG",
+            "buttonText": "Open RAG Demo",
             "comingSoon": false
         },
         {
             "id": "talkozy",
-            "title": "Talkozy",
+            "title": "Talkozy Voice Coach",
             "badge": "Live",
-            "description": "English voice coach: JWT cookie auth, learning flows, OpenRouter/Ollama + Whisper/Kokoro path.",
+            "category": "ai",
+            "featured": false,
+            "description": "Pelatih bahasa Inggris interaktif suara berbasis AI: JWT cookie auth, flow pembelajaran personal, & integrasi model audio Whisper/Kokoro.",
             "features": [
-                "JWT cookies",
-                "Voice coach",
-                "RBAC",
-                "OpenRouter"
+                "JWT Cookie Auth",
+                "Voice AI Coach",
+                "RBAC Role Access",
+                "OpenRouter Models"
             ],
             "icon": "ai",
             "link": "https://talkozy.nexwave-tech.my.id",
@@ -81,25 +91,11 @@
             "comingSoon": false
         },
         {
-            "id": "onetwotripid",
-            "title": "Dreamscape Tour & Trip",
-            "badge": "Live",
-            "description": "Platform reservasi perjalanan premium berbasis Next.js. Menawarkan pengalaman booking seamless dengan performa tinggi dan manajemen inventaris tour yang efisien.",
-            "features": [
-                "Next.js App Router",
-                "High Performance SEO",
-                "Real-time Inventory",
-                "Responsive Experience"
-            ],
-            "icon": "travel",
-            "link": "https://trip.nexwave-tech.my.id",
-            "buttonText": "Explore Project",
-            "comingSoon": false
-        },
-        {
             "id": "ai-agent",
             "title": "WhatsApp AI Assistant",
             "badge": "Live",
+            "category": "ai",
+            "featured": false,
             "description": "Asisten chatbot cerdas berbasis LLM untuk WhatsApp bisnis. Mengotomatisasi respon pelanggan 24/7 dengan persona yang dipersonalisasi sesuai brand Anda.",
             "features": [
                 "LLM Integration",
@@ -113,9 +109,29 @@
             "comingSoon": false
         },
         {
-            "id": "web-admin",
-            "title": "High-End Landing Page",
+            "id": "onetwotripid",
+            "title": "Dreamscape Tour & Trip",
             "badge": "Live",
+            "category": "web",
+            "featured": false,
+            "description": "Platform reservasi perjalanan premium berbasis Next.js App Router. Booking seamless dengan performa tinggi dan manajemen inventaris tour realtime.",
+            "features": [
+                "Next.js App Router",
+                "High Performance SEO",
+                "Real-time Inventory",
+                "Responsive Experience"
+            ],
+            "icon": "travel",
+            "link": "https://trip.nexwave-tech.my.id",
+            "buttonText": "Explore Project",
+            "comingSoon": false
+        },
+        {
+            "id": "web-admin",
+            "title": "High-End Agency Landing Page",
+            "badge": "Live",
+            "category": "web",
+            "featured": false,
             "description": "Desain landing page agensi digital dengan estetika tinggi. Dibangun menggunakan Next.js dan Tailwind CSS untuk konversi klien premium yang optimal.",
             "features": [
                 "Premium UI/UX Design",
@@ -130,8 +146,10 @@
         },
         {
             "id": "hematin-app",
-            "title": "Hematin - Mobile App",
+            "title": "Hematin Mobile PWA App",
             "badge": "Live",
+            "category": "web",
+            "featured": false,
             "description": "Aplikasi manajemen rumah tangga cerdas berbasis Flutter. Membantu pelacakan stok dapur, pengeluaran, dan resep berbasis AI dalam satu genggaman intuitif.",
             "features": [
                 "Flutter Cross-Platform",
@@ -148,6 +166,8 @@
             "id": "kiwarijournal",
             "title": "Kiwari Journal & Forum",
             "badge": "Live",
+            "category": "web",
+            "featured": false,
             "description": "Sistem publikasi media online dan forum komunitas dinamis. Dirancang untuk traffic tinggi dengan arsitektur server-side yang menjamin kecepatan akses.",
             "features": [
                 "Multi-Author System",
@@ -161,26 +181,12 @@
             "comingSoon": false
         },
         {
-            "id": "kasir",
-            "title": "Kasir (POS) Cloud",
-            "badge": "Maintenance",
-            "description": "Sistem point of sales terpusat untuk efisiensi retail. Memfasilitasi laporan keuangan otomatis dan manajemen stok antar cabang secara real-time.",
-            "features": [
-                "Cloud Transaction",
-                "Auto-Stock Update",
-                "Financial Reports",
-                "Multi-Outlet Sync"
-            ],
-            "icon": "pos",
-            "link": "#",
-            "buttonText": "Under Repair",
-            "comingSoon": true
-        },
-        {
             "id": "custom-project",
             "title": "Custom System Development",
             "badge": "Request",
-            "description": "Punya masalah bisnis unik yang butuh solusi teknologi khusus? Kami siap merancang dan membangun sistem kustom yang dipersonalisasi sesuai alur kerja Anda.",
+            "category": "enterprise",
+            "featured": true,
+            "description": "Punya masalah bisnis unik yang butuh solusi teknologi khusus? Kami siap merancang dan membangun sistem kustom (PWA, Enterprise ERP, SEO, atau AI) yang dipersonalisasi.",
             "features": [
                 "Custom Architecture",
                 "Personalized Solutions",
