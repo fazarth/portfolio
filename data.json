@@ -104,7 +104,7 @@
                 "Custom AI Persona"
             ],
             "icon": "ai",
-            "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20tertarik%20dan%20ingin%20berbicara%20mengenai%20AI%20Agent.",
+            "link": "action:wa_agent",
             "buttonText": "Coba Demo AI",
             "comingSoon": false
         },
@@ -194,7 +194,7 @@
                 "Direct Consultation"
             ],
             "icon": "next",
-            "link": "https://wa.me/6281222297568?text=Halo%2C%20saya%20ingin%20diskusi%20mengenai%20custom%20project%20untuk%20masalah%20bisnis%20saya.",
+            "link": "action:wa_custom",
             "buttonText": "Konsultasi Masalah Anda",
             "comingSoon": false
         }

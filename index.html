@@ -41,7 +41,7 @@
                 <li><a href="#about" class="nav-link">Tentang</a></li>
             </ul>
             <div class="nav-cta">
-                <a href="https://wa.me/6281222297568" target="_blank" class="btn btn-primary btn-sm">Konsultasi Gratis</a>
+                <a href="#" onclick="openContact('wa', event)" class="btn btn-primary btn-sm">Konsultasi Gratis</a>
             </div>
         </div>
     </nav>
@@ -190,7 +190,7 @@
                     <p>Wujudkan sistem impian Anda dengan dukungan teknis profesional. Hubungi kami melalui WhatsApp untuk konsultasi cepat.</p>
                 </div>
                 <div class="cta-action">
-                    <a href="https://wa.me/6281222297568" target="_blank" class="btn btn-primary">
+                    <a href="#" onclick="openContact('wa', event)" class="btn btn-primary">
                         Chat WhatsApp →
                     </a>
                 </div>
@@ -210,7 +210,23 @@
         </div>
     </footer>
 
+    <!-- Dynamic Encrypted WhatsApp Link Helper (Prevents Bot Scraping) -->
     <script>
+        function openContact(type, event, text) {
+            if (event) event.preventDefault();
+            if (type === 'wa') {
+                const country = '62';
+                const num1 = '812';
+                const num2 = '2229';
+                const num3 = '7568';
+                let url = 'https://wa.me/' + country + num1 + num2 + num3;
+                if (text) {
+                    url += '?text=' + encodeURIComponent(text);
+                }
+                window.open(url, '_blank');
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
             // Navbar scroll effect
             window.addEventListener('scroll', function() {
@@ -232,7 +248,7 @@
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
             // Initialize Lucide Icons
-            lucide.createIcons();
+            if (window.lucide) lucide.createIcons();
 
             // Escape untrusted JSON fields before HTML render
             function escapeHtml(value) {
@@ -246,7 +262,7 @@
 
             function safeUrl(value) {
                 const raw = String(value ?? '').trim();
-                if (!raw || raw === '#') return '#';
+                if (!raw || raw === '#' || raw.startsWith('action:')) return '#';
                 try {
                     const url = new URL(raw, window.location.origin);
                     if (url.protocol === 'http:' || url.protocol === 'https:') return url.href;
@@ -271,7 +287,15 @@
                     const title = escapeHtml(p.title);
                     const description = escapeHtml(p.description);
                     const buttonText = escapeHtml(p.buttonText);
-                    const link = safeUrl(p.link);
+                    const link = p.link || '#';
+                    const isWaAction = link.startsWith('action:wa');
+                    const safeHref = isWaAction ? '#' : safeUrl(link);
+                    const waTextPrompt = link === 'action:wa_agent' 
+                        ? 'Halo, saya tertarik dan ingin berbicara mengenai WhatsApp AI Agent.' 
+                        : 'Halo, saya ingin diskusi mengenai custom project untuk masalah bisnis saya.';
+                    const clickAttr = isWaAction 
+                        ? `onclick="openContact('wa', event, '${waTextPrompt}')"` 
+                        : '';
                     const features = (p.features || []).map(f => `<li>${escapeHtml(f)}</li>`).join('');
                     return `
                     <div class="product-card ${isFeatured ? 'card-featured' : (isRequest ? 'card-highlight' : '')}">
@@ -285,7 +309,7 @@
                                 ${features}
                             </ul>
                         </div>
-                        <a href="${link}" class="btn ${p.comingSoon ? 'btn-outline' : (isRequest || isFeatured ? 'btn-accent' : 'btn-primary')}" ${p.comingSoon ? '' : 'target="_blank" rel="noopener noreferrer"'}>
+                        <a href="${safeHref}" ${clickAttr} class="btn ${p.comingSoon ? 'btn-outline' : (isRequest || isFeatured ? 'btn-accent' : 'btn-primary')}" ${isWaAction || p.comingSoon ? '' : 'target="_blank" rel="noopener noreferrer"'}>
                             ${buttonText}
                         </a>
                     </div>
@@ -323,6 +347,7 @@
             const quoteForm = document.getElementById('aiQuoteForm');
             const resultBox = document.getElementById('quoteResultBox');
             const calcBtn = document.getElementById('calcSubmitBtn');
+            let lastGeneratedWaText = "";
 
             if (openBtn && modal) {
                 openBtn.addEventListener('click', () => modal.classList.add('active'));
@@ -392,10 +417,16 @@
 
                         resultBox.style.display = 'block';
 
-                        // Prepare WhatsApp Message Deep Link
-                        const waText = `Halo NexWave Tech! Saya baru mencoba AI Quote Calculator di website:%0A%0A📌 Kategori: ${encodeURIComponent(category)}%0A🏢 Industri: ${encodeURIComponent(industry)}%0A⏱️ Estimasi Waktu: ${encodeURIComponent(timeStr)}%0A⚡ Tech Stack: ${encodeURIComponent(stackStr)}%0A%0APesan Tambahan:%0A${encodeURIComponent(prompt || 'Saya ingin konsultasi lebih lanjut mengenai estimasi proyek ini.')}`;
-                        document.getElementById('sendWaQuoteBtn').href = `https://wa.me/6281222297568?text=${waText}`;
+                        // Prepare Encrypted WhatsApp Message
+                        lastGeneratedWaText = `Halo NexWave Tech! Saya baru mencoba AI Quote Calculator di website:\n\n📌 Kategori: ${category}\n🏢 Industri: ${industry}\n⏱️ Estimasi Waktu: ${timeStr}\n⚡ Tech Stack: ${stackStr}\n\nPesan Tambahan:\n${prompt || 'Saya ingin konsultasi lebih lanjut mengenai estimasi proyek ini.'}`;
                     }, 800);
+                });
+            }
+
+            const sendWaQuoteBtn = document.getElementById('sendWaQuoteBtn');
+            if (sendWaQuoteBtn) {
+                sendWaQuoteBtn.addEventListener('click', function(e) {
+                    openContact('wa', e, lastGeneratedWaText);
                 });
             }
         });
