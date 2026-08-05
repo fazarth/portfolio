@@ -146,7 +146,7 @@
         },
         {
             "id": "hematin-app",
-            "title": "Hematin Mobile PWA App",
+            "title": "Hematin - Mobile App (Flutter)",
             "badge": "Live",
             "category": "web",
             "featured": false,
