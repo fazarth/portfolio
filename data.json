@@ -39,6 +39,25 @@
             "comingSoon": false
         },
         {
+            "id": "manufacture",
+            "title": "NexWave Manufacture",
+            "badge": "Live",
+            "category": "enterprise",
+            "featured": false,
+            "description": "Manufacturing Execution Suite: multi-tenant core (identity/JWT), WHS stock opname & FEFO allocation, PPIC planning, logistics, customs, and operator PWA with offline queue.",
+            "description_id": "Manufacturing Execution Suite: core multi-tenant (identity/JWT), WHS stock opname & alokasi FEFO, planning PPIC, logistik, bea cukai, dan PWA operator dengan offline queue.",
+            "features": [
+                "Multi-Tenant Microservices",
+                "WHS Stock Opname + FEFO",
+                "Operator PWA Offline Queue",
+                "PPIC / Logistic / Customs API"
+            ],
+            "icon": "warehouse",
+            "link": "https://manufacture.nexwave-tech.my.id",
+            "buttonText": "Open App Demo",
+            "comingSoon": false
+        },
+        {
             "id": "tanyadoc",
             "title": "Sciens AI",
             "badge": "Live",
@@ -53,7 +72,7 @@
                 "Workspace Knowledge Packs"
             ],
             "icon": "ai",
-            "link": "https://rag.nexwave-tech.my.id",
+            "link": "https://sciens.nexwave-tech.my.id",
             "buttonText": "Open Sciens AI",
             "comingSoon": false
         },
