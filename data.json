@@ -39,25 +39,6 @@
             "comingSoon": false
         },
         {
-            "id": "bonded-inventory",
-            "title": "Bonded Inventory (.NET 9)",
-            "badge": "Live",
-            "category": "enterprise",
-            "featured": false,
-            "description": ".NET 9 Minimal API: bonded warehouse stock ledger integrated with customs portal (CEISA-like demo). Document submit, audit logs, & stock on accept.",
-            "description_id": ".NET 9 Minimal API: bonded warehouse stock ledger terintegrasi dengan portal bea cukai (CEISA-like demo). Document submit, audit logs, & stock on accept.",
-            "features": [
-                ".NET 9 Minimal API",
-                "Mock Customs Portal",
-                "Audit Log Ledger",
-                "Swagger OpenAPI Specs"
-            ],
-            "icon": "warehouse",
-            "link": "https://bonded.nexwave-tech.my.id",
-            "buttonText": "Open .NET Demo",
-            "comingSoon": false
-        },
-        {
             "id": "tanyadoc",
             "title": "Sciens AI",
             "badge": "Live",
