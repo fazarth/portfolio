@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- ========== MAIN DOMAIN ========== -->
+  <url>
+    <loc>https://www.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nexwave-tech.my.id/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.nexwave-tech.my.id/landing-id.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nexwave-tech.my.id/"/>
+  </url>
+  
+  <url>
+    <loc>https://www.nexwave-tech.my.id/landing-id.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://www.nexwave-tech.my.id/landing-id.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nexwave-tech.my.id/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.nexwave-tech.my.id/"/>
+  </url>
+
+  <url>
+    <loc>https://www.nexwave-tech.my.id/maintenance.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.nexwave-tech.my.id/status.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ========== NexWaveTeam AI Agency OS ========== -->
+  <url>
+    <loc>https://team.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ========== Enterprise WMS ========== -->
+  <url>
+    <loc>https://wms.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ========== NexWave Manufacture ========== -->
+  <url>
+    <loc>https://manufacture.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ========== Sciens AI ========== -->
+  <url>
+    <loc>https://sciens.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ========== Talkozy Voice Coach ========== -->
+  <url>
+    <loc>https://talkozy.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ========== Dreamscape Tour & Trip ========== -->
+  <url>
+    <loc>https://trip.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ========== Hematin ========== -->
+  <url>
+    <loc>https://hematin.nexwave-tech.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ========== Kiwari Journal ========== -->
+  <url>
+    <loc>https://kiwarijournals.my.id/</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

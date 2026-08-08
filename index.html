@@ -5,12 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexWave Tech - Right Technology for Real Problems</title>
     <meta name="description" content="Independent technology practice for custom web apps, enterprise systems (WMS/ERP), workflow automation, and AI agents.">
+    <meta name="keywords" content="custom web apps, enterprise WMS ERP, AI agents automation, Next.js React Flutter, warehouse management system, manufacturing execution system, WhatsApp AI chatbot, workflow automation, software development Indonesia, NexWave Tech">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="NexWave Tech">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.nexwave-tech.my.id/">
+    
+    <!-- Alternate hreflang for bilingual -->
+    <link rel="alternate" hreflang="en" href="https://www.nexwave-tech.my.id/">
+    <link rel="alternate" hreflang="id" href="https://www.nexwave-tech.my.id/landing-id.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.nexwave-tech.my.id/">
     
     <!-- Open Graph -->
     <meta property="og:title" content="NexWave Tech - Right Technology for Real Problems">
     <meta property="og:description" content="Independent technology practice for custom web apps, enterprise systems, and AI automation.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nexwave-tech.my.id">
+    <meta property="og:image" content="https://www.nexwave-tech.my.id/assets/logo.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:site_name" content="NexWave Tech">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NexWave Tech - Right Technology for Real Problems">
+    <meta name="twitter:description" content="Independent technology practice for custom web apps, enterprise systems, and AI automation.">
+    <meta name="twitter:image" content="https://www.nexwave-tech.my.id/assets/logo.png">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NexWave Tech",
+      "url": "https://www.nexwave-tech.my.id",
+      "logo": "https://www.nexwave-tech.my.id/assets/logo.png",
+      "description": "Independent technology practice for custom web apps, enterprise systems, and AI automation.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "availableLanguage": ["English", "Indonesian"]
+      },
+      "sameAs": [
+        "https://www.nexwave-tech.my.id"
+      ]
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" href="assets/logo.png" type="image/png">
@@ -223,8 +265,8 @@
                 <div class="quote-modal-title">
                     <span class="quote-icon">🤖</span>
                     <div>
-                        <h3 data-i18n="modal_title">Halo, aku Nexy! 👋</h3>
-                        <p data-i18n="modal_desc">Jelaskan ide atau kebutuhan proyekmu, aku akan menganalisis arsitektur, rekomendasi tech stack, dan estimasi waktunya secara instan!</p>
+                        <h3 data-i18n="modal_title">Hey, I'm Nexy! 👋</h3>
+                        <p data-i18n="modal_desc">Describe your project idea — I'll instantly analyze the architecture, recommend the best tech stack, and break down the timeline!</p>
                     </div>
                 </div>
                 <button id="closeAiQuoteBtn" class="quote-close-btn">&times;</button>
@@ -233,8 +275,8 @@
             <div class="quote-modal-body">
                 <form id="aiQuoteForm" class="quote-form">
                     <div class="form-group">
-                        <label class="form-label" data-i18n="modal_desc_label" style="font-weight:600; font-size:15px; margin-bottom:8px; display:block;">Jelaskan Ide / Kebutuhan Proyek Anda:</label>
-                        <textarea id="quotePrompt" class="form-input" rows="4" placeholder="Contoh: Saya ingin membuat aplikasi kasir POS toko parfum dengan fitur cetak struk, manajemen stok, dan laporan penjualan..." style="resize:vertical; min-height:110px; padding:14px; font-size:14px; border-radius:12px;" required></textarea>
+                        <label class="form-label" data-i18n="modal_desc_label" style="font-weight:600; font-size:15px; margin-bottom:8px; display:block;">Describe Your Project / Requirements:</label>
+                        <textarea id="quotePrompt" class="form-input" rows="4" placeholder="Example: I need a POS cashier app for my retail store with barcode scanning, receipt printing, stock management, and real-time sales dashboard..." style="resize:vertical; min-height:110px; padding:14px; font-size:14px; border-radius:12px;" required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block" id="calcSubmitBtn" data-i18n="modal_submit_btn">
@@ -339,18 +381,16 @@
                 contact_title: 'Ready to Launch Your <span class="text-accent">Project?</span>',
                 contact_desc: "Turn your technical requirements into high-performing reality. Contact us via WhatsApp for instant technical consultation.",
                 contact_btn: "Chat on WhatsApp →",
-                modal_title: "Nexy",
-                modal_desc: "Calculate architecture estimates, tech stack, and timeline breakdown in 30 seconds!",
-                modal_cat_label: "Service Category:",
-                modal_ind_label: "Business Industry Segment:",
-                modal_prompt_label: "Problem Description / Special Features (Optional):",
+                modal_title: "Hey, I'm Nexy! 👋",
+                modal_desc: "Describe your project idea — I'll instantly analyze the architecture, recommend the best tech stack, and break down the timeline!",
+                modal_desc_label: "Describe Your Project / Requirements:",
                 modal_submit_btn: "⚡ Generate AI Estimate Now",
                 modal_res_badge: "✓ AI Architecture Analysis Complete",
                 res_time_label: "Estimated Timeline",
                 res_stack_label: "Recommended Tech Stack",
                 res_feat_label: "Key Architectural Features:",
                 res_wa_btn: "💬 Send AI Architecture Proposal to WhatsApp",
-                prompt_placeholder: "Example: Need a barcode scanning PWA with thermal receipt printing and real-time stock sync to e-commerce store."
+                prompt_placeholder: "Example: I need a POS cashier app for my retail store with barcode scanning, receipt printing, stock management, and real-time sales dashboard..."
             },
             id: {
                 nav_home: "Beranda",
@@ -362,7 +402,7 @@
                 hero_badge: "Engineers at Heart",
                 hero_title: 'Teknologi Tepat untuk <span class="text-accent">Masalah Nyata</span>',
                 hero_desc: "Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.",
-                hero_calc_btn: "🤖 Hitung Estimasi AI Instant",
+                hero_calc_btn: "🤖 Kalkulator Estimasi AI Instan",
                 hero_projects_btn: "Lihat Project",
                 prod_badge: "Portfolio",
                 prod_title: 'Solusi yang <span class="text-accent">Telah Berjalan</span>',
@@ -371,7 +411,7 @@
                 filter_ai: "🤖 AI & Automations",
                 filter_enterprise: "🏢 Enterprise & WMS",
                 filter_web: "📱 Web & Mobile Apps",
-                serv_badge: "Our Services",
+                serv_badge: "Layanan Kami",
                 serv_title: 'Layanan <span class="text-accent">Unggulan</span>',
                 serv_desc: "Solusi teknologi komprehensif untuk mendigitalisasi dan mengotomatisasi bisnis Anda.",
                 serv_1_title: "Web & Mobile Apps",
@@ -380,7 +420,7 @@
                 serv_2_desc: "Pengembangan sistem kustom (ERP/WMS) menggunakan .NET Core dan Golang untuk efisiensi bisnis dan kelola stok skala besar.",
                 serv_3_title: "AI Agents & Automations",
                 serv_3_desc: "Asisten AI cerdas, otomatisasi workflow, dan chatbot WhatsApp kustom untuk meningkatkan produktivitas tim Anda 24/7.",
-                flow_badge: "Our Process",
+                flow_badge: "Proses Kami",
                 flow_title: 'Gimana Kami <span class="text-accent">Bekerja?</span>',
                 flow_desc: "Proses kerja terukur untuk memastikan setiap baris kode memberikan dampak nyata bagi bisnis Anda.",
                 flow_1_title: "Analisa & Diskusi",
@@ -399,18 +439,16 @@
                 contact_title: 'Siap Memulai <span class="text-accent">Project?</span>',
                 contact_desc: "Wujudkan sistem impian Anda dengan dukungan teknis profesional. Hubungi kami melalui WhatsApp untuk konsultasi cepat.",
                 contact_btn: "Chat WhatsApp →",
-                modal_title: "Nexy",
-                modal_desc: "Hitung estimasi arsitektur, biaya, & waktu pengerjaan proyek Anda dalam 30 detik!",
-                modal_cat_label: "Kategori Layanan:",
-                modal_ind_label: "Segmen Industri Bisnis:",
-                modal_prompt_label: "Deskripsi Masalah / Fitur Khusus (Opsional):",
-                modal_submit_btn: "⚡ Generasi Estimasi AI Now",
-                modal_res_badge: "✓ AI Proposal Analysis Complete",
+                modal_title: "Halo, aku Nexy! 👋",
+                modal_desc: "Jelaskan ide proyekmu — aku akan langsung menganalisis arsitektur, merekomendasikan tech stack terbaik, dan estimasi waktunya!",
+                modal_desc_label: "Jelaskan Ide / Kebutuhan Proyek Anda:",
+                modal_submit_btn: "⚡ Generate AI Estimate Now",
+                modal_res_badge: "✓ AI Architecture Analysis Complete",
                 res_time_label: "Estimasi Waktu",
                 res_stack_label: "Rekomendasi Tech Stack",
-                res_feat_label: "Fitur Utilitas Utama:",
-                res_wa_btn: "💬 Kirim Proposal AI Ke WhatsApp",
-                prompt_placeholder: "Contoh: Saya butuh PWA kasir barcode dengan cetak resi thermal dan sync stok real-time ke toko e-commerce."
+                res_feat_label: "Fitur Arsitektur Utama:",
+                res_wa_btn: "💬 Kirim Proposal Arsitektur AI ke WhatsApp",
+                prompt_placeholder: "Contoh: Saya butuh aplikasi kasir POS untuk toko retail dengan barcode scan, cetak struk, manajemen stok, dan dashboard penjualan real-time..."
             }
         };
 
