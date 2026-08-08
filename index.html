@@ -233,29 +233,8 @@
             <div class="quote-modal-body">
                 <form id="aiQuoteForm" class="quote-form">
                     <div class="form-group">
-                        <label class="form-label" data-i18n="modal_cat_label">Service Category:</label>
-                        <select id="quoteCategory" class="form-input" required>
-                            <option value="Custom App / Mobile PWA">Custom App / Mobile PWA (POS, Booking, Inventory)</option>
-                            <option value="Enterprise WMS & ERP">Enterprise WMS & Custom ERP (.NET / Next.js)</option>
-                            <option value="SEO Growth & Authority">SEO Growth & Google Rank #1 (Next.js SSR)</option>
-                            <option value="Digital Marketing & Automation">Digital Marketing & Content Automation (Threads/Social)</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" data-i18n="modal_ind_label">Business Industry Segment:</label>
-                        <select id="quoteIndustry" class="form-input" required>
-                            <option value="Retail & E-Commerce">Retail & E-Commerce</option>
-                            <option value="Corporate & B2B Services">Corporate & B2B Services</option>
-                            <option value="Logistics & Supply Chain">Logistics, Warehouse & Fleet</option>
-                            <option value="F&B, Clinic & Hospitality">F&B, Healthcare Clinics & Services</option>
-                            <option value="Tech Startup & Software House">Tech Startup & Product Development</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" data-i18n="modal_prompt_label">Problem Description / Special Features (Optional):</label>
-                        <textarea id="quotePrompt" class="form-input form-textarea" placeholder="Example: Need a barcode scanning PWA with thermal receipt printing and real-time stock sync to e-commerce store."></textarea>
+                        <label class="form-label" data-i18n="modal_desc_label" style="font-weight:600; font-size:15px; margin-bottom:8px; display:block;">Jelaskan Ide / Kebutuhan Proyek Anda:</label>
+                        <textarea id="quotePrompt" class="form-input" rows="4" placeholder="Contoh: Saya ingin membuat aplikasi kasir POS toko parfum dengan fitur cetak struk, manajemen stok, dan laporan penjualan..." style="resize:vertical; min-height:110px; padding:14px; font-size:14px; border-radius:12px;" required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-block" id="calcSubmitBtn" data-i18n="modal_submit_btn">
@@ -628,9 +607,9 @@
             if (quoteForm) {
                 quoteForm.addEventListener('submit', async function(e) {
                     e.preventDefault();
-                    const category = document.getElementById('quoteCategory').value;
-                    const industry = document.getElementById('quoteIndustry').value;
                     const prompt = document.getElementById('quotePrompt').value.trim();
+                    const category = 'Custom Application / Web System';
+                    const industry = 'Business & IT Services';
 
                     calcBtn.disabled = true;
                     calcBtn.innerHTML = currentLang === 'id' ? '🤖 AI Sedang Menganalisis Kebutuhan...' : '🤖 AI Analyzing Architecture...';
