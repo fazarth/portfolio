@@ -223,7 +223,7 @@
                 <div class="quote-modal-title">
                     <span class="quote-icon">🤖</span>
                     <div>
-                        <h3 data-i18n="modal_title">AI Instant Project & Quote Calculator</h3>
+                        <h3 data-i18n="modal_title">NexSpec AI</h3>
                         <p data-i18n="modal_desc">Calculate architecture estimates, tech stack, and timeline breakdown in 30 seconds!</p>
                     </div>
                 </div>
@@ -360,7 +360,7 @@
                 contact_title: 'Ready to Launch Your <span class="text-accent">Project?</span>',
                 contact_desc: "Turn your technical requirements into high-performing reality. Contact us via WhatsApp for instant technical consultation.",
                 contact_btn: "Chat on WhatsApp →",
-                modal_title: "AI Instant Project & Quote Calculator",
+                modal_title: "NexSpec AI",
                 modal_desc: "Calculate architecture estimates, tech stack, and timeline breakdown in 30 seconds!",
                 modal_cat_label: "Service Category:",
                 modal_ind_label: "Business Industry Segment:",
@@ -420,7 +420,7 @@
                 contact_title: 'Siap Memulai <span class="text-accent">Project?</span>',
                 contact_desc: "Wujudkan sistem impian Anda dengan dukungan teknis profesional. Hubungi kami melalui WhatsApp untuk konsultasi cepat.",
                 contact_btn: "Chat WhatsApp →",
-                modal_title: "AI Instant Project & Quote Calculator",
+                modal_title: "NexSpec AI",
                 modal_desc: "Hitung estimasi arsitektur, biaya, & waktu pengerjaan proyek Anda dalam 30 detik!",
                 modal_cat_label: "Kategori Layanan:",
                 modal_ind_label: "Segmen Industri Bisnis:",
@@ -626,82 +626,93 @@
             }
 
             if (quoteForm) {
-                quoteForm.addEventListener('submit', function(e) {
+                quoteForm.addEventListener('submit', async function(e) {
                     e.preventDefault();
                     const category = document.getElementById('quoteCategory').value;
                     const industry = document.getElementById('quoteIndustry').value;
                     const prompt = document.getElementById('quotePrompt').value.trim();
 
                     calcBtn.disabled = true;
-                    calcBtn.innerHTML = currentLang === 'id' ? '⚡ Menganalisis Arsitektur AI...' : '⚡ Analyzing AI Architecture...';
+                    calcBtn.innerHTML = currentLang === 'id' ? '🤖 AI Sedang Menganalisis Kebutuhan...' : '🤖 AI Analyzing Architecture...';
 
-                    setTimeout(() => {
-                        calcBtn.disabled = false;
-                        calcBtn.innerHTML = currentLang === 'id' ? '⚡ Generasi Estimasi AI Now' : '⚡ Generate AI Estimate Now';
+                    const systemPrompt = `You are NexWave Tech AI Architecture Estimator.
+Your ONLY job is to analyze software/web/app project requests and return a JSON estimate.
 
-                        // Smart Presets based on Category
-                        let timeStr = currentLang === 'id' ? "2 - 3 Minggu" : "2 - 3 Weeks";
-                        let stackStr = "Next.js 15, PWA, Tailwind CSS, PostgreSQL";
-                        let featArr = currentLang === 'id' ? [
-                            "Arsitektur PWA Responsive & Super Cepat",
-                            "Panel Admin Real-Time & Management Dashboard",
-                            "Akses Client Portal Live Transparency Tracking"
-                        ] : [
-                            "Responsive & Ultra-fast PWA Architecture",
-                            "Real-Time Admin Management Dashboard",
-                            "Client Portal Live Transparency Tracking Access"
-                        ];
+GUARDRAIL RULES:
+1. If the user prompt or request is completely OUT OF TOPIC (e.g. asking who is president, general knowledge, politics, jokes, personal advice), return JSON:
+   { "isValid": false, "rejectReason": "${currentLang === 'id' ? 'Maaf, AI ini khusus dirancang untuk mengestimasi proyek software, web, dan sistem aplikasi.' : 'Sorry, this AI is specifically designed for software, web, and app project estimations.'}" }
 
-                        if (category.includes("WMS") || category.includes("ERP")) {
-                            timeStr = currentLang === 'id' ? "3 - 5 Minggu" : "3 - 5 Weeks";
-                            stackStr = ".NET 10 Minimal API, Next.js, PostgreSQL, Docker";
-                            featArr = currentLang === 'id' ? [
-                                "Modul WMS Bin/Batch FEFO Stock Ledger",
-                                "Mobile Barcode Scanner PWA & Integration API",
-                                "Multi-warehouse Audit Trail & Reporting"
-                            ] : [
-                                "WMS Bin/Batch FEFO Stock Ledger Module",
-                                "Mobile Barcode Scanner PWA & ERP Integration API",
-                                "Multi-warehouse Audit Trail & Reporting"
-                            ];
-                        } else if (category.includes("SEO")) {
-                            timeStr = currentLang === 'id' ? "1 - 3 Bulan" : "1 - 3 Months";
-                            stackStr = "Next.js SSR, Google Search Console API, Schema Markup";
-                            featArr = currentLang === 'id' ? [
-                                "Audit SEO Teknis & Speed Optimization 90+",
-                                "Authority Content Strategy & Keywords Halaman 1",
-                                "Dashboard Laporan Trafik & Ranking Realtime"
-                            ] : [
-                                "Technical SEO Audit & 90+ PageSpeed Optimization",
-                                "Authority Content Strategy & Google Rank #1 Keywords",
-                                "Real-time Traffic & Keyword Ranking Dashboard"
-                            ];
-                        } else if (category.includes("Digital Marketing")) {
-                            timeStr = currentLang === 'id' ? "1 Minggu Setup (Monthly)" : "1 Week Setup (Running Monthly)";
-                            stackStr = "NexWave Agency OS, Content Studio, Threads Automation";
-                            featArr = currentLang === 'id' ? [
-                                "Jadwal Konten Otomatis 2x/Hari Berbasis AI",
-                                "High Conversion Copywriting & Visual Assets",
-                                "Laporan Engagement & Multi-Channel Pipeline"
-                            ] : [
-                                "Automated AI Content Scheduling (2x Daily)",
-                                "High Conversion Copywriting & Visual Brand Assets",
-                                "Multi-Channel Engagement & Pipeline Reporting"
-                            ];
+2. If valid (any app/web/software/IT request or when description is empty), analyze category "${category}" and industry "${industry}" alongside prompt "${prompt}".
+   Return JSON:
+   {
+     "isValid": true,
+     "title": "Short solution title in ${currentLang === 'id' ? 'Indonesian' : 'English'}",
+     "timeline": "Timeline in ${currentLang === 'id' ? 'Indonesian' : 'English'} (e.g. 2 - 3 Minggu)",
+     "techStack": "Recommended tech stack (e.g. Next.js 15, PostgreSQL, TailWind)",
+     "features": ["Feature 1 in ${currentLang === 'id' ? 'Indonesian' : 'English'}", "Feature 2", "Feature 3"]
+   }
+ONLY return raw JSON string. Do not use markdown code block formatting.`;
+
+                    try {
+                        const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+                            method: 'POST',
+                            headers: {
+                                'Authorization': 'Bearer ' + atob('c2stb3ItdjEtYzZmZmM1NzQwYTA3N2NkZDI4NmQzZjM0N2YzMGFiMDczYmEwMGI2ZTVhZjI2NTM5ZmRiMzFlZTY1NDRhNzA0MQ=='),
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                model: 'deepseek/deepseek-chat',
+                                messages: [
+                                    { role: 'system', content: systemPrompt },
+                                    { role: 'user', content: prompt || `Selected category: ${category}, Industry: ${industry}` }
+                                ],
+                                max_tokens: 300
+                            })
+                        });
+
+                        const data = await response.json();
+                        const rawText = data.choices[0].message.content.replace(/```json/g, '').replace(/```/g, '').trim();
+                        const result = JSON.parse(rawText);
+
+                        if (!result.isValid) {
+                            alert(result.rejectReason || 'Permintaan di luar topik estimasi proyek.');
+                            calcBtn.disabled = false;
+                            calcBtn.innerHTML = currentLang === 'id' ? '⚡ Generasi Estimasi AI Now' : '⚡ Generate AI Estimate Now';
+                            return;
                         }
 
-                        document.getElementById('resTitle').textContent = currentLang === 'id' ? `Estimasi Solusi: ${category} (${industry})` : `Solution Estimate: ${category} (${industry})`;
-                        document.getElementById('resTime').textContent = timeStr;
-                        document.getElementById('resStack').textContent = stackStr;
-                        document.getElementById('resFeatures').innerHTML = featArr.map(f => `<li>✓ ${f}</li>`).join('');
+                        document.getElementById('resTitle').textContent = `Estimasi Solusi: ${result.title}`;
+                        document.getElementById('resTime').textContent = result.timeline;
+                        document.getElementById('resStack').textContent = result.techStack;
+                        document.getElementById('resFeatures').innerHTML = result.features.map(f => `<li>✓ ${f}</li>`).join('');
 
                         resultBox.style.display = 'block';
 
-                        // Prepare Encrypted WhatsApp Message
                         lastGeneratedWaText = currentLang === 'id' 
-                            ? `Halo NexWave Tech! Saya baru mencoba AI Quote Calculator di website:\n\n📌 Kategori: ${category}\n🏢 Industri: ${industry}\n⏱️ Estimasi Waktu: ${timeStr}\n⚡ Tech Stack: ${stackStr}\n\nPesan Tambahan:\n${prompt || 'Saya ingin konsultasi lebih lanjut mengenai estimasi proyek ini.'}`
-                            : `Hello NexWave Tech! I just calculated a project estimate on your website:\n\n📌 Category: ${category}\n🏢 Industry: ${industry}\n⏱️ Est. Timeline: ${timeStr}\n⚡ Tech Stack: ${stackStr}\n\nAdditional Notes:\n${prompt || 'I would like to consult further regarding this project architecture.'}`;
-                    }, 800);
+                            ? `Halo NexWave Tech! Saya baru mencoba AI Quote Calculator di website:
+
+📌 Kategori: ${category}
+📌 Industri: ${industry}
+💬 Deskripsi: ${prompt || '-'}
+
+⏱️ Estimasi Waktu: ${result.timeline}
+💻 Recommended Stack: ${result.techStack}`
+                            : `Hello NexWave Tech! I just calculated a project estimate on your website:
+
+📌 Category: ${category}
+📌 Industry: ${industry}
+💬 Description: ${prompt || '-'}
+
+⏱️ Estimated Time: ${result.timeline}
+💻 Recommended Stack: ${result.techStack}`;
+
+                    } catch (err) {
+                        console.error('AI Calculator Error:', err);
+                        alert(currentLang === 'id' ? 'Gagal menghubungkan ke AI Engine. Silakan coba lagi.' : 'Failed to connect to AI Engine. Please try again.');
+                    } finally {
+                        calcBtn.disabled = false;
+                        calcBtn.innerHTML = currentLang === 'id' ? '⚡ Generasi Estimasi AI Now' : '⚡ Generate AI Estimate Now';
+                    }
                 });
             }
 
