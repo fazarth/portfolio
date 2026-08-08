@@ -53,6 +53,22 @@
       ]
     }
     </script>
+
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.nexwave-tech.my.id/"
+        }
+      ]
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" href="assets/logo.png" type="image/png">
@@ -62,8 +78,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons (deferred) -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    
+    <!-- Preconnect external CDN origins -->
+    <link rel="preconnect" href="https://cdn.simpleicons.org" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -198,31 +218,31 @@
                 <div class="tech-group">
                     <p class="tech-label" data-i18n="tech_label_1">Frameworks & Languages</p>
                     <div class="tech-stack">
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/laravel" width="20" alt="Laravel"> Laravel</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs" width="20" alt="Next.js"> Next JS</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/react" width="20" alt="React"> React</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/flutter" width="20" alt="Flutter"> Flutter</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/go" width="20" alt="Golang"> Golang</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/dotnet" width="20" alt=".Net"> ASP.NET Core</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/laravel" width="20" height="20" alt="Laravel" loading="lazy"> Laravel</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/nextdotjs" width="20" height="20" alt="Next.js" loading="lazy"> Next JS</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/react" width="20" height="20" alt="React" loading="lazy"> React</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/flutter" width="20" height="20" alt="Flutter" loading="lazy"> Flutter</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/go" width="20" height="20" alt="Golang" loading="lazy"> Golang</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/dotnet" width="20" height="20" alt=".Net" loading="lazy"> ASP.NET Core</div>
                     </div>
                 </div>
 
                 <div class="tech-group">
                     <p class="tech-label" data-i18n="tech_label_2">Database & Cloud</p>
                     <div class="tech-stack">
-                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" width="20" alt="SQL Server"> SQL Server</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql" width="20" alt="MySQL"> MySQL</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/supabase" width="20" alt="Supabase"> Supabase</div>
-                        <div class="tech-item"><img src="https://cdn.simpleicons.org/firebase" width="20" alt="Firebase"> Firebase</div>
+                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" width="20" height="20" alt="SQL Server" loading="lazy"> SQL Server</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/mysql" width="20" height="20" alt="MySQL" loading="lazy"> MySQL</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/supabase" width="20" height="20" alt="Supabase" loading="lazy"> Supabase</div>
+                        <div class="tech-item"><img src="https://cdn.simpleicons.org/firebase" width="20" height="20" alt="Firebase" loading="lazy"> Firebase</div>
                     </div>
                 </div>
 
                 <div class="tech-group">
                     <p class="tech-label" data-i18n="tech_label_3">Microsoft Power Platform</p>
                     <div class="tech-stack">
-                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerapps.svg" width="20" alt="Power Apps"> Power Apps</div>
-                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftsharepoint.svg" width="20" alt="SharePoint"> SharePoint</div>
-                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerautomate.svg" width="20" alt="Power Automate"> Power Automate</div>
+                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerapps.svg" width="20" height="20" alt="Power Apps" loading="lazy"> Power Apps</div>
+                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftsharepoint.svg" width="20" height="20" alt="SharePoint" loading="lazy"> SharePoint</div>
+                        <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerautomate.svg" width="20" height="20" alt="Power Automate" loading="lazy"> Power Automate</div>
                     </div>
                 </div>
             </div>
