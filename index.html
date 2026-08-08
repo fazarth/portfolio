@@ -223,8 +223,8 @@
                 <div class="quote-modal-title">
                     <span class="quote-icon">🤖</span>
                     <div>
-                        <h3 data-i18n="modal_title">NexSpec AI</h3>
-                        <p data-i18n="modal_desc">Calculate architecture estimates, tech stack, and timeline breakdown in 30 seconds!</p>
+                        <h3 data-i18n="modal_title">Halo, aku NexSpec AI! 👋</h3>
+                        <p data-i18n="modal_desc">Jelaskan ide atau kebutuhan proyekmu, aku akan menganalisis arsitektur, rekomendasi tech stack, dan estimasi waktunya secara instan!</p>
                     </div>
                 </div>
                 <button id="closeAiQuoteBtn" class="quote-close-btn">&times;</button>
@@ -614,7 +614,7 @@
                     calcBtn.disabled = true;
                     calcBtn.innerHTML = currentLang === 'id' ? '🤖 AI Sedang Menganalisis Kebutuhan...' : '🤖 AI Analyzing Architecture...';
 
-                    const systemPrompt = `You are NexWave Tech AI Architecture Estimator.
+                    const systemPrompt = `You are NexSpec AI, an intelligent software architecture consultant for NexWave Tech.
 Your ONLY job is to analyze software/web/app project requests and return a JSON estimate.
 
 GUARDRAIL RULES:
