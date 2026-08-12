@@ -135,26 +135,6 @@
             "comingSoon": false
         },
         {
-            "id": "web-admin",
-            "title": "High-End Agency Landing Page",
-            "badge": "Live",
-            "category": "web",
-            "featured": false,
-            "description": "Digital agency landing page with high aesthetics. Built using Next.js and Tailwind CSS for optimal premium client conversion.",
-            "description_id": "Desain landing page agensi digital dengan estetika tinggi. Dibangun menggunakan Next.js dan Tailwind CSS untuk konversi klien premium yang optimal.",
-            "features": [
-                "Premium UI/UX Design",
-                "Next.js 15 Integration",
-                "Smooth Animations",
-                "High-Tech Aesthetic"
-            ],
-            "icon": "next",
-            "link": "https://hematin.nexwave-tech.my.id",
-            "buttonText": "View Demo",
-            "buttonText_id": "Lihat Demo",
-            "comingSoon": false
-        },
-        {
             "id": "hematin-app",
             "title": "Hematin - Mobile App (Flutter)",
             "badge": "Live",
