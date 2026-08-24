@@ -20,44 +20,6 @@
             "comingSoon": false
         },
         {
-            "id": "warehouse",
-            "title": "Enterprise WMS",
-            "badge": "Live",
-            "category": "enterprise",
-            "featured": false,
-            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, returns, cycle count, stock aging, mobile barcode scanning & ERP API.",
-            "description_id": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API.",
-            "features": [
-                "FEFO Allocation",
-                "Bin + Batch Stock Ledger",
-                "QR Scan Mobile PWA",
-                "REST API ERP Integration"
-            ],
-            "icon": "warehouse",
-            "link": "https://wms.nexwave-tech.my.id",
-            "buttonText": "Open WMS Demo",
-            "comingSoon": false
-        },
-        {
-            "id": "manufacture",
-            "title": "NexWave Manufacture",
-            "badge": "Live",
-            "category": "enterprise",
-            "featured": false,
-            "description": "Manufacturing Execution Suite: multi-tenant core (identity/JWT), WHS stock opname & FEFO allocation, PPIC planning, logistics, customs, and operator PWA with offline queue.",
-            "description_id": "Manufacturing Execution Suite: core multi-tenant (identity/JWT), WHS stock opname & alokasi FEFO, planning PPIC, logistik, bea cukai, dan PWA operator dengan offline queue.",
-            "features": [
-                "Multi-Tenant Microservices",
-                "WHS Stock Opname + FEFO",
-                "Operator PWA Offline Queue",
-                "PPIC / Logistic / Customs API"
-            ],
-            "icon": "warehouse",
-            "link": "https://manufacture.nexwave-tech.my.id",
-            "buttonText": "Open App Demo",
-            "comingSoon": false
-        },
-        {
             "id": "tanyadoc",
             "title": "Sciens AI",
             "badge": "Live",
@@ -113,6 +75,63 @@
             "link": "action:wa_agent",
             "buttonText": "Try AI Demo",
             "buttonText_id": "Coba Demo AI",
+            "comingSoon": false
+        },
+        {
+            "id": "warehouse",
+            "title": "Enterprise WMS",
+            "badge": "Live",
+            "category": "enterprise",
+            "featured": false,
+            "description": "Warehouse Management System: PO\u2192GR\u2192Put Away, FEFO pick\u2192pack\u2192ship, returns, cycle count, stock aging, mobile barcode scanning & ERP API.",
+            "description_id": "Warehouse Management System: PO\u2192GR\u2192Put Away, FEFO pick\u2192pack\u2192ship, retur, cycle count, aging stok, mobile barcode scan & ERP API.",
+            "features": [
+                "FEFO Allocation",
+                "Bin + Batch Stock Ledger",
+                "QR Scan Mobile PWA",
+                "REST API ERP Integration"
+            ],
+            "icon": "warehouse",
+            "link": "https://wms.nexwave-tech.my.id",
+            "buttonText": "Open WMS Demo",
+            "comingSoon": false
+        },
+        {
+            "id": "manufacture",
+            "title": "NexWave Manufacture",
+            "badge": "Live",
+            "category": "enterprise",
+            "featured": false,
+            "description": "Manufacturing Execution Suite: multi-tenant core (identity/JWT), WHS stock opname & FEFO allocation, PPIC planning, logistics, and operator PWA with offline queue.",
+            "description_id": "Manufacturing Execution Suite: core multi-tenant (identity/JWT), WHS stock opname & alokasi FEFO, planning PPIC, logistik, dan PWA operator dengan offline queue.",
+            "features": [
+                "Multi-Tenant Microservices",
+                "WHS Stock Opname + FEFO",
+                "Operator PWA Offline Queue",
+                "PPIC / Logistic"
+            ],
+            "icon": "warehouse",
+            "link": "https://manufacture.nexwave-tech.my.id",
+            "buttonText": "Open App Demo",
+            "comingSoon": false
+        },
+        {
+            "id": "nexora",
+            "title": "Nexora",
+            "badge": "Live",
+            "category": "enterprise",
+            "featured": false,
+            "description": "Plan. Build. Deliver. Comprehensive enterprise resource planning and delivery system.",
+            "description_id": "Plan. Build. Deliver. Sistem perencanaan sumber daya dan pengiriman enterprise yang komprehensif.",
+            "features": [
+                "Project Planning",
+                "Build Management",
+                "Delivery Tracking",
+                "Enterprise API"
+            ],
+            "icon": "warehouse",
+            "link": "https://nexora.nexwave-tech.my.id",
+            "buttonText": "Open Nexora",
             "comingSoon": false
         },
         {
