@@ -83,8 +83,8 @@
             "badge": "Live",
             "category": "enterprise",
             "featured": false,
-            "description": "Warehouse Management System: PO\u2192GR\u2192Put Away, FEFO pick\u2192pack\u2192ship, returns, cycle count, stock aging, mobile barcode scanning & ERP API.",
-            "description_id": "Warehouse Management System: PO\u2192GR\u2192Put Away, FEFO pick\u2192pack\u2192ship, retur, cycle count, aging stok, mobile barcode scan & ERP API.",
+            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, returns, cycle count, stock aging, mobile barcode scanning & ERP API.",
+            "description_id": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API.",
             "features": [
                 "FEFO Allocation",
                 "Bin + Batch Stock Ledger",
@@ -121,15 +121,15 @@
             "badge": "Live",
             "category": "enterprise",
             "featured": false,
-            "description": "Plan. Build. Deliver. Comprehensive enterprise resource planning and delivery system.",
-            "description_id": "Plan. Build. Deliver. Sistem perencanaan sumber daya dan pengiriman enterprise yang komprehensif.",
+            "description": "Modern project management platform with Kanban, Gantt charts, sprint planning, and multi-workspace collaboration.",
+            "description_id": "Platform manajemen proyek modern dengan Kanban, Gantt chart, sprint planning, dan kolaborasi multi-workspace.",
             "features": [
-                "Project Planning",
-                "Build Management",
-                "Delivery Tracking",
-                "Enterprise API"
+                "Kanban & Gantt Views",
+                "Sprint & Backlog",
+                "Multi-Workspace",
+                "Real-time Dashboard"
             ],
-            "icon": "warehouse",
+            "icon": "project",
             "link": "https://nexora.nexwave-tech.my.id/",
             "buttonText": "Open Nexora",
             "comingSoon": false
