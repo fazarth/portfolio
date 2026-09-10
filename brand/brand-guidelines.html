@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexWave Tech — Brand Guidelines v1.0</title>
+<style>
+  :root{
+    --primary:#0056D2; --violet:#7C3AED; --navy:#0F172A;
+    --cyan:#56DFD7; --sky:#38BDF8; --light:#38BDF8;
+    --ink:#0F172A; --muted:#64748B; --bg:#FFFFFF; --soft:#F8FAFC; --line:#E2E8F0;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{font-family:'Inter','Segoe UI',Arial,sans-serif; color:var(--ink); background:var(--soft); line-height:1.6}
+  .wrap{max-width:960px; margin:0 auto; padding:0 28px}
+  header{background:linear-gradient(135deg,var(--primary),var(--violet)); color:#fff; padding:64px 0 56px}
+  header h1{font-size:2.2rem; font-weight:800; letter-spacing:-.5px}
+  header p{opacity:.85; margin-top:8px; max-width:640px}
+  .ver{display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); padding:2px 12px; border-radius:99px; font-size:.75rem; font-weight:600; margin-bottom:18px}
+  section{padding:48px 0; border-bottom:1px solid var(--line)}
+  section h2{font-size:1.35rem; font-weight:800; margin-bottom:6px}
+  section h2 .num{color:var(--primary); margin-right:10px}
+  .sub{color:var(--muted); font-size:.95rem; margin-bottom:24px}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:20px}
+  .card{background:#fff; border:1px solid var(--line); border-radius:16px; padding:20px; text-align:center; transition:box-shadow .2s}
+  .card:hover{box-shadow:0 10px 30px -10px rgba(2,6,23,.15)}
+  .card .tag{font-size:.68rem; font-weight:700; letter-spacing:1px; color:var(--primary); text-transform:uppercase; margin-bottom:14px}
+  .card img{max-width:100%; height:auto; border-radius:10px}
+  .card h3{font-size:.95rem; margin:12px 0 4px}
+  .card p{font-size:.78rem; color:var(--muted)}
+  .stage{background:#fff; border:1px solid var(--line); border-radius:16px; padding:28px; margin-bottom:20px}
+  .stage.dark{background:var(--navy)}
+  .stage.center{text-align:center}
+  .row{display:flex; gap:24px; flex-wrap:wrap; align-items:center; justify-content:center}
+  .swatch{flex:1 1 130px; border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#fff}
+  .swatch .chip{height:76px}
+  .swatch .meta{padding:8px 12px; font-size:.72rem}
+  .swatch .meta b{display:block; font-size:.8rem}
+  table{width:100%; border-collapse:collapse; background:#fff; border-radius:12px; overflow:hidden; font-size:.85rem}
+  th,td{padding:10px 14px; text-align:left; border-bottom:1px solid var(--line)}
+  th{background:var(--navy); color:#fff; font-weight:600; font-size:.75rem; letter-spacing:.5px; text-transform:uppercase}
+  code{background:var(--soft); border:1px solid var(--line); padding:1px 7px; border-radius:6px; font-size:.8rem}
+  .rule{display:flex; gap:18px; align-items:flex-start; background:#fff; border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-bottom:12px}
+  .rule .ic{font-size:1.4rem}
+  .rule h4{font-size:.9rem; margin-bottom:2px}
+  .rule p{font-size:.8rem; color:var(--muted)}
+  .pills{display:flex; gap:8px; flex-wrap:wrap}
+  .pills span{font-size:.72rem; font-weight:600; padding:3px 12px; border-radius:99px; border:1px solid var(--line); background:#fff}
+  footer{padding:36px 0; text-align:center; color:var(--muted); font-size:.8rem}
+  @media(max-width:560px){ header h1{font-size:1.6rem} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="ver">BRAND GUIDELINES — V1.0 — 2026</span>
+    <h1>NexWave Tech</h1>
+    <p>Software house yang membantu Anda mengikuti perkembangan teknologi agar tidak tertinggal. Kemajuan teknologi tidak bisa dihindari — dan sekarang ada AI, yang seharusnya menjadi alat dan pendamping dalam bekerja &amp; berbisnis: lebih mudah, lebih cepat. Bukan dihindari, bukan ditakuti.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">01</span>Brand Positioning</h2>
+    <p class="sub">Why NexWave Tech exists</p>
+    <div class="stage">
+      <table>
+        <tr><th style="width:170px">Aspect</th><th>Definition</th></tr>
+        <tr><td><b>Brand Essence</b></td><td>Gelombang teknologi yang mengantarkan — bukan menabrak — bisnis Anda.</td></tr>
+        <tr><td><b>Promise</b></td><td>Teknologi (termasuk AI) sebagai alat &amp; pendamping kerja, bukan ancaman. Kami bantu adopsi yang tepat, bertahap, dan berdampak.</td></tr>
+        <tr><td><b>Personality</b></td><td>Modern · Terpercaya · Membumi (tidak jualan hype) · Progresif</td></tr>
+        <tr><td><b>Target Voice</b></td><td>ID: hangat &amp; tegas, minim jargon · EN: clear, confident, plain-spoken</td></tr>
+        <tr><td><b>Tagline (opsional)</b></td><td>“Ride the wave of progress” / “Teknologi untuk maju, bukan takut”</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">02</span>Logo System — 5 Konsep</h2>
+    <p class="sub">Pilih satu sebagai primary; sisanya varian. Semua tersedia SVG + PNG (1024px).</p>
+    <div class="grid">
+      <div class="card">
+        <div class="tag">Konsep 1 — Recommended</div>
+        <img src="logos/logo-1.png" alt="logo 1">
+        <h3>N Mark · Gradient Tile</h3>
+        <p>Dua pilar putih membentuk huruf <b>N</b>, garis cyan sebagai diagonal gelombang. Simbol gabungan N + gelombang. Paling kuat di ukuran kecil (favicon).</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 2</div>
+        <img src="logos/logo-2-preview.png" alt="logo 2">
+        <h3>N Mark + Wordmark</h3>
+        <p>Kombinasi mark &amp; teks “NexWave” + sub “TECH”. Untuk navbar, email signature, dokumen resmi.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 3</div>
+        <img src="logos/logo-3.png" alt="logo 3" style="background:#fff; padding:16px">
+        <h3>Monoline N — Light</h3>
+        <p>Versi garis tunggal navy. Penggunaan: cetak hitam-putih, invoice, stempel, emboss.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 4</div>
+        <img src="logos/logo-4.png" alt="logo 4">
+        <h3>N Mark · Dark Tile + Dots</h3>
+        <p>Tile navy dengan titik-titik “sinyal” — visualisasi data / AI tersebar. Untuk presentasi, slide gelap, merchandise gelap.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 5</div>
+        <img src="logos/logo-5.png" alt="logo 5">
+        <h3>Angular N · Sky → Blue + Wave Base</h3>
+        <p>N agresif-modern (garis diagonal tegas), gelombang rendah sebagai alas. Kesan software house yang dinamis &amp; berkembang.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Varian Dark Surface</div>
+        <img src="logos/logo-3w.png" alt="logo 3 white" style="background:#0F172A">
+        <h3>White / Mono Versions</h3>
+        <p><code>logo-3w</code> &amp; <code>logo-2w</code> untuk background gelap (footer, slide).</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 6 — New</div>
+        <img src="logos/logo-6.png" alt="logo 6" style="background:#EFF6FF; padding:14px">
+        <h3>Ring Badge · Monoline</h3>
+        <p>Lingkaran outline biru + N navy monoline. Kesan komunitas/tech circle. Bagus untuk avatar &amp; badge.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 7 — New</div>
+        <img src="logos/logo-7.png" alt="logo 7">
+        <h3>Growth Bars + Wave</h3>
+        <p>Bar putih menaik (pertumbuhan/naik kelas) di tile navy, gelombang cyan di dasar. Pesan: bisnis makin maju.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 8 — New</div>
+        <img src="logos/logo-8.png" alt="logo 8" style="background:#FFFFFF; padding:14px">
+        <h3>Rising Bubble + Waves</h3>
+        <p>“Matahari terbit” gradasi sky→blue di atas gelombang. Metafora: teknologi mengangkat bisnis, bukan menenggelamkan.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 9 — New</div>
+        <img src="logos/logo-9.png" alt="logo 9">
+        <h3>Swoosh Momentum</h3>
+        <p>N + lengkung swoosh meluncur ke kanan-atas + titik komet cyan. Arah maju, momentum, tidak tertinggal.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Konsep 10 — New</div>
+        <img src="logos/logo-10.png" alt="logo 10" style="background:#FFFFFF; padding:14px">
+        <h3>Outline Frame · Minimal</h3>
+        <p>Kotak outline navy tipis + N &amp; gelombang teal. Minimalis, cocok untuk dokumen/cetak ringan &amp; UI clean.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">03</span>Primary Usage</h2>
+    <p class="sub">Rekomendasi penerapan</p>
+    <div class="stage center" style="background:#fff">
+      <img src="logos/logo-2-preview.png" alt="primary lockup" style="max-height:130px">
+      <p style="font-size:.8rem; color:var(--muted); margin-top:10px">Lockup utama (light background) — <code>logo-2.svg / logo-2.png</code></p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Favicon / App Icon</h3><p>Gunakan mark saja: <code>logo-1</code> (atau mark favorit Anda). Jangan wordmark — terlalu kecil.</p></div>
+      <div class="card"><h3>Navbar &amp; Footer</h3><p>Navbar: <code>logo-2</code>. Footer gelap: <code>logo-2w</code>.</p></div>
+      <div class="card"><h3>Cetak / Mono</h3><p><code>logo-3</code> navy atau <code>logo-3w</code> putih. Hindari gradasi bila hanya 1 warna.</p></div>
+      <div class="card"><h3>OG Image &amp; Slide</h3><p><code>logo-4</code> untuk kontras tinggi di media sosial &amp; deck gelap.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">04</span>Color Palette</h2>
+    <p class="sub">Primary blue = kepercayaan &amp; profesional · Cyan accent = gelombang/energi · Violet = AI/kreativitas</p>
+    <div class="row">
+      <div class="swatch"><div class="chip" style="background:#0056D2"></div><div class="meta"><b>Primary Blue</b>#0056D2<br><code>--primary</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#56DFD7"></div><div class="meta"><b>Cyan Accent</b>#56DFD7<br><code>--cyan</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#38BDF8"></div><div class="meta"><b>Sky (gradasi)</b>#38BDF8<br><code>--sky</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#7C3AED"></div><div class="meta"><b>Violet AI</b>#7C3AED<br><code>--violet</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#0F172A"></div><div class="meta"><b>Navy Ink</b>#0F172A<br><code>--navy</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#FFFFFF; border-bottom:1px solid #E2E8F0"></div><div class="meta"><b>White</b>#FFFFFF<br><code>--bg</code></div></div>
+    </div>
+    <p style="margin-top:18px; font-size:.85rem"><b>Gradasi signature:</b> <code>135deg #0056D2 → #7C3AED</code> (tile logo) &amp; <code>#38BDF8 → #0056D2</code> (konsep 5). Cyan hanya sebagai aksen tipis di atas primary — jangan dominan.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">05</span>Typography</h2>
+    <p class="sub">Inter = font utama seluruh produk &amp; materi</p>
+    <table>
+      <tr><th>Role</th><th>Font / Weight</th><th>Penggunaan</th></tr>
+      <tr><td>Display</td><td>Inter <b>ExtraBold 800</b></td><td>Judul utama, angka hero</td></tr>
+      <tr><td>Heading</td><td>Inter <b>Bold 700 / SemiBold 600</b></td><td>Section header, card title</td></tr>
+      <tr><td>Body</td><td>Inter Regular 400 / Medium 500</td><td>Paragraf, UI</td></tr>
+      <tr><td>Label</td><td>Inter SemiBold 600, <code>letter-spacing</code> besar</td><td>Badge, “TECH” sub-label, tombol kecil</td></tr>
+    </table>
+    <p style="margin-top:14px; font-size:.85rem">Fallback: <code>'Segoe UI', Arial, sans-serif</code>. Dalam logo, teks tidak perlu di-trace — pakai font Inter langsung agar konsisten.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">06</span>Voice &amp; Messaging</h2>
+    <p class="sub">Sesuai positioning: AI = alat &amp; pendamping, bukan ancaman</p>
+    <div class="rule"><div class="ic">✅</div><div><h4>Katakan</h4><p>“Teknologi biar kerja lebih mudah &amp; cepat — kami dampingi dari langkah pertama.” · “AI sebagai partner kerja Anda.” · “Tidak perlu takut tertinggal — kami yang jaga Anda tetap relevan.”</p></div></div>
+    <div class="rule"><div class="ic">❌</div><div><h4>Hindari</h4><p>Bahasa menakut-nakuti (“ganti karyawan dengan AI”), hype berlebihan (“AI ajaib instan”), jargon mentah tanpa konteks.</p></div></div>
+    <p style="font-size:.85rem"><b>Tagline alternatif:</b> “Right technology for real problems” (sudah dipakai di hero portfolio) tetap valid sebagai tagline utama.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">07</span>Do &amp; Don't</h2>
+    <div class="grid">
+      <div class="rule"><div class="ic">✅</div><div><h4>Do</h4><p>Jaga clear space ≥ 1× tinggi mark di sekeliling logo. Gunakan varian sesuai permukaan (light/dark/mono).</p></div></div>
+      <div class="rule"><div class="ic">❌</div><div><h4>Don't</h4><p>Jangan ubah proporsi, rotasi, atau warna. Jangan taruh di atas foto ramai. Jangan repot warna gradasi saat 1 warna saja.</p></div></div>
+      <div class="rule"><div class="ic">❌</div><div><h4>Don't</h4><p>Jangan rekonstruksi logo dari teks font — selalu pakai file SVG/PNG dari folder <code>brand/logos/</code>.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2><span class="num">08</span>File Index</h2>
+    <table>
+      <tr><th>File</th><th>Format</th><th>Pakai untuk</th></tr>
+      <tr><td><code>logo-1.svg / .png</code></td><td>Mark + gradasi tile</td><td>Favicon, app icon, avatar</td></tr>
+      <tr><td><code>logo-2.svg / .png</code></td><td>Mark + wordmark (light)</td><td>Navbar, signature, dokumen</td></tr>
+      <tr><td><code>logo-2w.svg / .png</code></td><td>Mark + wordmark (white)</td><td>Footer &amp; permukaan gelap</td></tr>
+      <tr><td><code>logo-3.svg / .png</code></td><td>Monoline navy</td><td>Cetak mono, invoice</td></tr>
+      <tr><td><code>logo-3w.svg / .png</code></td><td>Monoline putih</td><td>Cetak putih / gelap</td></tr>
+      <tr><td><code>logo-4.svg / .png</code></td><td>Dark tile + signal dots</td><td>OG image, slide gelap</td></tr>
+      <tr><td><code>logo-5.svg / .png</code></td><td>Angular N + wave base</td><td>Alternatif modern</td></tr>
+      <tr><td><code>logo-6.svg / .png</code></td><td>Ring badge monoline</td><td>Avatar, badge, circle icon</td></tr>
+      <tr><td><code>logo-7.svg / .png</code></td><td>Growth bars + wave</td><td>Pesan pertumbuhan / progress</td></tr>
+      <tr><td><code>logo-8.svg / .png</code></td><td>Rising bubble + waves</td><td>Teknologi mengangkat bisnis</td></tr>
+      <tr><td><code>logo-9.svg / .png</code></td><td>Swoosh momentum + dot</td><td>Momentum / arah maju</td></tr>
+      <tr><td><code>logo-10.svg / .png</code></td><td>Outline frame minimal</td><td>UI clean, cetak ringan</td></tr>
+      <tr><td><code>render2.py</code></td><td>Script</td><td>Regenerate PNG konsep 6-10</td></tr>
+      <tr><td><code>render.py</code></td><td>Script</td><td>Regenerate semua PNG/OG</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  NexWave Tech — Brand Guidelines v1.0 · Generated for portfolio refresh · <code>E:\Kerjaan\Code\Live\portfolio\brand\</code>
+</footer>
+</body>
+</html>

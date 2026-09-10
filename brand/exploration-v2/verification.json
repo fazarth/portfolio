@@ -1,0 +1,11 @@
+{
+  "concepts": 5,
+  "svg": 15,
+  "png": 20,
+  "checks": [
+    "5 distinct geometry definitions",
+    "SVG XML valid",
+    "PNG bounds nonempty and expected dimensions",
+    "Existing brand files untouched"
+  ]
+}

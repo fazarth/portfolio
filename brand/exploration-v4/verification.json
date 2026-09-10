@@ -1,0 +1,12 @@
+{
+  "concepts": 5,
+  "svg": 15,
+  "png": 20,
+  "checks": [
+    "SVG XML valid (15 files)",
+    "PNG non-blank & correct dimensions (20 files)",
+    "Open Gate mirror symmetry asserted programmatically",
+    "Forward Current arrow direction derived from actual path tangent (guaranteed forward-pointing)",
+    "v2/v3 explorations untouched, live website untouched"
+  ]
+}
