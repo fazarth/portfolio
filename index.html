@@ -21,7 +21,7 @@
     <meta property="og:title" content="NexWave Tech - Right Technology for Real Problems">
     <meta property="og:description" content="Independent technology practice for custom web apps, enterprise systems, and AI automation.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nexwave-tech.my.id">
+    <meta property="og:url" content="https://www.nexwave-tech.my.id/">
     <meta property="og:image" content="https://www.nexwave-tech.my.id/assets/logo.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
@@ -129,6 +129,9 @@
                 </div>
                 <a href="#" onclick="openContact('wa', event)" class="btn btn-primary btn-sm" data-i18n="nav_cta">Free Consultation</a>
             </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -537,6 +540,25 @@
                 if (window.scrollY > 50) nav.classList.add('scrolled');
                 else nav.classList.remove('scrolled');
             });
+
+            // Mobile nav toggle
+            const navToggleBtn = document.getElementById('navToggle');
+            const navLinksEl = document.getElementById('navLinks');
+            if (navToggleBtn && navLinksEl) {
+                const closeMenu = () => {
+                    navLinksEl.classList.remove('active');
+                    navToggleBtn.classList.remove('active');
+                    navToggleBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                };
+                navToggleBtn.addEventListener('click', function() {
+                    const open = navLinksEl.classList.toggle('active');
+                    navToggleBtn.classList.toggle('active', open);
+                    navToggleBtn.setAttribute('aria-expanded', String(open));
+                    document.body.style.overflow = open ? 'hidden' : '';
+                });
+                navLinksEl.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+            }
 
             // Reveal on Scroll
             const observerOptions = { threshold: 0.1 };

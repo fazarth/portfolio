@@ -371,6 +371,9 @@
                 <a href="/" class="lang-btn" style="text-decoration:none;font-weight:600;font-size:0.82rem;color:#64748b;padding:4px 12px;border-radius:16px;background:#f1f5f9;">🇬🇧 EN</a>
                 <a href="#" onclick="openContact('wa', event)" class="btn btn-primary btn-sm">Konsultasi Gratis</a>
             </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
@@ -700,6 +703,25 @@
                 const nav = document.getElementById('navbar');
                 nav.classList.toggle('scrolled', window.scrollY > 50);
             });
+
+            // Mobile nav toggle
+            const navToggleBtn = document.getElementById('navToggle');
+            const navLinksEl = document.getElementById('navLinks');
+            if (navToggleBtn && navLinksEl) {
+                const closeMenu = () => {
+                    navLinksEl.classList.remove('active');
+                    navToggleBtn.classList.remove('active');
+                    navToggleBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                };
+                navToggleBtn.addEventListener('click', () => {
+                    const open = navLinksEl.classList.toggle('active');
+                    navToggleBtn.classList.toggle('active', open);
+                    navToggleBtn.setAttribute('aria-expanded', String(open));
+                    document.body.style.overflow = open ? 'hidden' : '';
+                });
+                navLinksEl.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+            }
 
             // Reveal animations
             const observer = new IntersectionObserver((entries) => {

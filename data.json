@@ -198,7 +198,7 @@
             "title": "Custom System Development",
             "badge": "Request",
             "category": "enterprise",
-            "featured": true,
+            "featured": false,
             "description": "Have unique business requirements? We design and build custom software solutions (Mobile PWA, Enterprise ERP, SEO, or AI) tailored to your workflow.",
             "description_id": "Punya masalah bisnis unik yang butuh solusi teknologi khusus? Kami siap merancang dan membangun sistem kustom (PWA, Enterprise ERP, SEO, atau AI) yang dipersonalisasi.",
             "features": [
