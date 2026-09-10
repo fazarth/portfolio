@@ -1,0 +1,11 @@
+name = "nexwave-quote-api"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+account_id = "c413d5e444492d858eb3bdfe675969f2"
+
+# Custom domain: quote.nexwave-tech.my.id  (attached via --domain; api.* is taken by NEXA AI)
+# Secret (never in this file, never in the frontend):
+#   npx wrangler secret put OPENROUTER_API_KEY
+# Deploy:
+#   npx wrangler deploy --domain quote.nexwave-tech.my.id
+workers_dev = false

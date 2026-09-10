@@ -1,0 +1,6 @@
+# Worker dependencies — none. wrangler runs via npx.
+node_modules/
+.wrangler/
+.dev.vars
+.env
+.env.*
