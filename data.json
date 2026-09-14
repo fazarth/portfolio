@@ -20,44 +20,6 @@
             "comingSoon": false
         },
         {
-            "id": "tanyadoc",
-            "title": "Sciens AI",
-            "badge": "Live",
-            "category": "ai",
-            "featured": false,
-            "description": "Document RAG chat platform: upload company docs, contextual QA, & model customization settings. Multi-sector workspace packs.",
-            "description_id": "Document RAG chat platform: upload dokumen perusahaan, tanya jawab kontekstual, & model settings. Multi-sector workspace path.",
-            "features": [
-                "Doc Upload Parsing",
-                "RAG Context Chat",
-                "OpenRouter AI Models",
-                "Workspace Knowledge Packs"
-            ],
-            "icon": "ai",
-            "link": "https://sciens.nexwave-tech.my.id",
-            "buttonText": "Open Sciens AI",
-            "comingSoon": false
-        },
-        {
-            "id": "talkozy",
-            "title": "Talkozy Voice Coach",
-            "badge": "Live",
-            "category": "ai",
-            "featured": false,
-            "description": "Interactive AI-powered voice English coach: JWT cookie auth, personalized learning flows, & Whisper/Kokoro audio model integration.",
-            "description_id": "Pelatih bahasa Inggris interaktif suara berbasis AI: JWT cookie auth, flow pembelajaran personal, & integrasi model audio Whisper/Kokoro.",
-            "features": [
-                "JWT Cookie Auth",
-                "Voice AI Coach",
-                "RBAC Role Access",
-                "OpenRouter Models"
-            ],
-            "icon": "ai",
-            "link": "https://talkozy.nexwave-tech.my.id",
-            "buttonText": "Open Talkozy",
-            "comingSoon": false
-        },
-        {
             "id": "ai-agent",
             "title": "WhatsApp AI Assistant",
             "badge": "Live",
@@ -75,63 +37,6 @@
             "link": "action:wa_agent",
             "buttonText": "Try AI Demo",
             "buttonText_id": "Coba Demo AI",
-            "comingSoon": false
-        },
-        {
-            "id": "warehouse",
-            "title": "Enterprise WMS",
-            "badge": "Live",
-            "category": "enterprise",
-            "featured": false,
-            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, returns, cycle count, stock aging, mobile barcode scanning & ERP API.",
-            "description_id": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API.",
-            "features": [
-                "FEFO Allocation",
-                "Bin + Batch Stock Ledger",
-                "QR Scan Mobile PWA",
-                "REST API ERP Integration"
-            ],
-            "icon": "warehouse",
-            "link": "https://wms.nexwave-tech.my.id",
-            "buttonText": "Open WMS Demo",
-            "comingSoon": false
-        },
-        {
-            "id": "manufacture",
-            "title": "NexWave Manufacture",
-            "badge": "Live",
-            "category": "enterprise",
-            "featured": false,
-            "description": "Manufacturing Execution Suite: multi-tenant core (identity/JWT), WHS stock opname & FEFO allocation, PPIC planning, logistics, and operator PWA with offline queue.",
-            "description_id": "Manufacturing Execution Suite: core multi-tenant (identity/JWT), WHS stock opname & alokasi FEFO, planning PPIC, logistik, dan PWA operator dengan offline queue.",
-            "features": [
-                "Multi-Tenant Microservices",
-                "WHS Stock Opname + FEFO",
-                "Operator PWA Offline Queue",
-                "PPIC / Logistic"
-            ],
-            "icon": "warehouse",
-            "link": "https://manufacture.nexwave-tech.my.id",
-            "buttonText": "Open App Demo",
-            "comingSoon": false
-        },
-        {
-            "id": "nexora",
-            "title": "Nexora",
-            "badge": "Live",
-            "category": "enterprise",
-            "featured": false,
-            "description": "Modern project management platform with Kanban, Gantt charts, sprint planning, and multi-workspace collaboration.",
-            "description_id": "Platform manajemen proyek modern dengan Kanban, Gantt chart, sprint planning, dan kolaborasi multi-workspace.",
-            "features": [
-                "Kanban & Gantt Views",
-                "Sprint & Backlog",
-                "Multi-Workspace",
-                "Real-time Dashboard"
-            ],
-            "icon": "project",
-            "link": "https://nexora.nexwave-tech.my.id/",
-            "buttonText": "Open Nexora",
             "comingSoon": false
         },
         {
@@ -174,26 +79,6 @@
             "comingSoon": false
         },
         {
-            "id": "kiwarijournal",
-            "title": "Kiwari Journal & Forum",
-            "badge": "Live",
-            "category": "web",
-            "featured": false,
-            "description": "Online media publication and dynamic community forum. Engineered for high traffic with fast server-side rendering architecture.",
-            "description_id": "Sistem publikasi media online dan forum komunitas dinamis. Dirancang untuk traffic tinggi dengan arsitektur server-side yang menjamin kecepatan akses.",
-            "features": [
-                "Multi-Author System",
-                "Community Forum",
-                "Server-Side Rendering",
-                "Dynamic Content"
-            ],
-            "icon": "forum",
-            "link": "https://kiwarijournals.my.id",
-            "buttonText": "Visit Site",
-            "buttonText_id": "Kunjungi Situs",
-            "comingSoon": false
-        },
-        {
             "id": "custom-project",
             "title": "Custom System Development",
             "badge": "Request",
@@ -212,6 +97,126 @@
             "buttonText": "Consult Your Project",
             "buttonText_id": "Konsultasi Masalah Anda",
             "comingSoon": false
+        },
+        {
+            "id": "warehouse",
+            "title": "Enterprise WMS",
+            "badge": "Maintenance",
+            "category": "enterprise",
+            "featured": false,
+            "description": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, returns, cycle count, stock aging, mobile barcode scanning & ERP API.",
+            "description_id": "Warehouse Management System: PO→GR→Put Away, FEFO pick→pack→ship, retur, cycle count, aging stok, mobile barcode scan & ERP API.",
+            "features": [
+                "FEFO Allocation",
+                "Bin + Batch Stock Ledger",
+                "QR Scan Mobile PWA",
+                "REST API ERP Integration"
+            ],
+            "icon": "warehouse",
+            "link": "#",
+            "buttonText": "Demo Temporarily Offline",
+            "comingSoon": true,
+            "buttonText_id": "Demo Sedang Offline"
+        },
+        {
+            "id": "manufacture",
+            "title": "NexWave Manufacture",
+            "badge": "Maintenance",
+            "category": "enterprise",
+            "featured": false,
+            "description": "Manufacturing Execution Suite: multi-tenant core (identity/JWT), WHS stock opname & FEFO allocation, PPIC planning, logistics, and operator PWA with offline queue.",
+            "description_id": "Manufacturing Execution Suite: core multi-tenant (identity/JWT), WHS stock opname & alokasi FEFO, planning PPIC, logistik, dan PWA operator dengan offline queue.",
+            "features": [
+                "Multi-Tenant Microservices",
+                "WHS Stock Opname + FEFO",
+                "Operator PWA Offline Queue",
+                "PPIC / Logistic"
+            ],
+            "icon": "warehouse",
+            "link": "#",
+            "buttonText": "Demo Temporarily Offline",
+            "comingSoon": true,
+            "buttonText_id": "Demo Sedang Offline"
+        },
+        {
+            "id": "tanyadoc",
+            "title": "Sciens AI",
+            "badge": "Maintenance",
+            "category": "ai",
+            "featured": false,
+            "description": "Document RAG chat platform: upload company docs, contextual QA, & model customization settings. Multi-sector workspace packs.",
+            "description_id": "Document RAG chat platform: upload dokumen perusahaan, tanya jawab kontekstual, & model settings. Multi-sector workspace path.",
+            "features": [
+                "Doc Upload Parsing",
+                "RAG Context Chat",
+                "OpenRouter AI Models",
+                "Workspace Knowledge Packs"
+            ],
+            "icon": "ai",
+            "link": "#",
+            "buttonText": "Demo Temporarily Offline",
+            "comingSoon": true,
+            "buttonText_id": "Demo Sedang Offline"
+        },
+        {
+            "id": "talkozy",
+            "title": "Talkozy Voice Coach",
+            "badge": "Maintenance",
+            "category": "ai",
+            "featured": false,
+            "description": "Interactive AI-powered voice English coach: JWT cookie auth, personalized learning flows, & Whisper/Kokoro audio model integration.",
+            "description_id": "Pelatih bahasa Inggris interaktif suara berbasis AI: JWT cookie auth, flow pembelajaran personal, & integrasi model audio Whisper/Kokoro.",
+            "features": [
+                "JWT Cookie Auth",
+                "Voice AI Coach",
+                "RBAC Role Access",
+                "OpenRouter Models"
+            ],
+            "icon": "ai",
+            "link": "#",
+            "buttonText": "Demo Temporarily Offline",
+            "comingSoon": true,
+            "buttonText_id": "Demo Sedang Offline"
+        },
+        {
+            "id": "nexora",
+            "title": "Nexora",
+            "badge": "Maintenance",
+            "category": "enterprise",
+            "featured": false,
+            "description": "Modern project management platform with Kanban, Gantt charts, sprint planning, and multi-workspace collaboration.",
+            "description_id": "Platform manajemen proyek modern dengan Kanban, Gantt chart, sprint planning, dan kolaborasi multi-workspace.",
+            "features": [
+                "Kanban & Gantt Views",
+                "Sprint & Backlog",
+                "Multi-Workspace",
+                "Real-time Dashboard"
+            ],
+            "icon": "project",
+            "link": "#",
+            "buttonText": "Demo Temporarily Offline",
+            "comingSoon": true,
+            "buttonText_id": "Demo Sedang Offline"
+        },
+        {
+            "id": "kiwarijournal",
+            "title": "Kiwari Journal & Forum",
+            "badge": "Maintenance",
+            "category": "web",
+            "featured": false,
+            "description": "Online media publication and dynamic community forum. Engineered for high traffic with fast server-side rendering architecture.",
+            "description_id": "Sistem publikasi media online dan forum komunitas dinamis. Dirancang untuk traffic tinggi dengan arsitektur server-side yang menjamin kecepatan akses.",
+            "features": [
+                "Multi-Author System",
+                "Community Forum",
+                "Server-Side Rendering",
+                "Dynamic Content"
+            ],
+            "icon": "forum",
+            "link": "#",
+            "buttonText": "Demo Temporarily Offline",
+            "buttonText_id": "Demo Sedang Offline",
+            "comingSoon": true
         }
     ]
 }

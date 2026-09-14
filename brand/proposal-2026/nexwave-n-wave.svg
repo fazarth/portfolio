@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+<title id="title">NexWave Tech N-Wave logo proposal</title>
+<desc id="desc">A clear letter N whose rising diagonal forms a gentle forward wave.</desc>
+<path d="M18 47V17M46 47V17" fill="none" stroke="#0F172A" stroke-width="7" stroke-linecap="round"/>
+<path d="M18 47 C27 46 37 22 46 17" fill="none" stroke="#56DFD7" stroke-width="9" stroke-linecap="round"/>
+<path d="M18 47 C27 46 37 22 46 17" fill="none" stroke="#0056D2" stroke-width="7" stroke-linecap="round"/>
+</svg>

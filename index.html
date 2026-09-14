@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexWave Tech - Right Technology for Real Problems</title>
-    <meta name="description" content="Independent technology practice for custom web apps, enterprise systems (WMS/ERP), workflow automation, and AI agents.">
+    <title>NexWave Tech | Custom Software, WMS & AI Automation</title>
+    <meta name="description" content="NexWave Tech builds custom software, WMS/ERP systems, web and mobile apps, and practical AI automation for growing businesses in Indonesia.">
     <meta name="keywords" content="custom web apps, enterprise WMS ERP, AI agents automation, Next.js React Flutter, warehouse management system, manufacturing execution system, WhatsApp AI chatbot, workflow automation, software development Indonesia, NexWave Tech">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="NexWave Tech">
@@ -18,21 +18,22 @@
     <link rel="alternate" hreflang="x-default" href="https://www.nexwave-tech.my.id/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="NexWave Tech - Right Technology for Real Problems">
-    <meta property="og:description" content="Independent technology practice for custom web apps, enterprise systems, and AI automation.">
+    <meta property="og:title" content="NexWave Tech | Custom Software, WMS & AI Automation">
+    <meta property="og:description" content="Practical software and AI solutions that help growing businesses work faster and stay ahead.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.nexwave-tech.my.id/">
-    <meta property="og:image" content="https://www.nexwave-tech.my.id/assets/logo.png">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
+    <meta property="og:image" content="https://www.nexwave-tech.my.id/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="NexWave Tech — custom software and practical AI solutions">
     <meta property="og:site_name" content="NexWave Tech">
     <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="NexWave Tech - Right Technology for Real Problems">
-    <meta name="twitter:description" content="Independent technology practice for custom web apps, enterprise systems, and AI automation.">
-    <meta name="twitter:image" content="https://www.nexwave-tech.my.id/assets/logo.png">
+    <meta name="twitter:title" content="NexWave Tech | Custom Software, WMS & AI Automation">
+    <meta name="twitter:description" content="Practical software and AI solutions that help growing businesses work faster and stay ahead.">
+    <meta name="twitter:image" content="https://www.nexwave-tech.my.id/assets/og-image.png">
     
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -42,7 +43,9 @@
       "name": "NexWave Tech",
       "url": "https://www.nexwave-tech.my.id",
       "logo": "https://www.nexwave-tech.my.id/assets/logo.png",
-      "description": "Independent technology practice for custom web apps, enterprise systems, and AI automation.",
+      "image": "https://www.nexwave-tech.my.id/assets/og-image.png",
+      "description": "NexWave Tech builds custom software, enterprise systems, and practical AI automation for growing businesses.",
+      "areaServed": "ID",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "sales",
@@ -54,21 +57,13 @@
     }
     </script>
 
-    <!-- WebSite + SearchAction Structured Data (Google Sitelinks Search Box) -->
+    <!-- WebSite Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "NexWave Tech",
-      "url": "https://www.nexwave-tech.my.id/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.nexwave-tech.my.id/?s={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "url": "https://www.nexwave-tech.my.id/"
     }
     </script>
 
@@ -88,8 +83,9 @@
     }
     </script>
     
-    <!-- Favicon -->
-    <link rel="icon" href="assets/logo.png" type="image/png">
+    <!-- Favicons / Social -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <meta name="theme-color" content="#0056D2">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,12 +135,17 @@
     <section class="hero reveal" id="home">
         <div class="container">
             <div class="hero-text">
-                <span class="badge" data-i18n="hero_badge">Engineers at Heart</span>
-                <h1 data-i18n="hero_title">Right Technology for <span class="text-accent">Real Problems</span></h1>
-                <p data-i18n="hero_desc">We build tailored digital solutions designed specifically to solve operational bottlenecks and accelerate your business growth.</p>
+                <span class="badge" data-i18n="hero_badge">Software built around real workflows</span>
+                <h1 data-i18n="hero_title">Turn Technology into a <span class="text-accent">Business Advantage</span></h1>
+                <p data-i18n="hero_desc">Custom software, enterprise systems, and practical AI automation that help your team work faster, adapt confidently, and stay competitive.</p>
                 <div class="hero-buttons">
-                    <button id="openAiQuoteBtn" class="btn btn-primary" data-i18n="hero_calc_btn">🤖 Instant AI Quote Calculator</button>
-                    <a href="#products" class="btn btn-outline" data-i18n="hero_projects_btn">Explore Projects</a>
+                    <a href="#" onclick="openContact('wa', event, currentLang === 'id' ? 'Halo NexWave Tech, saya ingin konsultasi gratis mengenai kebutuhan software atau AI untuk bisnis saya.' : 'Hello NexWave Tech, I would like a free consultation about a software or AI project for my business.')" class="btn btn-primary" data-i18n="hero_consult_btn">Start a Free Consultation</a>
+                    <button id="openAiQuoteBtn" class="btn btn-outline" data-i18n="hero_calc_btn">Get an AI Project Estimate</button>
+                </div>
+                <div class="hero-proof" aria-label="Service highlights">
+                    <span data-i18n="hero_proof_1">Direct engineering consultation</span>
+                    <span data-i18n="hero_proof_2">Solutions matched to your workflow</span>
+                    <span data-i18n="hero_proof_3">AI used as a practical tool</span>
                 </div>
             </div>
         </div>
@@ -156,7 +157,7 @@
             <div class="section-header">
                 <span class="badge" data-i18n="prod_badge">Portfolio</span>
                 <h2 data-i18n="prod_title">Proven <span class="text-accent">Live Solutions</span></h2>
-                <p data-i18n="prod_desc">Showcase of applications and systems that have successfully optimized results for our clients.</p>
+                <p data-i18n="prod_desc">Selected products and working demos that show how we solve operational, customer, and knowledge-work problems.</p>
             </div>
             <div class="category-filter-bar" id="categoryFilterBar">
                 <button class="filter-tab active" data-category="all" data-i18n="filter_all">All Projects</button>
@@ -164,7 +165,10 @@
                 <button class="filter-tab" data-category="enterprise" data-i18n="filter_enterprise">🏢 Enterprise & WMS</button>
                 <button class="filter-tab" data-category="web" data-i18n="filter_web">📱 Web & Mobile Apps</button>
             </div>
-            <div class="products-grid" id="productsGrid"></div>
+            <div class="products-grid is-limited" id="productsGrid"></div>
+            <div class="products-actions">
+                <button class="btn btn-outline" id="showAllProductsBtn" data-i18n="prod_show_all">View All Projects</button>
+            </div>
         </div>
     </section>
 
@@ -292,6 +296,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">
+                    <img src="assets/logo.png" alt="" width="28" height="28" loading="lazy">
                     <span>NexWave<span class="text-accent">Tech</span></span>
                 </div>
                 <p>&copy; 2026 NexWave Tech. All rights reserved.</p>
@@ -300,17 +305,17 @@
     </footer>
 
     <!-- AI Instant Quote Calculator Modal -->
-    <div id="aiQuoteModal" class="quote-modal-backdrop">
+    <div id="aiQuoteModal" class="quote-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="aiQuoteTitle" aria-hidden="true">
         <div class="quote-modal">
             <div class="quote-modal-header">
                 <div class="quote-modal-title">
                     <span class="quote-icon">🤖</span>
                     <div>
-                        <h3 data-i18n="modal_title">Hey, I'm Nexy! 👋</h3>
+                        <h3 id="aiQuoteTitle" data-i18n="modal_title">Hey, I'm Nexy! 👋</h3>
                         <p data-i18n="modal_desc">Describe your project idea — I'll instantly analyze the architecture, recommend the best tech stack, and break down the timeline!</p>
                     </div>
                 </div>
-                <button id="closeAiQuoteBtn" class="quote-close-btn">&times;</button>
+                <button id="closeAiQuoteBtn" class="quote-close-btn" type="button" aria-label="Close AI quote dialog">&times;</button>
             </div>
             
             <div class="quote-modal-body">
@@ -385,14 +390,18 @@
                 nav_process: "Process",
                 nav_about: "About",
                 nav_cta: "Free Consultation",
-                hero_badge: "Engineers at Heart",
-                hero_title: 'Right Technology for <span class="text-accent">Real Problems</span>',
-                hero_desc: "We build tailored digital solutions designed specifically to solve operational bottlenecks and accelerate your business growth.",
-                hero_calc_btn: "🤖 Instant AI Quote Calculator",
-                hero_projects_btn: "Explore Projects",
+                hero_badge: "Software built around real workflows",
+                hero_title: 'Turn Technology into a <span class="text-accent">Business Advantage</span>',
+                hero_desc: "Custom software, enterprise systems, and practical AI automation that help your team work faster, adapt confidently, and stay competitive.",
+                hero_consult_btn: "Start a Free Consultation",
+                hero_calc_btn: "Get an AI Project Estimate",
+                hero_proof_1: "Direct engineering consultation",
+                hero_proof_2: "Solutions matched to your workflow",
+                hero_proof_3: "AI used as a practical tool",
                 prod_badge: "Portfolio",
                 prod_title: 'Proven <span class="text-accent">Live Solutions</span>',
-                prod_desc: "Showcase of applications and systems that have successfully optimized results for our clients.",
+                prod_desc: "Selected products and working demos that show how we solve operational, customer, and knowledge-work problems.",
+                prod_show_all: "View All Projects",
                 filter_all: "All Projects",
                 filter_ai: "🤖 AI & Automations",
                 filter_enterprise: "🏢 Enterprise & WMS",
@@ -443,14 +452,18 @@
                 nav_process: "Proses",
                 nav_about: "Tentang",
                 nav_cta: "Konsultasi Gratis",
-                hero_badge: "Engineers at Heart",
-                hero_title: 'Teknologi Tepat untuk <span class="text-accent">Masalah Nyata</span>',
-                hero_desc: "Kami membangun solusi digital yang dirancang khusus untuk menjawab tantangan operasional dan mempercepat efisiensi bisnis Anda.",
-                hero_calc_btn: "🤖 Kalkulator Estimasi AI Instan",
-                hero_projects_btn: "Lihat Project",
+                hero_badge: "Software House untuk Bisnis yang Terus Bergerak",
+                hero_title: 'Jadikan Teknologi <span class="text-accent">Keunggulan Bisnis Anda</span>',
+                hero_desc: "Kami membangun software custom, sistem operasional, dan automasi AI praktis agar tim bekerja lebih mudah, cepat, dan siap mengikuti perubahan teknologi.",
+                hero_consult_btn: "Mulai Konsultasi Gratis",
+                hero_calc_btn: "Dapatkan Estimasi Project AI",
+                hero_proof_1: "Konsultasi langsung dengan engineer",
+                hero_proof_2: "Solusi mengikuti alur kerja bisnis",
+                hero_proof_3: "AI sebagai alat kerja praktis",
                 prod_badge: "Portfolio",
-                prod_title: 'Solusi yang <span class="text-accent">Telah Berjalan</span>',
-                prod_desc: "Showcase aplikasi dan sistem yang telah berhasil mengoptimalkan hasil bisnis klien kami.",
+                prod_title: 'Solusi dan <span class="text-accent">Demo yang Berjalan</span>',
+                prod_desc: "Pilihan produk dan demo aktif yang menunjukkan cara kami menyelesaikan masalah operasional, layanan pelanggan, dan knowledge work.",
+                prod_show_all: "Lihat Semua Project",
                 filter_all: "Semua Project",
                 filter_ai: "🤖 AI & Automations",
                 filter_enterprise: "🏢 Enterprise & WMS",
@@ -465,7 +478,7 @@
                 serv_3_title: "AI Agents & Automations",
                 serv_3_desc: "Asisten AI cerdas, otomatisasi workflow, dan chatbot WhatsApp kustom untuk meningkatkan produktivitas tim Anda 24/7.",
                 flow_badge: "Proses Kami",
-                flow_title: 'Gimana Kami <span class="text-accent">Bekerja?</span>',
+                flow_title: 'Cara Kami <span class="text-accent">Bekerja</span>',
                 flow_desc: "Proses kerja terukur untuk memastikan setiap baris kode memberikan dampak nyata bagi bisnis Anda.",
                 flow_1_title: "Analisa & Diskusi",
                 flow_1_desc: "Memahami inti masalah bisnis Anda untuk menemukan solusi teknologi yang paling efisien.",
@@ -575,6 +588,23 @@
 
             document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+            // Highlight the section currently in view
+            const navItems = [...document.querySelectorAll('.nav-link')];
+            const sections = [...document.querySelectorAll('section[id]')];
+            const setActiveNav = () => {
+                const y = window.scrollY + 140;
+                let activeId = sections[0]?.id;
+                sections.forEach(section => { if (section.offsetTop <= y) activeId = section.id; });
+                navItems.forEach(link => {
+                    const active = link.getAttribute('href') === `#${activeId}`;
+                    link.classList.toggle('active', active);
+                    if (active) link.setAttribute('aria-current', 'page');
+                    else link.removeAttribute('aria-current');
+                });
+            };
+            window.addEventListener('scroll', setActiveNav, { passive: true });
+            setActiveNav();
+
             // Initialize Lucide Icons
             if (window.lucide) lucide.createIcons();
 
@@ -601,6 +631,20 @@
             // Load & Filter Projects
             let allProducts = [];
             let currentFilter = 'all';
+            let showAllProducts = false;
+
+            function syncProductsView() {
+                const grid = document.getElementById('productsGrid');
+                const button = document.getElementById('showAllProductsBtn');
+                if (!grid || !button) return;
+                const limited = currentFilter === 'all' && !showAllProducts;
+                grid.classList.toggle('is-limited', limited);
+                grid.classList.toggle('is-filtered', currentFilter !== 'all');
+                button.closest('.products-actions').style.display = currentFilter === 'all' ? 'flex' : 'none';
+                button.textContent = showAllProducts
+                    ? (currentLang === 'id' ? 'Tampilkan Lebih Sedikit' : 'Show Fewer Projects')
+                    : i18n[currentLang].prod_show_all;
+            }
 
             function renderProducts(categoryFilter = 'all') {
                 currentFilter = categoryFilter;
@@ -636,7 +680,7 @@
 
                     return `
                     <div class="product-card ${isFeatured ? 'card-featured' : (isRequest ? 'card-highlight' : '')}">
-                        ${isFeatured ? '<div class="featured-ribbon">⭐ Flagship Platform</div>' : ''}
+                        ${isFeatured ? '<div class="featured-ribbon">Flagship Platform</div>' : ''}
                         <div class="product-badge ${statusClass}">${badge}</div>
                         <div class="product-icon">${getIcon(p.icon)}</div>
                         <h3>${title}</h3>
@@ -646,17 +690,27 @@
                                 ${features}
                             </ul>
                         </div>
-                        <a href="${safeHref}" ${clickAttr} class="btn ${p.comingSoon ? 'btn-outline' : (isRequest || isFeatured ? 'btn-accent' : 'btn-primary')}" ${isWaAction || p.comingSoon ? '' : 'target="_blank" rel="noopener noreferrer"'}>
+                        <a href="${safeHref}" ${clickAttr} class="btn ${p.comingSoon ? 'btn-outline' : (isRequest || isFeatured ? 'btn-accent' : 'btn-primary')}" ${p.comingSoon ? 'aria-disabled="true" tabindex="-1"' : (isWaAction ? '' : 'target="_blank" rel="noopener noreferrer"')}>
                             ${buttonText}
                         </a>
                     </div>
                     `;
                 }).join('');
+                syncProductsView();
             }
 
             window.renderProductsCurrent = function() {
                 renderProducts(currentFilter);
             };
+
+            const showAllProductsBtn = document.getElementById('showAllProductsBtn');
+            if (showAllProductsBtn) {
+                showAllProductsBtn.addEventListener('click', () => {
+                    showAllProducts = !showAllProducts;
+                    syncProductsView();
+                    if (!showAllProducts) document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                });
+            }
 
             fetch('data.json')
                 .then(res => res.json())
@@ -671,6 +725,7 @@
                             tabs.forEach(t => t.classList.remove('active'));
                             this.classList.add('active');
                             const cat = this.getAttribute('data-category');
+                            showAllProducts = cat !== 'all';
                             renderProducts(cat);
                         });
                     });
@@ -693,16 +748,23 @@
             const calcBtn = document.getElementById('calcSubmitBtn');
             let lastGeneratedWaText = "";
 
+            const closeQuoteModal = () => {
+                if (!modal) return;
+                modal.classList.remove('active');
+                modal.setAttribute('aria-hidden', 'true');
+                openBtn?.focus();
+            };
             if (openBtn && modal) {
-                openBtn.addEventListener('click', () => modal.classList.add('active'));
-            }
-            if (closeBtn && modal) {
-                closeBtn.addEventListener('click', () => modal.classList.remove('active'));
-            }
-            if (modal) {
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) modal.classList.remove('active');
+                openBtn.addEventListener('click', () => {
+                    modal.classList.add('active');
+                    modal.setAttribute('aria-hidden', 'false');
+                    document.getElementById('quotePrompt')?.focus();
                 });
+            }
+            if (closeBtn && modal) closeBtn.addEventListener('click', closeQuoteModal);
+            if (modal) {
+                modal.addEventListener('click', (e) => { if (e.target === modal) closeQuoteModal(); });
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('active')) closeQuoteModal(); });
             }
 
             if (quoteForm) {
