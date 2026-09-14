@@ -1,20 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 75" fill="none">
-  <g transform="translate(0, 0)">
-    <defs>
-    <linearGradient id="nwGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00E5A0" />
-      <stop offset="45%" stop-color="#00D2C4" />
-      <stop offset="100%" stop-color="#0066FF" />
-    </linearGradient>
-    <linearGradient id="nwBlue" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0052CC" />
-      <stop offset="100%" stop-color="#0066FF" />
-    </linearGradient>
-  </defs>
-  <path d="M55 42 L76 14 C77 12 79 11 82 11 L92 11 C95 11 96 13 95 16 L76 54 C75 56 73 57 70 57 L60 57 C58 57 57 55 57 53 Z" fill="url(#nwBlue)" />
-  <path d="M8 64 L8 26 C8 15 17 8 28 8 C38 8 46 14 52 23 L62 38 C68 47 75 51 83 48 C88 46 93 42 98 34 C98 37 96 43 92 48 C84 58 74 61 64 56 C57 52 50 43 45 35 L38 24 C34 19 30 17 26 17 C20 17 16 22 16 29 L16 59 L8 64 Z" fill="url(#nwGrad)" />
-  <path d="M45 35 C52 46 62 58 73 58 C84 58 92 51 98 34 C94 45 85 53 74 53 C63 53 53 44 45 35 Z" fill="#004FB8" opacity="0.8" />
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <!-- NexWave Tech Portfolio Logo (100% Transparent, Uncropped) -->
+  <g transform="translate(140, 200)">
+    <!-- Cyan & Electric Blue Technology Wave Monogram NW -->
+    <path d="M-60,50 C-60,-50 -30,-70 0,-70 C30,-70 40,-10 60,-10 C80,-10 90,-70 120,-70 C150,-70 160,-10 160,50" fill="none" stroke="#56DFD7" stroke-width="20" stroke-linecap="round"/>
+    <path d="M-60,50 L-60,-40 L-10,30 L30,-40 L70,30 L120,-40 L120,50" fill="none" stroke="#0066FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
   </g>
-  <text x="112" y="52" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="800" font-size="44" fill="#0B1220" letter-spacing="-0.02em">Nex<tspan fill="#0066FF">Wave</tspan></text>
+  <!-- Text Brand Name -->
+  <text x="460" y="195" font-family="'Inter', -apple-system, sans-serif" font-weight="800" font-size="48" fill="#FFFFFF" letter-spacing="2">NexWave</text>
+  <text x="460" y="240" font-family="'Inter', -apple-system, sans-serif" font-weight="600" font-size="20" fill="#56DFD7" letter-spacing="8">TECHNOLOGY</text>
 </svg>

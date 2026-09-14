@@ -85,13 +85,12 @@
     
     <!-- Favicons / Social -->
     <link rel="icon" href="assets/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <meta name="theme-color" content="#0B1220">
+    <meta name="theme-color" content="#0056D2">
     
-    <!-- Google Fonts: Plus Jakarta Sans -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons (deferred) -->
     <script src="https://unpkg.com/lucide@latest" defer></script>
@@ -108,9 +107,9 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo" aria-label="NexWave Tech">
-                <img src="assets/logo-mark.svg" alt="NexWave Logo" width="34" height="26">
-                <span>Nex<span class="text-accent">Wave</span></span>
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="NexWave Tech Logo" width="32" height="32">
+                <span>NexWave<span class="text-accent">Tech</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home" class="nav-link" data-i18n="nav_home">Home</a></li>
@@ -136,17 +135,12 @@
     <section class="hero reveal" id="home">
         <div class="container">
             <div class="hero-text">
-                <span class="badge-brand" data-i18n="hero_brand_badge">✦ AI bukan musuh · AI adalah tools · Mari berjalan bersama</span>
-                <h1 data-i18n="hero_title">Teknologi & AI untuk <span class="text-accent">Masa Depan Bersama</span></h1>
+                <span class="badge" data-i18n="hero_badge">Software built around real workflows</span>
+                <h1 data-i18n="hero_title">Turn Technology into a <span class="text-accent">Business Advantage</span></h1>
                 <p data-i18n="hero_desc">Custom software, enterprise systems, and practical AI automation that help your team work faster, adapt confidently, and stay competitive.</p>
                 <div class="hero-buttons">
                     <a href="#" onclick="openContact('wa', event, currentLang === 'id' ? 'Halo NexWave Tech, saya ingin konsultasi gratis mengenai kebutuhan software atau AI untuk bisnis saya.' : 'Hello NexWave Tech, I would like a free consultation about a software or AI project for my business.')" class="btn btn-primary" data-i18n="hero_consult_btn">Start a Free Consultation</a>
                     <button id="openAiQuoteBtn" class="btn btn-outline" data-i18n="hero_calc_btn">Get an AI Project Estimate</button>
-                </div>
-                <div class="hero-pills" aria-label="Core Capabilities">
-                    <div class="hero-pill"><i data-lucide="code-2"></i> <span data-i18n="pill_software">Software House</span></div>
-                    <div class="hero-pill"><i data-lucide="cpu"></i> <span data-i18n="pill_ai">AI Gateway & Solutions</span></div>
-                    <div class="hero-pill"><i data-lucide="users"></i> <span data-i18n="pill_target">Untuk Individu, UMKM & Perusahaan</span></div>
                 </div>
                 <div class="hero-proof" aria-label="Service highlights">
                     <span data-i18n="hero_proof_1">Direct engineering consultation</span>
@@ -276,37 +270,6 @@
                         <div class="tech-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerautomate.svg" width="20" height="20" alt="Power Automate" loading="lazy"> Power Automate</div>
                     </div>
                 </div>
-
-                <!-- 4 Core Brand Pillars -->
-                <div class="pillars-section">
-                    <div class="pillars-header">
-                        <span class="badge" data-i18n="pillars_badge">Brand Values</span>
-                        <h3 data-i18n="pillars_title">Pilar Nilai <span class="text-accent">NexWave</span></h3>
-                        <p data-i18n="pillars_desc">Prinsip dasar yang memandu setiap solusi teknologi dan inovasi kecerdasan buatan yang kami bangun.</p>
-                    </div>
-                    <div class="pillars-grid">
-                        <div class="pillar-card">
-                            <span class="pillar-badge">01 · INKLUSIF</span>
-                            <h4 data-i18n="pillar_1_title">Inklusif</h4>
-                            <p data-i18n="pillar_1_desc">Teknologi untuk semua, tanpa terkecuali. Dirancang mudah digunakan oleh individu hingga skala korporasi.</p>
-                        </div>
-                        <div class="pillar-card">
-                            <span class="pillar-badge">02 · BERKELANJUTAN</span>
-                            <h4 data-i18n="pillar_2_title">Berkelanjutan</h4>
-                            <p data-i18n="pillar_2_desc">Tumbuh bersama jangka panjang dengan arsitektur scalable, aman, dan efisien biaya.</p>
-                        </div>
-                        <div class="pillar-card">
-                            <span class="pillar-badge">03 · INOVATIF</span>
-                            <h4 data-i18n="pillar_3_title">Inovatif</h4>
-                            <p data-i18n="pillar_3_desc">Selalu mencari cara baru untuk memberi dampak nyata melalui integrasi software modern dan AI praktis.</p>
-                        </div>
-                        <div class="pillar-card">
-                            <span class="pillar-badge">04 · KOLABORATIF</span>
-                            <h4 data-i18n="pillar_4_title">Kolaboratif</h4>
-                            <p data-i18n="pillar_4_desc">Karena masa depan dibangun bersama. Kami bermitra erat dari perancangan hingga implementasi produksi.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -333,10 +296,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">
-                    <img src="assets/logo-mark.svg" alt="NexWave" width="28" height="22" loading="lazy">
-                    <span>Nex<span class="text-accent">Wave</span></span>
+                    <img src="assets/logo.png" alt="" width="28" height="28" loading="lazy">
+                    <span>NexWave<span class="text-accent">Tech</span></span>
                 </div>
-                <p style="font-size:0.88rem; color:var(--text-muted); font-weight:600;" data-i18n="footer_tagline">Teknologi & AI untuk Masa Depan Bersama</p>
                 <p>&copy; 2026 NexWave Tech. All rights reserved.</p>
             </div>
         </div>
@@ -428,15 +390,11 @@
                 nav_process: "Process",
                 nav_about: "About",
                 nav_cta: "Free Consultation",
-                hero_brand_badge: "✦ AI is not the enemy · AI is a tool · Let's advance together",
                 hero_badge: "Software built around real workflows",
-                hero_title: 'Technology & AI for <span class="text-accent">Our Shared Future</span>',
-                hero_desc: "Custom software house, enterprise systems, and practical AI solutions empowering individuals, MSMEs, and enterprises to scale with confidence.",
+                hero_title: 'Turn Technology into a <span class="text-accent">Business Advantage</span>',
+                hero_desc: "Custom software, enterprise systems, and practical AI automation that help your team work faster, adapt confidently, and stay competitive.",
                 hero_consult_btn: "Start a Free Consultation",
                 hero_calc_btn: "Get an AI Project Estimate",
-                pill_software: "Software House",
-                pill_ai: "AI Gateway & Solutions",
-                pill_target: "For Individuals, MSMEs & Enterprises",
                 hero_proof_1: "Direct engineering consultation",
                 hero_proof_2: "Solutions matched to your workflow",
                 hero_proof_3: "AI used as a practical tool",
@@ -470,24 +428,12 @@
                 flow_4_desc: "Deploying to cloud infrastructure with continuous monitoring, maintenance, and reliability support.",
                 about_title: 'Trusted Technology <span class="text-accent">Partner</span>',
                 about_desc: "Engineering discipline combined with modern tech stacks to build resilient software products.",
-                pillars_badge: "Brand Values",
-                pillars_title: 'NexWave <span class="text-accent">Brand Pillars</span>',
-                pillars_desc: "Guiding principles behind every engineering line and intelligent solution we build.",
-                pillar_1_title: "Inclusive",
-                pillar_1_desc: "Technology for everyone, without exception. Accessible and intuitive across teams and scales.",
-                pillar_2_title: "Sustainable",
-                pillar_2_desc: "Growing together long-term with resilient, scalable, and cost-effective system architectures.",
-                pillar_3_title: "Innovative",
-                pillar_3_desc: "Continuously pioneering practical methods to create measurable business value with AI & modern software.",
-                pillar_4_title: "Collaborative",
-                pillar_4_desc: "Because the future is built together. Partnering closely from audit to production deployment.",
                 tech_label_1: "Frameworks & Languages",
                 tech_label_2: "Database & Cloud",
                 tech_label_3: "Microsoft Power Platform",
                 contact_title: 'Ready to Launch Your <span class="text-accent">Project?</span>',
                 contact_desc: "Turn your technical requirements into high-performing reality. Contact us via WhatsApp for instant technical consultation.",
                 contact_btn: "Chat on WhatsApp →",
-                footer_tagline: "Technology & AI for Our Shared Future",
                 modal_title: "Hey, I'm Nexy! 👋",
                 modal_desc: "Describe your project idea — I'll instantly analyze the architecture, recommend the best tech stack, and break down the timeline!",
                 modal_desc_label: "Describe Your Project / Requirements:",
@@ -506,15 +452,11 @@
                 nav_process: "Proses",
                 nav_about: "Tentang",
                 nav_cta: "Konsultasi Gratis",
-                hero_brand_badge: "✦ AI bukan musuh · AI adalah tools · Mari berjalan bersama",
                 hero_badge: "Software House untuk Bisnis yang Terus Bergerak",
-                hero_title: 'Teknologi & AI untuk <span class="text-accent">Masa Depan Bersama</span>',
-                hero_desc: "Platform AI & Software House untuk individu, UMKM, dan perusahaan yang ingin maju bersama melalui custom software, enterprise system, dan otomatisasi cerdas.",
+                hero_title: 'Jadikan Teknologi <span class="text-accent">Keunggulan Bisnis Anda</span>',
+                hero_desc: "Kami membangun software custom, sistem operasional, dan automasi AI praktis agar tim bekerja lebih mudah, cepat, dan siap mengikuti perubahan teknologi.",
                 hero_consult_btn: "Mulai Konsultasi Gratis",
                 hero_calc_btn: "Dapatkan Estimasi Project AI",
-                pill_software: "Software House",
-                pill_ai: "AI Gateway & Solutions",
-                pill_target: "Untuk Individu, UMKM & Perusahaan",
                 hero_proof_1: "Konsultasi langsung dengan engineer",
                 hero_proof_2: "Solusi mengikuti alur kerja bisnis",
                 hero_proof_3: "AI sebagai alat kerja praktis",
@@ -528,49 +470,37 @@
                 filter_web: "📱 Web & Mobile Apps",
                 serv_badge: "Layanan Kami",
                 serv_title: 'Layanan <span class="text-accent">Unggulan</span>',
-                serv_desc: "Solusi engineering lengkap untuk digitalisasi dan automasi operasional bisnis Anda.",
-                serv_1_title: "Web & Mobile App",
-                serv_1_desc: "Pengembangan aplikasi web dan mobile modern dengan Next.js, React, dan Flutter yang cepat, stabil, dan siap scale-up.",
-                serv_2_title: "Sistem Enterprise (WMS/ERP)",
-                serv_2_desc: "Sistem operasional berbasis .NET Core dan Golang untuk kontrol stok, mutasi gudang, dan volume data transaksi tinggi.",
-                serv_3_title: "AI Agents & Automasi",
-                serv_3_desc: "Agent AI cerdas, pipeline automasi kerja, dan chatbot WhatsApp custom untuk membantu operasional bisnis 24/7.",
-                flow_badge: "Alur Kerja",
+                serv_desc: "Solusi teknologi komprehensif untuk mendigitalisasi dan mengotomatisasi bisnis Anda.",
+                serv_1_title: "Web & Mobile Apps",
+                serv_1_desc: "Membangun platform web dan mobile modern berbasis Next.js, React, dan Flutter dengan fokus pada performa dan skalabilitas tinggi.",
+                serv_2_title: "Enterprise Systems (WMS/ERP)",
+                serv_2_desc: "Pengembangan sistem kustom (ERP/WMS) menggunakan .NET Core dan Golang untuk efisiensi bisnis dan kelola stok skala besar.",
+                serv_3_title: "AI Agents & Automations",
+                serv_3_desc: "Asisten AI cerdas, otomatisasi workflow, dan chatbot WhatsApp kustom untuk meningkatkan produktivitas tim Anda 24/7.",
+                flow_badge: "Proses Kami",
                 flow_title: 'Cara Kami <span class="text-accent">Bekerja</span>',
-                flow_desc: "Proses engineering terstruktur untuk memastikan setiap baris kode memberi dampak nyata pada operasional bisnis.",
-                flow_1_title: "Audit & Analisis Kebutuhan",
-                flow_1_desc: "Mempelajari bottleneck operasional bisnis Anda untuk merancang solusi teknis yang paling tepat sasaran.",
-                flow_2_title: "Arsitektur & UI/UX",
-                flow_2_desc: "Menyusun arsitektur sistem dan desain antarmuka yang mudah digunakan langsung oleh tim lapangan.",
-                flow_3_title: "Pengembangan Cepat & Teruji",
-                flow_3_desc: "Proses development gesit menggunakan tech stack modern yang siap untuk kebutuhan produksi nyata.",
-                flow_4_title: "Deployment & Dukungan Teknis",
-                flow_4_desc: "Peluncuran ke cloud dengan monitoring berkala, panduan penggunaan, dan jaminan keandalan sistem.",
-                about_title: 'Partner Teknologi <span class="text-accent">Terpercaya</span>',
-                about_desc: "Disiplin engineering dipadukan dengan tech stack modern untuk membangun produk digital yang tangguh.",
-                pillars_badge: "Pilar Nilai",
-                pillars_title: 'Pilar Nilai <span class="text-accent">NexWave</span>',
-                pillars_desc: "Prinsip dasar yang memandu setiap solusi teknologi dan inovasi kecerdasan buatan yang kami bangun.",
-                pillar_1_title: "Inklusif",
-                pillar_1_desc: "Teknologi untuk semua, tanpa terkecuali. Dirancang mudah digunakan oleh individu hingga skala korporasi.",
-                pillar_2_title: "Berkelanjutan",
-                pillar_2_desc: "Tumbuh bersama jangka panjang dengan arsitektur scalable, aman, dan efisien biaya.",
-                pillar_3_title: "Inovatif",
-                pillar_3_desc: "Selalu mencari cara baru untuk memberi dampak nyata melalui integrasi software modern dan AI praktis.",
-                pillar_4_title: "Kolaboratif",
-                pillar_4_desc: "Karena masa depan dibangun bersama. Kami bermitra erat dari perancangan hingga implementasi produksi.",
-                tech_label_1: "Framework & Bahasa Pemrograman",
+                flow_desc: "Proses kerja terukur untuk memastikan setiap baris kode memberikan dampak nyata bagi bisnis Anda.",
+                flow_1_title: "Analisa & Diskusi",
+                flow_1_desc: "Memahami inti masalah bisnis Anda untuk menemukan solusi teknologi yang paling efisien.",
+                flow_2_title: "Arsitektur & Desain",
+                flow_2_desc: "Menyusun cetak biru sistem dan desain UI/UX yang fokus pada kemudahan penggunaan.",
+                flow_3_title: "Pembangunan",
+                flow_3_desc: "Proses pengembangan menggunakan tech stack modern sesuai dengan kebutuhan spesifikasi sistem.",
+                flow_4_title: "Launch & Support",
+                flow_4_desc: "Meluncurkan sistem ke cloud dan memastikan semuanya berjalan stabil di tangan pengguna.",
+                about_title: 'Partner Teknologi <span class="text-accent">Andal</span>',
+                about_desc: "Kombinasi keahlian teknis untuk menghasilkan produk perangkat lunak yang andal.",
+                tech_label_1: "Framework & Language",
                 tech_label_2: "Database & Cloud",
                 tech_label_3: "Microsoft Power Platform",
-                contact_title: 'Siap Memulai <span class="text-accent">Project Anda?</span>',
-                contact_desc: "Ubah kebutuhan teknis bisnis Anda menjadi solusi nyata yang andal. Hubungi kami via WhatsApp untuk konsultasi langsung.",
-                contact_btn: "Chat via WhatsApp →",
-                footer_tagline: "Teknologi & AI untuk Masa Depan Bersama",
-                modal_title: "Halo, saya Nexy! 👋",
-                modal_desc: "Ceritakan kebutuhan atau ide aplikasi Anda — saya akan langsung bantu analisa arsitektur, rekomendasi teknologi, dan estimasi waktunya!",
-                modal_desc_label: "Jelaskan Kebutuhan / Ide Project Anda:",
-                modal_submit_btn: "⚡ Buat Estimasi Arsitektur AI Sekarang",
-                modal_res_badge: "✓ Analisis Arsitektur AI Selesai",
+                contact_title: 'Siap Memulai <span class="text-accent">Project?</span>',
+                contact_desc: "Wujudkan sistem impian Anda dengan dukungan teknis profesional. Hubungi kami melalui WhatsApp untuk konsultasi cepat.",
+                contact_btn: "Chat WhatsApp →",
+                modal_title: "Halo, aku Nexy! 👋",
+                modal_desc: "Jelaskan ide proyekmu — aku akan langsung menganalisis arsitektur, merekomendasikan tech stack terbaik, dan estimasi waktunya!",
+                modal_desc_label: "Jelaskan Ide / Kebutuhan Proyek Anda:",
+                modal_submit_btn: "⚡ Generate AI Estimate Now",
+                modal_res_badge: "✓ AI Architecture Analysis Complete",
                 res_time_label: "Estimasi Waktu",
                 res_stack_label: "Rekomendasi Tech Stack",
                 res_feat_label: "Fitur Arsitektur Utama:",
