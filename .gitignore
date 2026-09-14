@@ -9,3 +9,4 @@ admin/
 Thumbs.db
 __pycache__/
 *.pyc
+*.bak
